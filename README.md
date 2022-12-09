@@ -101,3 +101,7 @@ In the end you'll get a line like:
 ```
 dpkg-deb: building package 'ros-humble-bosdyn-msgs' in '../ros-humble-bosdyn-msgs_0.0.0-0jammy_amd64.deb'.
 ```
+
+### Upload debian to GitHub
+
+You should now have a `.deb` file containing the `bosdyn_msgs` package. You need to upload that as a release to GitHub [here](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository). Please increment the version of the release. At some point we may consider automating this process but we don't have a formalized way of doing these precompilations yet. 
