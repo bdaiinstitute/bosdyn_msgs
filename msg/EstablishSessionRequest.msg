@@ -12,5 +12,10 @@ bosdyn_msgs/Lease[] leases
 
 # Use this to provide other data (e.g. from the blackboard).
 # The RemoteGrpc node will provide the name of the node automatically.
+# Deprecated in favor of params.
 bosdyn_msgs/VariableDeclaration[] inputs
+
+# Parameters set by the client.
+bosdyn_msgs/CustomParam params
+bool params_is_set
 

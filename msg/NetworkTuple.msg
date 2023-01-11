@@ -2,16 +2,16 @@
 
 # Network configuration data.
 
-#a big-endian representation of an IPv4 address
+# a big-endian representation of an IPv4 address
 uint32 address
 bool address_is_set
-#The mask used for defining the system's subnet
+# The mask used for defining the system's subnet
 uint32 netmask
 bool netmask_is_set
-#A global routing is set up for the address defined below (if present)
+# A global routing is set up for the address defined below (if present)
 uint32 gateway
 bool gateway_is_set
-#If MTU is present, and <16 bits wide, then it is set for the ethernet interface's MTU
-#if not, the MTU is set to 1500
+# If MTU is present, and <16 bits wide, then it is set for the ethernet interface's MTU
+# if not, the MTU is set to 1500
 uint32 mtu
 bool mtu_is_set

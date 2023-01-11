@@ -5,3 +5,16 @@
 # Common request header.
 bosdyn_msgs/RequestHeader header
 bool header_is_set
+
+# Leases that AutoReturn may use to accomplish its goals.
+# If left empty, use the leases specified in ConfigureRequest.
+# If empty and no leases have been specified by ConfigureRequest, the response will have a
+# CODE_INVALID_REQUEST in the header.
+bosdyn_msgs/Lease[] leases
+
+# Parameters to use.
+# If left empty, use the params specified in ConfigureRequest.
+# If empty and no params have been specified by ConfigureRequest, the response will have a
+# CODE_INVALID_REQUEST in the header.
+bosdyn_msgs/Params params
+bool params_is_set

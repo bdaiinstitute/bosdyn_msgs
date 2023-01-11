@@ -47,12 +47,12 @@ int8 TASK_TYPE_R3_CIRCLE_FORCE=4
 int8 TASK_TYPE_R3_LINEAR_FORCE=5
 # This option simply holds the hand in place with stiff impedance control.
 # You can use this mode at the beginning of a constrained manipulation task or to
-# hold position while transitioning between two different constrained manipulation tasks.
-# The target pose to hold will be the measured hand pose upon transitioning to constrained
-# manipulation or upon switching to this task type.
-# This mode should only be used during constrained manipulation tasks,
-# since it uses impedance control to hold the hand in place.
-# This is not intended to stop the arm during position control moves.
+# hold position while transitioning between two different constrained manipulation
+# tasks. The target pose to hold will be the measured hand pose upon transitioning to
+# constrained manipulation or upon switching to this task type. This mode should only
+# be used during constrained manipulation tasks, since it uses impedance control to
+# hold the hand in place. This is not intended to stop the arm during position control
+# moves.
 int8 TASK_TYPE_HOLD_POSE=6
 
 int8 value

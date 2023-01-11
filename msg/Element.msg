@@ -44,3 +44,7 @@ bool battery_monitor_is_set
 # timeout.
 builtin_interfaces/Duration action_duration
 bool action_duration_is_set
+
+# Unique identifier for this element.  This will be embedded in various DAQ captures
+# and various logging bundles.  This should be globally unique across all elements.
+string id

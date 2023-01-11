@@ -2,17 +2,20 @@
 
 # Parameters for offsetting the body from the normal default.
 
-
 bosdyn_msgs/BodyControlParamsOneOfParam param
 
 # Setting for how the robot interprets base offset pitch & roll components.
-# In the default case (ROTATION_SETTING_OFFSET) the robot will naturally align the body to the pitch of the current terrain.
-# In some circumstances, the user may wish to override this value and try to maintain alignment
-# with respect to gravity. Be careful with this setting as it may likely degrade robot performance in
-# complex terrain, e.g. stairs, platforms, or slopes of sufficiently high grade.
-# The rotation setting for the robot body.  Ignored if body_assist_for_manipulation is requested.
+# In the default case (ROTATION_SETTING_OFFSET) the robot will naturally align the body to the
+# pitch of the current terrain. In some circumstances, the user may wish to override this value
+# and try to maintain alignment with respect to gravity. Be careful with this setting as it may
+# likely degrade robot performance in complex terrain, e.g. stairs, platforms, or slopes of
+# sufficiently high grade.
+# The rotation setting for the robot body.  Ignored if body_assist_for_manipulation or
+# body_pose are enabled.
 bosdyn_msgs/BodyControlParamsRotationSetting rotation_setting
 
-# Instead of directly specify the base offset trajectory, these options allow the robot to calcuate offsets
-# based on the hand's location.  If the robot does not have a SpotArm attached, sending this request will
-# hvae no effect.
+# Instead of directly specify the base offset trajectory, these options allow the robot to
+# calcuate offsets based on the hand's location.  If the robot does not have a SpotArm
+# attached, sending this request will have no effect.
+
+# An SE3 based desired body pose trajectory with a specified base frame.

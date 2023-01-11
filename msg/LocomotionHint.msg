@@ -23,12 +23,12 @@ int8 HINT_JOG=8
 # Demo gait which hops while holding some feet in the air.
 int8 HINT_HOP=9
 # HINT_AUTO_TROT is deprecated due to the name being too similar to the Spot Autowalk feature.
-# It has been replaced by HINT_SPEED_SELECT_TROT. Keeping this value in here for now for backwards
-# compatibility, but this may be removed in future releases.
+# It has been replaced by HINT_SPEED_SELECT_TROT. Keeping this value in here for now for
+# backwards compatibility, but this may be removed in future releases.
 int8 HINT_AUTO_TROT=10
 # HINT_AUTO_AMBLE is deprecated due to the name being too similar to the Spot Autowalk feature.
-# It has been replaced by HINT_SPEED_SELECT_AMBLE. Keeping this value in here for now for backwards
-# compatibility, but this may be removed in future releases.
+# It has been replaced by HINT_SPEED_SELECT_AMBLE. Keeping this value in here for now for
+# backwards compatibility, but this may be removed in future releases.
 int8 HINT_AUTO_AMBLE=11
 
 int8 value

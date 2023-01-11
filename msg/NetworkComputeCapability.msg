@@ -4,7 +4,12 @@
 bosdyn_msgs/NetworkComputeServerConfiguration server_config
 bool server_config_is_set
 
-# Provide list of available models
-string[] available_models
+# Provide list of available models.
+# DEPRECATED as of 3.3. Replaced by AvailableModels.
 
-bosdyn_msgs/ModelLabels[] labels
+# Information about available classes for each model.
+# DEPRECATED as of 3.3. Replaced by AvailableModels.
+
+# Envelope message for repeated ModelData.
+bosdyn_msgs/AvailableModels models
+bool models_is_set

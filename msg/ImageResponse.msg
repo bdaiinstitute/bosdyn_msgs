@@ -15,3 +15,7 @@ bool source_is_set
 bosdyn_msgs/ImageResponseStatus status
 
 # Previous fields in the protobuf that are now reserved.
+
+# Filled out if status is STATUS_CUSTOM_PARAMS_ERROR.
+bosdyn_msgs/CustomParamError custom_param_error
+bool custom_param_error_is_set

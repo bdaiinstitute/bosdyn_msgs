@@ -2,6 +2,6 @@
 
 # Identifier for a playable sound.
 
-#internally, sounds are stored in a flat table. This name is the
-#identifier of a sound effect
+# internally, sounds are stored in a flat table. This name is the
+# identifier of a sound effect
 string name

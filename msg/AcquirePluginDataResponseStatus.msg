@@ -3,5 +3,6 @@
 int8 STATUS_UNKNOWN=0
 int8 STATUS_OK=1 # The capture action has successfully started acquiring the data.
 int8 STATUS_UNKNOWN_CAPTURE_TYPE=2 # One of the capability requests in the AcquisitionRequestList is unknown.
+int8 STATUS_CUSTOM_PARAMS_ERROR=3 # See custom_param_error field for details.
 
 int8 value

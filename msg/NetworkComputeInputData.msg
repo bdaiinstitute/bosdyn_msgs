@@ -20,3 +20,11 @@ float32 min_confidence
 # defining the sensor's frame with respect to Spot's body and vision frames.
 # Field is ignored for non-image input.
 bosdyn_msgs/NetworkComputeInputDataRotateImage rotate_image
+
+# For some computer vision operations a number of reference images are required along with the
+# input image.
+bosdyn_msgs/Image[] reference_images
+
+# Input parameters unique to this worker that do not match any of the above fields.
+bosdyn_msgs/DictParam custom_params
+bool custom_params_is_set

@@ -5,5 +5,5 @@
 # Common request header.
 bosdyn_msgs/RequestHeader header
 bool header_is_set
-#volume, as a percentage of maximum.
+# volume, as a percentage of maximum.
 float32 volume

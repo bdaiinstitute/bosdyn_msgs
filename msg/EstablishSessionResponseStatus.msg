@@ -10,6 +10,9 @@ int8 STATUS_OK=1
 int8 STATUS_MISSING_LEASES=2
 # Remote service needs additional inputs.
 int8 STATUS_MISSING_INPUTS=3
+# There was another error with the input parameters.
+# See the params_error field for details.
+int8 STATUS_PARAMS_ERROR=4
 
 # Note there is no status for an error condition in the LeaseUseResult field.
 # Even if STATUS_OK is returned, an error may be indicated in lease_use_results.

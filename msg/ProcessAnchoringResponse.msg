@@ -39,3 +39,7 @@ string[] missing_snapshot_ids
 string[] missing_waypoint_ids
 # Unorganized list of waypoints and object IDs which were invalid (missing from the map).
 string[] invalid_hints
+# List of edges that are inconsistent with the optimized result. This can happen when incorrect
+# loop closures have been made before optimization, when inconsistent anchoring hints were passed in,
+# or because the optmizer ended up in a local minimum.
+bosdyn_msgs/EdgeId[] inconsistent_edges

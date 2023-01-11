@@ -13,3 +13,10 @@ string host
 # Note that ko_tform_body in the request will be ignored (it will be recalculated at runtime).
 bosdyn_msgs/SetLocalizationRequest localization_request
 bool localization_request_is_set
+# If true, a poor quality check will not result in the node returning FAILURE.
+# If false, the localization will be checked for quality by comparing agains the map data, and if
+# the localization is poor quality, the node returns FAILURE.
+bool allow_bad_quality
+# If non-empty, the blackboard variable with this name will contain the response of the
+# graph nav SetLocalization request after this node receives it.
+string response_bb_key

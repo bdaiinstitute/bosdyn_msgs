@@ -12,13 +12,15 @@ int32 tag_id
 bosdyn_msgs/Vec2 dimensions
 bool dimensions_is_set
 
-# The frame name for the raw version of this fiducial. This will be included in the transform snapshot.
+# The frame name for the raw version of this fiducial. This will be included in the transform
+# snapshot.
 string frame_name_fiducial
 
 # Status of the pose estimation of the unfiltered fiducial frame.
 bosdyn_msgs/AprilTagPropertiesAprilTagPoseStatus fiducial_pose_status
 
-# The frame name for the filtered version of this fiducial. This will be included in the transform snapshot.
+# The frame name for the filtered version of this fiducial. This will be included in the
+# transform snapshot.
 string frame_name_fiducial_filtered
 
 # Status of the pose estimation of the filtered fiducial frame.
@@ -37,4 +39,3 @@ bosdyn_msgs/SE3Covariance detection_covariance
 bool detection_covariance_is_set
 # The frame that the detection covariance is expressed in.
 string detection_covariance_reference_frame
-

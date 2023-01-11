@@ -5,3 +5,7 @@
 # A area callback can request to be in control of one or more resources at runtime.
 string[] required_lease_resources
 
+# Parameters this area callback supports that do not match any of the other fields.
+bosdyn_msgs/DictParamSpec custom_params
+bool custom_params_is_set
+

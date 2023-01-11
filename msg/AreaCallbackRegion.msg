@@ -7,3 +7,7 @@ string service_name
 
 # Human-readable description of this region.
 string description
+
+# Configuration data associated with this area callback.
+bosdyn_msgs/AreaCallbackData recorded_data
+bool recorded_data_is_set

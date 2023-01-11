@@ -20,6 +20,7 @@ float32 saturation
 bool saturation_is_set
 
 # Set the image gain level.
+# This paramater is only effective when manual exposure is used.
 # Min 0, max 1
 float32 gain
 bool gain_is_set

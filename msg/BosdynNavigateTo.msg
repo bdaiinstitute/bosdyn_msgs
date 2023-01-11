@@ -23,3 +23,6 @@ string navigation_feedback_response_blackboard_key
 # If provided, this will write the last NavigateToResponse message to
 # a blackboard variable with this name.
 string navigate_to_response_blackboard_key
+
+# Defines robot behavior when route is blocked. Defaults to reroute when route is blocked.
+bosdyn_msgs/RouteFollowingParamsRouteBlockedBehavior route_blocked_behavior

@@ -13,6 +13,8 @@
 
 # Set the pan, tilt, and zoom of the SpotCam.
 
+# Align SpotCam to a waypoint. Cannot be used with SpotCamPtz or RobotBodyPose
+
 # Position the body and perform a joint move and cartesian command in target frame
 
 # Set the camera params of the gripper camera
@@ -28,6 +30,8 @@ bosdyn_msgs/ActionWrapperSpotCamPtz spot_cam_ptz
 bool spot_cam_ptz_is_set
 bosdyn_msgs/ActionWrapperArmSensorPointing arm_sensor_pointing
 bool arm_sensor_pointing_is_set
+bosdyn_msgs/ActionWrapperSpotCamAlignment spot_cam_alignment
+bool spot_cam_alignment_is_set
 bosdyn_msgs/ActionWrapperGripperCameraParams gripper_camera_params
 bool gripper_camera_params_is_set
 bosdyn_msgs/ActionWrapperGripperCommand gripper_command

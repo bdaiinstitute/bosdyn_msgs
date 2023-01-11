@@ -16,3 +16,9 @@ string channel
 # a "detected_gauges" channel, but want a way to further individually identify them as each specific gauge,
 # so you give each detection a unique data_name.
 string data_name
+
+# Unique identifier specified by the DAQStore service for this individual piece of data. It is
+# a monotonically-increasing value that is incremented for each stored capture. This value is
+# intended to be unique to a robot and not globally unique. We do not guarantee uniqueness pre
+# and post software upgrades or factory resets. This id does not necessarily start at 0.
+uint64 id

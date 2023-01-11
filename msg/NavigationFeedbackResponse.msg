@@ -50,3 +50,4 @@ bosdyn_msgs/NavigationFeedbackResponseRouteFollowingStatus route_following_statu
 # Status is STATUS_FOLLOWING_ROUTE, or STATUS_STUCK, and will be BLOCKAGE_STATUS_UNKNOWN in all other cases.
 # Additional information about whether or not the robot believes the current route to be blocked.
 bosdyn_msgs/NavigationFeedbackResponseBlockageStatus blockage_status
+

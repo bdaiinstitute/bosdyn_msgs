@@ -11,5 +11,13 @@ bool header_is_set
 bosdyn_msgs/LeaseUseResult lease_use_result
 bool lease_use_result_is_set
 
+
 # Return status for a request.
 bosdyn_msgs/ClearBehaviorFaultResponseStatus status
+
+# Echo back the behavior fault if it was active at the time of request.
+bosdyn_msgs/BehaviorFault behavior_fault
+bool behavior_fault_is_set
+
+# Blocking hardware faults for an unclearable behavior fault.
+bosdyn_msgs/SystemFault[] blocking_system_faults

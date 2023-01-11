@@ -10,3 +10,4 @@ bosdyn_msgs/DataCapture[] data_captures
 
 # List of Network Compute Bridge requests
 bosdyn_msgs/NetworkComputeCapture[] network_compute_captures
+

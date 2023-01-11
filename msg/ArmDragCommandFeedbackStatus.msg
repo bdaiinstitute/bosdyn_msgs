@@ -5,17 +5,17 @@ int8 STATUS_UNKNOWN=0
 # Robot is dragging.
 int8 STATUS_DRAGGING=1
 # Robot is not dragging because grasp failed.
-# This could be due to a lost grasp during a drag, or because the gripper isn't in a good
-# position at the time of request. You'll have to reposition or regrasp and then send a
-# new drag request to overcome this type of error.
-# Note: When requesting drag, make sure the gripper is positioned in front of the robot (not to the side of or
+# This could be due to a lost grasp during a drag, or because the gripper isn't in a
+# good position at the time of request. You'll have to reposition or regrasp and then
+# send a new drag request to overcome this type of error. Note: When requesting drag,
+# make sure the gripper is positioned in front of the robot (not to the side of or
 # above the robot body).
 int8 STATUS_GRASP_FAILED=2
 # Robot is not dragging for another reason.
 # This might be because the gripper isn't holding an item.
-# You can continue dragging once you resolve this type of error (i.e. by sending an ApiGraspOverride request).
-# Note: When requesting drag, be sure to that the robot knows it's holding something (or use APIGraspOverride to
-# OVERRIDE_HOLDING).
+# You can continue dragging once you resolve this type of error (i.e. by sending an
+# ApiGraspOverride request). Note: When requesting drag, be sure to that the robot
+# knows it's holding something (or use APIGraspOverride to OVERRIDE_HOLDING).
 int8 STATUS_OTHER_FAILURE=3
 
 int8 value

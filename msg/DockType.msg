@@ -10,5 +10,7 @@ int8 DOCK_TYPE_UNKNOWN=0
 int8 DOCK_TYPE_CONTACT_PROTOTYPE=1
 # Production version SpotDock
 int8 DOCK_TYPE_SPOT_DOCK=2
+# Production version SpotDock located in the dog house.
+int8 DOCK_TYPE_SPOT_DOGHOUSE=3
 
 int8 value

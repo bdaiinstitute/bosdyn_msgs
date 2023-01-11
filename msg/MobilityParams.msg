@@ -16,8 +16,8 @@ bosdyn_msgs/LocomotionHint locomotion_hint
 # DEPRECATED as of 3.2.0: The boolean field has been replaced by the field stairs_mode.
 # The following field will be deprecated and moved to 'reserved' in a future release.
 
-# Stairs are only supported in trot gaits. Enabling stairs mode will override some user defaults in
-# order to optimize stair behavior.
+# Stairs are only supported in trot gaits. Enabling stairs mode will override some user
+# defaults in order to optimize stair behavior.
 # The selected option for stairs mode.
 # If unset, will use the deprecated stair_hint instead.
 # If falling back on stair_hint, false will map to STAIRS_MODE_OFF.
@@ -49,7 +49,8 @@ bool disable_stair_error_auto_descent
 bosdyn_msgs/BodyExternalForceParams external_force_params
 bool external_force_params_is_set
 
-# Prevent the robot from pitching to get a better look at rearward terrain except in stairs mode.
+# Prevent the robot from pitching to get a better look at rearward terrain except in stairs
+# mode.
 bool disallow_non_stairs_pitch_limiting
 
 # Disable the secondary nearmap-based cliff avoidance that runs while on stairs.

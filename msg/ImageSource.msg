@@ -33,3 +33,7 @@ bosdyn_msgs/ImagePixelFormat[] pixel_formats
 
 # The image formats a specific image source supports.
 bosdyn_msgs/ImageFormat[] image_formats
+
+# ImageRequest parameters unique to this source that do not match any of the above fields.
+bosdyn_msgs/DictParamSpec custom_params
+bool custom_params_is_set

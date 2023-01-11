@@ -3,11 +3,15 @@
 bosdyn_msgs/ResponseHeader header # Common response header.
 bool header_is_set
 
-# Provide list of available models
-string[] available_models
+# Provide list of available models.
+# DEPRECATED as of 3.3. Replaced by AvailableModels.
 
 # Optional information about available classes for each model
-bosdyn_msgs/ModelLabels[] labels
+# DEPRECATED as of 3.3. Replaced by AvailableModels.
+
+# Envelope message for repeated ModelData.
+bosdyn_msgs/AvailableModels models
+bool models_is_set
 
 # Command status
 bosdyn_msgs/ListAvailableModelsStatus status

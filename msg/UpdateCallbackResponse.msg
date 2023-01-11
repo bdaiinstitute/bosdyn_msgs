@@ -12,4 +12,12 @@ bosdyn_msgs/UpdateCallbackResponseStatus status
 bosdyn_msgs/UpdateCallbackResponseOneOfResponse response
 
 
+# Localization changes inform Graph Nav when the callback has moved the robot,
+# and are ignored unless callback has control of the robot.
+bosdyn_msgs/UpdateCallbackResponseUpdateLocalization localization
+bool localization_is_set
+
+
+
+
 

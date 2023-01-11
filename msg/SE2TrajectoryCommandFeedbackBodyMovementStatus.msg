@@ -7,5 +7,4 @@ int8 BODY_STATUS_MOVING=1
 # The robot is at the goal and the body has stopped moving.
 int8 BODY_STATUS_SETTLED=2
 
-
 int8 value

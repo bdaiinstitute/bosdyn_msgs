@@ -23,3 +23,7 @@ bosdyn_msgs/Element[] elements
 # However, this is subject to change.
 bosdyn_msgs/Dock[] docks
 
+# Unique identifier for this walk.  This will be embedded in various DAQ captures
+# and various logging bundles.  This should be globally unique across all walks.
+string id
+

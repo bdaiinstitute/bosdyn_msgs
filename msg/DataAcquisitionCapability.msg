@@ -16,3 +16,7 @@ string channel_name
 
 # The data acquisition plugin service's service name used in directory registration.
 string service_name
+
+# Custom parameters supported by this instance of the service.
+bosdyn_msgs/DictParamSpec custom_params
+bool custom_params_is_set

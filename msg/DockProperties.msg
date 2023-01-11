@@ -6,7 +6,8 @@
 uint32 dock_id
 # Type of dock.
 bosdyn_msgs/DockType type
-# The frame name for the location of dock origin. This will be included in the transform snapshot.
+# The frame name for the location of dock origin. This will be included in the transform
+# snapshot.
 string frame_name_dock
 # Availability if the dock can be used
 bool unavailable

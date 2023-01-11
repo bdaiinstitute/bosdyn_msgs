@@ -2,11 +2,13 @@
 
 # The mode is unset.
 int8 ROUTE_BLOCKED_UNKNOWN=0
-# The robot will find the shortest path to any point after the furthest-along blockage,
-# and after the furthest-along traversed edge, and go to the point that gives that
-# shortest path. Then, the robot will follow the rest of the route from that point.
-# If multiple points on the route are similarly close to the robot, the robot will
-# prefer the earliest on the route.
+# For NavigateToRequests, the robot will find the shortest path to the desination
+# that avoids the blockage.
+# For NavigateRouteRequests, the robot will find the shortest path to any point
+# after the furthest-along blockage, and after the furthest-along traversed edge,
+# and go to the point that gives that shortest path. Then, the robot will follow
+# the rest of the route from that point. If multiple points on the route are
+# similarly close to the robot, the robot will prefer the earliest on the route.
 # This is the default.
 int8 ROUTE_BLOCKED_REROUTE=1
 # The robot will fail the command with status STATUS_STUCK;

@@ -6,7 +6,8 @@
 bosdyn_msgs/RequestHeader header
 bool header_is_set
 # Identifier for the sound.
-# If the same identifier is used as a previously loaded sound, that sound will be overwritten with the new data.
+# If the same identifier is used as a previously loaded sound, that sound will be overwritten
+# with the new data.
 bosdyn_msgs/Sound sound
 bool sound_is_set
 # WAV bytes to be joined.
