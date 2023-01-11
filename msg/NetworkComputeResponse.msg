@@ -24,6 +24,10 @@ float64 image_rotation_angle
 # Command status
 bosdyn_msgs/NetworkComputeStatus status
 
+# Filled out if status is NETWORK_COMPUTE_STATUS_CUSTOM_PARAMS_ERROR.
+bosdyn_msgs/CustomParamError custom_param_error
+bool custom_param_error_is_set
+
 # Optional field to indicate an alert detected by this model.
 #
 # Note that this alert will be reported for this entire response (including all output images).
@@ -36,4 +40,7 @@ bool alert_data_is_set
 # Maps name to OutputImage.
 bosdyn_msgs/KeyStringValueBosdynMsgsOutputImage[] output_images
 
+
+# Information computed about the regions of interest by the worker.
+bosdyn_msgs/KeyStringValueBosdynMsgsOutputData[] roi_output_data
 

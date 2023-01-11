@@ -21,5 +21,10 @@ string[] missing_lease_resources
 bosdyn_msgs/LeaseUseResult[] lease_use_results
 
 # The inputs required by the contacted node that were not mentioned in the request.
+# Deprecated in favor of missing_params.
 bosdyn_msgs/VariableDeclaration[] missing_inputs
+
+# Filled out if status is STATUS_CUSTOM_PARAMS_ERROR.
+bosdyn_msgs/CustomParamError params_error
+bool params_error_is_set
 

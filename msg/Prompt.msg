@@ -43,3 +43,7 @@ bool for_autonomous_processing
 # CRITICAL: Something went wrong, and the mission can't recover without human intervention.
 # Human needs to rescue the robot before battery runs out because it's not charging.
 bosdyn_msgs/AlertDataSeverityLevel severity
+
+# If specified, this node will write its current question (bosdyn.api.mission.Question proto)
+# to the blackboard while it is being ticked.
+string question_name_in_blackboard

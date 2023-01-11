@@ -12,3 +12,11 @@ bool region_info_is_set
 # If unset, a AreaCallback implementation may pick a reasonable value.
 builtin_interfaces/Time end_time
 bool end_time_is_set
+
+# Configuration data associated with this area callback region
+bosdyn_msgs/AreaCallbackData recorded_data
+bool recorded_data_is_set
+
+# Any other custom parameters to the callback.
+bosdyn_msgs/DictParam custom_params
+bool custom_params_is_set

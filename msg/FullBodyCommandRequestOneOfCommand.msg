@@ -2,35 +2,35 @@
 
 # ONEOF MESSAGE  Only one of the following can be set
 
+int8 COMMAND_NOT_SET=0
+
 # Command to stop the robot.
+int8 COMMAND_STOP_REQUEST_SET=4
 bosdyn_msgs/StopCommandRequest stop_request
 
 # Command to freeze all joints of the robot.
+int8 COMMAND_FREEZE_REQUEST_SET=7
 bosdyn_msgs/FreezeCommandRequest freeze_request
 
 # Command to self-right the robot to a ready position.
+int8 COMMAND_SELFRIGHT_REQUEST_SET=10
 bosdyn_msgs/SelfRightCommandRequest selfright_request
 
 # Command to safely power off the robot.
+int8 COMMAND_SAFE_POWER_OFF_REQUEST_SET=13
 bosdyn_msgs/SafePowerOffCommandRequest safe_power_off_request
 
 # Command to put the robot in a position to easily change the battery.
+int8 COMMAND_BATTERY_CHANGE_POSE_REQUEST_SET=16
 bosdyn_msgs/BatteryChangePoseCommandRequest battery_change_pose_request
 
 # Command to perform payload mass property estimation
+int8 COMMAND_PAYLOAD_ESTIMATION_REQUEST_SET=19
 bosdyn_msgs/PayloadEstimationCommandRequest payload_estimation_request
 
 # Command to perform full body constrained manipulation moves
+int8 COMMAND_CONSTRAINED_MANIPULATION_REQUEST_SET=22
 bosdyn_msgs/ConstrainedManipulationCommandRequest constrained_manipulation_request
-
-int8 COMMAND_NOT_SET=0
-int8 COMMAND_STOP_REQUEST_SET=1
-int8 COMMAND_FREEZE_REQUEST_SET=2
-int8 COMMAND_SELFRIGHT_REQUEST_SET=3
-int8 COMMAND_SAFE_POWER_OFF_REQUEST_SET=4
-int8 COMMAND_BATTERY_CHANGE_POSE_REQUEST_SET=5
-int8 COMMAND_PAYLOAD_ESTIMATION_REQUEST_SET=6
-int8 COMMAND_CONSTRAINED_MANIPULATION_REQUEST_SET=7
 
 # Only one of the above can be filled in.  Use the enum to choose which.
 int8 command_choice

@@ -8,8 +8,8 @@
 string group_name
 
 # If the mission contains SpotCAM PTZ actions, set this to true. At the start of the
-# mission, the SpotCAM PTZ autofocus will be reset, thereby improving the quality of
-# the subsequent PTZ captures.
+# mission (or if the robot falls), the SpotCAM PTZ autofocus will be reset, thereby
+# improving the quality of the subsequent PTZ captures.
 bool should_autofocus_ptz
 
 # The mission can automatically self-right the robot. Autonomous self-rights

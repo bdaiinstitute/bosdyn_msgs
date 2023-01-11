@@ -3,3 +3,6 @@
 bosdyn_msgs/AcquireDataRequest acquire_data_request
 bool acquire_data_request_is_set
 bosdyn_msgs/DataAcquisitionCompletionBehavior completion_behavior
+# Last known DAQ capabilities.
+bosdyn_msgs/AcquisitionCapabilityList last_known_capabilities
+bool last_known_capabilities_is_set

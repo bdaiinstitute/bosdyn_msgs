@@ -22,3 +22,9 @@ bool waypoint_source_is_set
 # Information about the state of the client when this waypoint was created.
 bosdyn_msgs/ClientMetadata client_metadata
 bool client_metadata_is_set
+
+# This waypoint may have specific settings to help with loop closure. This
+# Is useful for example when trying to ensure that a loop closure occurs at
+# a particular intersection or near a dock.
+bosdyn_msgs/WaypointAnnotationsLoopClosureSettings loop_closure_settings
+bool loop_closure_settings_is_set

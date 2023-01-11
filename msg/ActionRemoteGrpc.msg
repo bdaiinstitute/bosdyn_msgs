@@ -18,4 +18,9 @@ string[] lease_resources
 # The list of variables the remote host should receive.
 # Variables given can be available at either run-time or compile-time.
 # The "key" in KeyValue is the name of the variable as used by the remote system.
+# Deprecated in favor of parameters below.
 bosdyn_msgs/KeyValue[] inputs
+
+# All specifications and any values chosen at record time.
+bosdyn_msgs/CustomParamCollection parameters
+bool parameters_is_set

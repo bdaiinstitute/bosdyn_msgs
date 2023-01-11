@@ -35,3 +35,8 @@ bool impaired_state_is_set
 # will be returned, rather than STATUS_INCOMPATIBLE_SENSORS.
 bosdyn_msgs/SensorCompatibilityStatus sensor_status
 bool sensor_status_is_set
+
+# Graph Nav will check the quality of the resulting localization and report the status
+# here. Note that to preserve backwards compatability with 3.2 and earlier, a poor quality check
+# does not result in this RPC failing.
+bosdyn_msgs/SetLocalizationResponseQualityCheckResult quality_check_result

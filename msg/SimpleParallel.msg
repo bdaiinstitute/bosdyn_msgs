@@ -3,8 +3,13 @@
 # Run two child nodes together, returning the primary child's result when it completes.
 
 # Primary node, whose completion will end the execution of SimpleParallel.
+# The secondary node will be ticked at least once.
 bosdyn_msgs/Node primary
 bool primary_is_set
 # Secondary node, which will be ticked as long as the primary is still running.
 bosdyn_msgs/Node secondary
 bool secondary_is_set
+# By default, if the secondary node finishes before the primary node, the secondary node
+# will be restarted.  If this flag is set to true, and the secondary node completes before
+# the primary node, it will never be restarted.
+bool run_secondary_node_once

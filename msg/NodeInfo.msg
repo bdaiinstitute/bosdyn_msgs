@@ -12,4 +12,4 @@ string name
 bosdyn_msgs/UserData user_data
 bool user_data_is_set
 # Info on all children of this node, if any are present.
-# bosdyn_msgs/NodeInfo[] children
+string[] children  # Serialized bosdyn_msgs/NodeInfo to break recursion

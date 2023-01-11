@@ -15,4 +15,8 @@ int8 NETWORK_COMPUTE_STATUS_EXTERNAL_SERVER_ERROR=3
 # The robot failed to rotate the image as requested.
 int8 NETWORK_COMPUTE_STATUS_ROTATION_ERROR=4
 
+# One or more keys or values in the input custom_params are unsupported by the service.
+# See the custom_param_error for details.
+int8 NETWORK_COMPUTE_STATUS_CUSTOM_PARAMS_ERROR=5
+
 int8 value
