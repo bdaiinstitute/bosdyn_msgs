@@ -2,36 +2,36 @@
 
 # ONEOF MESSAGE  Only one of the following can be set
 
-int8 FEEDBACK_NOT_SET=0
-
 # Feedback for the stop command request.
-int8 FEEDBACK_STOP_FEEDBACK_SET=4
 bosdyn_msgs/StopCommandFeedback stop_feedback
 
 # Feedback for the freeze command request.
-int8 FEEDBACK_FREEZE_FEEDBACK_SET=7
 bosdyn_msgs/FreezeCommandFeedback freeze_feedback
 
 # Feedback for the self-right command request.
-int8 FEEDBACK_SELFRIGHT_FEEDBACK_SET=10
 bosdyn_msgs/SelfRightCommandFeedback selfright_feedback
 
 # Feedback for the safe power off command request.
-int8 FEEDBACK_SAFE_POWER_OFF_FEEDBACK_SET=13
 bosdyn_msgs/SafePowerOffCommandFeedback safe_power_off_feedback
 
 # Feedback for the battery change pose command request.
-int8 FEEDBACK_BATTERY_CHANGE_POSE_FEEDBACK_SET=16
 bosdyn_msgs/BatteryChangePoseCommandFeedback battery_change_pose_feedback
 
 # Feedback for the payload estimation command request.
-int8 FEEDBACK_PAYLOAD_ESTIMATION_FEEDBACK_SET=19
 bosdyn_msgs/PayloadEstimationCommandFeedback payload_estimation_feedback
 
 # Feedback for the constrained manipulation command request
-int8 FEEDBACK_CONSTRAINED_MANIPULATION_FEEDBACK_SET=22
 bosdyn_msgs/ConstrainedManipulationCommandFeedback constrained_manipulation_feedback
 
+
+int8 FEEDBACK_NOT_SET=0
+int8 FEEDBACK_STOP_FEEDBACK_SET=1
+int8 FEEDBACK_FREEZE_FEEDBACK_SET=2
+int8 FEEDBACK_SELFRIGHT_FEEDBACK_SET=3
+int8 FEEDBACK_SAFE_POWER_OFF_FEEDBACK_SET=4
+int8 FEEDBACK_BATTERY_CHANGE_POSE_FEEDBACK_SET=5
+int8 FEEDBACK_PAYLOAD_ESTIMATION_FEEDBACK_SET=6
+int8 FEEDBACK_CONSTRAINED_MANIPULATION_FEEDBACK_SET=7
 
 # Only one of the above can be filled in.  Use the enum to choose which.
 int8 feedback_choice

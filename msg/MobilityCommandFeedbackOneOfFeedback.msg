@@ -2,30 +2,30 @@
 
 # ONEOF MESSAGE  Only one of the following can be set
 
-int8 FEEDBACK_NOT_SET=0
-
 # Feedback for the trajectory command.
-int8 FEEDBACK_SE2_TRAJECTORY_FEEDBACK_SET=4
 bosdyn_msgs/SE2TrajectoryCommandFeedback se2_trajectory_feedback
 
 # Feedback for the velocity command.
-int8 FEEDBACK_SE2_VELOCITY_FEEDBACK_SET=7
 bosdyn_msgs/SE2VelocityCommandFeedback se2_velocity_feedback
 
 # Feedback for the sit command.
-int8 FEEDBACK_SIT_FEEDBACK_SET=10
 bosdyn_msgs/SitCommandFeedback sit_feedback
 
 # Feedback for the stand command.
-int8 FEEDBACK_STAND_FEEDBACK_SET=13
 bosdyn_msgs/StandCommandFeedback stand_feedback
-int8 FEEDBACK_STANCE_FEEDBACK_SET=14
 bosdyn_msgs/StanceCommandFeedback stance_feedback
-int8 FEEDBACK_STOP_FEEDBACK_SET=15
 bosdyn_msgs/StopCommandFeedback stop_feedback
-int8 FEEDBACK_FOLLOW_ARM_FEEDBACK_SET=16
 bosdyn_msgs/FollowArmCommandFeedback follow_arm_feedback
 
+
+int8 FEEDBACK_NOT_SET=0
+int8 FEEDBACK_SE2_TRAJECTORY_FEEDBACK_SET=1
+int8 FEEDBACK_SE2_VELOCITY_FEEDBACK_SET=2
+int8 FEEDBACK_SIT_FEEDBACK_SET=3
+int8 FEEDBACK_STAND_FEEDBACK_SET=4
+int8 FEEDBACK_STANCE_FEEDBACK_SET=5
+int8 FEEDBACK_STOP_FEEDBACK_SET=6
+int8 FEEDBACK_FOLLOW_ARM_FEEDBACK_SET=7
 
 # Only one of the above can be filled in.  Use the enum to choose which.
 int8 feedback_choice
