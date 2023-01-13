@@ -4,7 +4,7 @@
 # For example, if element_specs.int_spec is filled out, all values should follow
 # that specification. If element_specs.string_spec is filled out, all values
 # should follow that specification.
-string element_spec  # Serialized bosdyn_msgs/CustomParamSpec to break recursion
+bosdyn_msgs/SerializedMessage element_spec  # Serialized bosdyn_msgs/CustomParamSpec to break recursion
 bool element_spec_is_set
 
 # Minimum and maximum number of values the client may send.

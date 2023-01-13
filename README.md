@@ -1,5 +1,7 @@
 # bosdyn_msgs
 
+These are auto-generated 1-1 messages from Boston Dynamics Spot API.  These are **not supported by Boston Dynamics** and currently experimental!
+
 ## How to build `.deb`
 
 (Largely borrowed from [here](https://gist.github.com/awesomebytes/196eab972a94dd8fcdd69adfe3bd1152))

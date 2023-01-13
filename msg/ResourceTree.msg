@@ -7,4 +7,4 @@
 string resource
 
 # Sub-resources that make up this resource.
-string[] sub_resources  # Serialized bosdyn_msgs/ResourceTree to break recursion
+bosdyn_msgs/SerializedMessage[] sub_resources  # Serialized bosdyn_msgs/ResourceTree to break recursion

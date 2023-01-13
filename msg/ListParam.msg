@@ -3,4 +3,4 @@
 # A list of elements of given types.
 
 
-string[] values  # Serialized bosdyn_msgs/CustomParam to break recursion
+bosdyn_msgs/SerializedMessage[] values  # Serialized bosdyn_msgs/CustomParam to break recursion

@@ -7,7 +7,7 @@
 #          /       
 #         /         
 #     param A.B   param A.C
-string dict_spec  # Serialized bosdyn_msgs/DictParamSpec to break recursion
+bosdyn_msgs/SerializedMessage dict_spec  # Serialized bosdyn_msgs/DictParamSpec to break recursion
 # This parameter is a list of things.
 bosdyn_msgs/ListParamSpec list_spec
 bosdyn_msgs/Int64ParamSpec int_spec

@@ -16,6 +16,7 @@ find_package(sensor_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+
   "msg/AcquireDataRequest.msg"
   "msg/AcquireDataResponse.msg"
   "msg/AcquireDataResponseStatus.msg"
@@ -1019,6 +1020,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/SelfRightCommandRequest.msg"
   "msg/SensorCompatibilityStatus.msg"
   "msg/Sequence.msg"
+  "msg/SerializedMessage.msg"
   "msg/SeriesBlockIndex.msg"
   "msg/SeriesBlockIndexBlockEntry.msg"
   "msg/SeriesDescriptor.msg"
