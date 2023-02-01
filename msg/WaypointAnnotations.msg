@@ -17,7 +17,6 @@ bool scan_match_region_is_set
 
 # How this waypoint was made.
 bosdyn_msgs/WaypointWaypointSource waypoint_source
-bool waypoint_source_is_set
 
 # Information about the state of the client when this waypoint was created.
 bosdyn_msgs/ClientMetadata client_metadata

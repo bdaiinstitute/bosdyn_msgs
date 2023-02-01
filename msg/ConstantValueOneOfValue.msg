@@ -12,6 +12,7 @@ int8 VALUE_FLOAT_VALUE_SET=1
 int8 VALUE_STRING_VALUE_SET=2
 int8 VALUE_INT_VALUE_SET=3
 int8 VALUE_BOOL_VALUE_SET=4
+int8 VALUE_MSG_VALUE_SET=5
 
 # Only one of the above can be filled in.  Use the enum to choose which.
 int8 value_choice

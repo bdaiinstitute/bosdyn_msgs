@@ -9,4 +9,3 @@ bool push_point_in_frame_is_set
 
 # The side of the hinge with respect to the robot when facing the door.
 bosdyn_msgs/DoorCommandHingeSide hinge_side
-bool hinge_side_is_set

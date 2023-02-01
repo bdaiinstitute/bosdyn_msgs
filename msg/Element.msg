@@ -37,10 +37,3 @@ bool is_skipped
 # Considering using various thresholds depending on the target's distance from the dock
 bosdyn_msgs/BatteryMonitor battery_monitor
 bool battery_monitor_is_set
-
-# Maximum duration of action execution time, including all wrappers.
-# If they take longer than this duration, the action will be considered a failure.
-# Not including, or including a zero duration will set the action to NOT have a
-# timeout.
-builtin_interfaces/Duration action_duration
-bool action_duration_is_set

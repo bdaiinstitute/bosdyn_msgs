@@ -49,7 +49,6 @@ bool cost_is_set
 
 # How this edge was made.
 bosdyn_msgs/EdgeEdgeSource edge_source
-bool edge_source_is_set
 
 # If true, disables alternate-route-finding for this edge.
 bool disable_alternate_route_finding

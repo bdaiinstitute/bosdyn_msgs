@@ -24,9 +24,3 @@ int32 self_right_attempts
 # is often found in post-mission callbacks includes uploading data to the cloud or
 # sending an email. The callbacks will be executed serially (first in, first executed).
 bosdyn_msgs/ActionRemoteGrpc[] post_mission_callbacks
-
-# It can be useful to have the robot run a walk without collecting data.
-# If this boolean is set to true, the compiled mission will still navigate to the
-# target of each element, however it will not actually perform the associated
-# action & action wrappers.
-bool skip_actions

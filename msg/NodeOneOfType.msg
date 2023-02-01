@@ -8,7 +8,8 @@
 string node_reference
 
 int8 TYPE_NOT_SET=0
-int8 TYPE_NODE_REFERENCE_SET=1
+int8 TYPE_IMPL_SET=1
+int8 TYPE_NODE_REFERENCE_SET=2
 
 # Only one of the above can be filled in.  Use the enum to choose which.
 int8 type_choice
