@@ -2,7 +2,6 @@
 
 # The action (add, change, or delete) to be applied to a world object.
 bosdyn_msgs/MutateWorldObjectRequestAction action
-bool action_is_set
 
 # World object to be mutated.
 # If an object is being changed/deleted, then the world object id must match a world
