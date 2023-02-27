@@ -1,5 +1,24 @@
 # bosdyn_msgs
 
+This repository exists separately from the `spot_ros` driver because compiling all of the generated code takes long, and caching is complicated.
+
+We are using [earthly](https://docs.earthly.dev/) to generate the `.deb` artifact. Call `build.sh` to generate the `.deb`.
+
+
+Once the `.deb` is generated, it can be uploaded as a GitHub release, for example
+
+```sh
+gh release create aarch64-eloquent
+gh release upload aarch64-eloquent build/ros-eloquent-bosdyn-msgs_0.0.0-0bionic_arm64.deb
+```
+
+
+## buildkit log output is truncated
+
+To avoid log truncation (`+build | [output clipped, log limit 2MiB reached]`), [see here](https://github.com/earthly/earthly/issues/2714#issuecomment-1442515363).
+
+
+# old README:
 ## How to build `.deb`
 
 (Largely borrowed from [here](https://gist.github.com/awesomebytes/196eab972a94dd8fcdd69adfe3bd1152))
