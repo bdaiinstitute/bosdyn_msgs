@@ -16,5 +16,6 @@ bool acquisition_time_is_set
 
 # A tree-based collection of transformations, which will include the transformations
 # to the point cloud data frame and the point cloud sensor frame.
-#     FrameTreeSnapshot transforms_snapshot = 31;
+bosdyn_msgs/FrameTreeSnapshot transforms_snapshot
+bool transforms_snapshot_is_set
 

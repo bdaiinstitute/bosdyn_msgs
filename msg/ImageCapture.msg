@@ -9,7 +9,8 @@ bool acquisition_time_is_set
 # A tree-based collection of transformations, which will include the transformations to each image's
 # sensor in addition to transformations to the common frames ("vision", "body", "odom").
 # All transforms within the snapshot are at the acquistion time of the image.
-#     FrameTreeSnapshot transforms_snapshot = 31;
+bosdyn_msgs/FrameTreeSnapshot transforms_snapshot
+bool transforms_snapshot_is_set
 
 # The frame name for the image's sensor source. This will be included in the transform snapshot.
 string frame_name_image_sensor

@@ -24,4 +24,5 @@ bosdyn_msgs/RayIntersection[] hits
 #
 # Note that each object's frame names are defined within the properties
 # submessage e.g. "frame_name".
-#     FrameTreeSnapshot transforms_snapshot = 4;
+bosdyn_msgs/FrameTreeSnapshot transforms_snapshot
+bool transforms_snapshot_is_set
