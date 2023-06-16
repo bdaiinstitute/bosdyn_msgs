@@ -23,7 +23,8 @@ bool acquisition_time_is_set
 # "body", "odom"). All transforms within the snapshot are at the acquisition time of the world object.
 # Note that each object's frame names are defined within the properties submessage. For example,
 # the apriltag frame name is defined in the AprilTagProperties message as "frame_name_fiducial"
-#     FrameTreeSnapshot transforms_snapshot = 31;
+bosdyn_msgs/FrameTreeSnapshot transforms_snapshot
+bool transforms_snapshot_is_set
 
 # The drawable properties describe geometric shapes associated with an object.
 bosdyn_msgs/DrawableProperties[] drawable_properties

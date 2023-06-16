@@ -14,7 +14,8 @@ bool acquisition_timestamp_is_set
 # robot body ("body") in addition to transformations to the common frames ("world", "dr") and
 # ground plane estimate "gpe".
 # All transforms within the snapshot are at the acquisition time of kinematic state.
-#     FrameTreeSnapshot transforms_snapshot = 31;
+bosdyn_msgs/FrameTreeSnapshot transforms_snapshot
+bool transforms_snapshot_is_set
 
 # Velocity of the body frame with respect to vision frame and expressed in vision frame.
 # The linear velocity is applied at the origin of the body frame.

@@ -13,7 +13,8 @@ bool acquisition_time_is_set
 # A tree-based collection of transformations, which will include the transformations to each of
 # the returned local grids in addition to transformations to the common frames ("vision", "body", "odom").
 # All transforms within the snapshot are at the acquistion time of the local grid.
-#     FrameTreeSnapshot transforms_snapshot = 31;
+bosdyn_msgs/FrameTreeSnapshot transforms_snapshot
+bool transforms_snapshot_is_set
 
 # The frame name for the local grid data. This frame refers to the corner of cell (0, 0), such that
 # the map data is in the +x, +y quadrant.

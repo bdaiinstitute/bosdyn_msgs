@@ -20,4 +20,5 @@ bosdyn_msgs/ManipulationFeedbackState current_state
 # "gripper_nearest_object": 
 #      If the range camera in the hand senses an object, this frame will have the position of
 #      the nearest object.  This is useful for getting a ballpark range measurement.
-#     FrameTreeSnapshot transforms_snapshot_manipulation_data = 3;
+bosdyn_msgs/FrameTreeSnapshot transforms_snapshot_manipulation_data
+bool transforms_snapshot_manipulation_data_is_set
