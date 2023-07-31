@@ -1,3 +1,4 @@
+# Copyright (c) 2023 Boston Dynamics AI Institute LLC. All rights reserved.
 cmake_minimum_required(VERSION 3.8)
 project(bosdyn_msgs)
 
