@@ -2,12 +2,12 @@
 
 These messages were generated from [spot-sdk 3.2.0](https://github.com/boston-dynamics/spot-sdk/releases/tag/v3.2.0)
 
-
 ## How to build `.deb`
 
 (Largely borrowed from [here](https://gist.github.com/awesomebytes/196eab972a94dd8fcdd69adfe3bd1152))
 
 ### Get dependencies
+
 You may need the latest pip, follow the [official instructions](https://pip.pypa.io/en/stable/installing/).
 
 Install [bloom](http://ros-infrastructure.github.io/bloom/):
@@ -40,6 +40,7 @@ bloom-generate rosdebian --os-name ubuntu --os-version jammy --ros-distro humble
 ```
 
 You can also let the tool guess some stuff:
+
 ```bash
 bloom-generate rosdebian --ros-distro humble
 ```
@@ -91,10 +92,13 @@ fakeroot debian/rules binary
 ```
 
 If you get the error:
+
 ```bash
 dh: Command not found
 ```
+
 You need to install:
+
 ```bash
 sudo apt-get install dpkg-dev debhelper
 ```
@@ -107,4 +111,31 @@ dpkg-deb: building package 'ros-humble-bosdyn-msgs' in '../ros-humble-bosdyn-msg
 
 ### Upload debian to GitHub
 
-You should now have a `.deb` file containing the `bosdyn_msgs` package. You need to upload that as a release to GitHub [here](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository). Please increment the version of the release. At some point we may consider automating this process but we don't have a formalized way of doing these precompilations yet. 
+You should now have a `.deb` file containing the `bosdyn_msgs` package. You need to upload that as a release to GitHub [here](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository). Please increment the version of the release. At some point we may consider automating this process but we don't have a formalized way of doing these precompilations yet.
+
+## Build package for ARM64
+
+If you want to build the package for ARM64 architecture in non ARM64 host system you can do so through a docker container.
+
+1.  In order to create docker images on the development environment for a different architecture, first run the following commands:
+
+    ```
+    sudo apt-get install qemu binfmt-support qemu-user-static
+    sudo docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
+    ```
+
+2.  Build the docker image with with ARM64 target running Ubuntu 22.04 and ROS Humble.
+
+    ```
+    docker build -t bosdyn_msgs --platform linux/arm64/v8 -f Dockerfile .
+    ```
+
+3.  Run the docker image
+
+    ```
+    docker run -it bosdyn_msgs /bin/bash
+    ```
+
+4.  Inside the container follow the steps in **Create debian structure** section.
+
+5.  Copy the generated `.deb` file from the container to the host machine
