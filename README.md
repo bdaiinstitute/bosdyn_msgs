@@ -117,14 +117,14 @@ You should now have a `.deb` file containing the `bosdyn_msgs` package. You need
 
 If you want to build the package for ARM64 architecture in non ARM64 host system you can do so through a docker container.
 
-1.  In order to create docker images on the development environment for a different architecture, first run the following commands:
+1.  To create docker images on the development environment for a different architecture, first run the following commands:
 
     ```
     sudo apt-get install qemu binfmt-support qemu-user-static
     sudo docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
     ```
 
-2.  Build the docker image with with ARM64 target running Ubuntu 22.04 and ROS Humble.
+2.  Build the docker image with ARM64 target running Ubuntu 22.04 and ROS Humble.
 
     ```
     docker build -t bosdyn_msgs --platform linux/arm64/v8 -f Dockerfile .
@@ -136,6 +136,6 @@ If you want to build the package for ARM64 architecture in non ARM64 host system
     docker run -it bosdyn_msgs /bin/bash
     ```
 
-4.  Inside the container follow the steps in **Create debian structure** section.
+4.  Inside the container follow the steps in the **Create debian structure** section.
 
 5.  Copy the generated `.deb` file from the container to the host machine
