@@ -127,13 +127,13 @@ If you want to build the package for ARM64 architecture in non ARM64 host system
 2.  Build the docker image with ARM64 target running Ubuntu 22.04 and ROS Humble.
 
     ```
-    docker build -t bosdyn_msgs --platform linux/arm64/v8 -f Dockerfile .
+    docker build -t bosdyn_msgs/arm64 --platform linux/arm64/v8 -f docker/arm64/Dockerfile .
     ```
 
 3.  Run the docker image
 
     ```
-    docker run -it bosdyn_msgs /bin/bash
+    docker run -it bosdyn_msgs/arm64 /bin/bash
     ```
 
 4.  Inside the container follow the steps in the **Create debian structure** section.

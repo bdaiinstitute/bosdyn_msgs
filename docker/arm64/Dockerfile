@@ -17,3 +17,4 @@ RUN apt-get update && apt-get install -y \
 RUN git clone https://github.com/bdaiinstitute/bosdyn_msgs.git
 
 CMD ["bash"]
+
