@@ -1,9 +1,10 @@
+#!/usr/bin/env bash
 ARCH=arm64
 ROS_DISTRO=humble
 BASEIMAGE=arm64v8/ros:humble-ros-base-jammy
 
 # Set CWD to the root of the git repo
-GIT_ROOT=git rev-parse --show-toplevel
+GIT_ROOT=$(git rev-parse --show-toplevel)
 cd $GIT_ROOT
 
 # 
