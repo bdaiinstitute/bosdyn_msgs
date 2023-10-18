@@ -1,0 +1,969 @@
+-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found common_interfaces: 4.2.3 (/opt/ros/humble/share/common_interfaces/cmake)
+-- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)
+-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+-- Using numpy include directory: /usr/local/lib/python3.10/dist-packages/numpy/core/include
+-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c>;$<BUILD_INTERFACE:/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_fastrtps_c>;$<BUILD_INTERFACE:/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp>;$<BUILD_INTERFACE:/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_fastrtps_cpp>;$<BUILD_INTERFACE:/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_introspection_c>;$<BUILD_INTERFACE:/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_introspection_cpp>;/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c;/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_py
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs
+[  0%] Built target ament_cmake_python_copy_bosdyn_msgs
+[35m[1mConsolidate compiler generated dependencies of target bosdyn_msgs__rosidl_generator_c[0m
+[  0%] Built target bosdyn_msgs__cpp
+[  0%] [32mBuilding C object CMakeFiles/bosdyn_msgs__rosidl_generator_c.dir/rosidl_generator_c/bosdyn_msgs/msg/detail/acquisition_request_list__functions.c.o[0m
+[  0%] [32mBuilding C object CMakeFiles/bosdyn_msgs__rosidl_generator_c.dir/rosidl_generator_c/bosdyn_msgs/msg/detail/acquire_data_request__functions.c.o[0m
+[  0%] [32mBuilding C object CMakeFiles/bosdyn_msgs__rosidl_generator_c.dir/rosidl_generator_c/bosdyn_msgs/msg/detail/action__functions.c.o[0m
+[  0%] [32mBuilding C object CMakeFiles/bosdyn_msgs__rosidl_generator_c.dir/rosidl_generator_c/bosdyn_msgs/msg/detail/acquire_plugin_data_request__functions.c.o[0m
+[  0%] [32mBuilding C object CMakeFiles/bosdyn_msgs__rosidl_generator_c.dir/rosidl_generator_c/bosdyn_msgs/msg/detail/action_after_lease_stale__functions.c.o[0m
+[  0%] [32mBuilding C object CMakeFiles/bosdyn_msgs__rosidl_generator_c.dir/rosidl_generator_c/bosdyn_msgs/msg/detail/action_after_one_of_action__functions.c.o[0m
+[  0%] [32mBuilding C object CMakeFiles/bosdyn_msgs__rosidl_generator_c.dir/rosidl_generator_c/bosdyn_msgs/msg/detail/action_after_auto_return__functions.c.o[0m
+[  0%] [32mBuilding C object CMakeFiles/bosdyn_msgs__rosidl_generator_c.dir/rosidl_generator_c/bosdyn_msgs/msg/detail/action_after_controlled_motors_off__functions.c.o[0m
+[  0%] [32mBuilding C object CMakeFiles/bosdyn_msgs__rosidl_generator_c.dir/rosidl_generator_c/bosdyn_msgs/msg/detail/action_after_immediate_robot_off__functions.c.o[0m
+[  0%] [32mBuilding C object CMakeFiles/bosdyn_msgs__rosidl_generator_c.dir/rosidl_generator_c/bosdyn_msgs/msg/detail/action_data_acquisition__functions.c.o[0m
+[  0%] [32mBuilding C object CMakeFiles/bosdyn_msgs__rosidl_generator_c.dir/rosidl_generator_c/bosdyn_msgs/msg/detail/action_id_query__functions.c.o[0m
+[35m[1mConsolidate compiler generated dependencies of target bosdyn_msgs__rosidl_typesupport_cpp[0m
+[  0%] [32mBuilding C object CMakeFiles/bosdyn_msgs__rosidl_generator_c.dir/rosidl_generator_c/bosdyn_msgs/msg/detail/action_after_record_event__functions.c.o[0m
+In file included from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/one_of_param__struct.h:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/custom_param_one_of_value__struct.h:90[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/custom_param__struct.h:22[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_custom_param__struct.h:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/dict_param__struct.h:22[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/image_request__struct.h:28[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/image_source_capture__struct.h:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/acquisition_request_list__struct.h:22[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/acquire_data_request__struct.h:28[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/acquire_data_request__functions.h:19[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/acquire_data_request__functions.c:4[m[K:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.h:33:3:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[Kbosdyn_msgs__msg__DictParam[m[K’
+   33 |   [01;31m[Kbosdyn_msgs__msg__DictParam[m[K value;
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/one_of_param__struct.h:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/custom_param_one_of_value__struct.h:90[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/custom_param__struct.h:22[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_custom_param__struct.h:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/dict_param__struct.h:22[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/image_request__struct.h:28[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/image_source_capture__struct.h:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/acquisition_request_list__struct.h:22[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/acquire_plugin_data_request__struct.h:30[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/acquire_plugin_data_request__functions.h:19[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/acquire_plugin_data_request__functions.c:4[m[K:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.h:33:3:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[Kbosdyn_msgs__msg__DictParam[m[K’
+   33 |   [01;31m[Kbosdyn_msgs__msg__DictParam[m[K value;
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/one_of_param__struct.h:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/custom_param_one_of_value__struct.h:90[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/custom_param__struct.h:22[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_custom_param__struct.h:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/dict_param__struct.h:22[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/image_request__struct.h:28[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/image_source_capture__struct.h:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/acquisition_request_list__struct.h:22[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/acquire_data_request__struct.h:28[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/action_data_acquisition__struct.h:22[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/action_one_of_action__struct.h:54[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/action__struct.h:22[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/action__functions.h:19[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/action__functions.c:4[m[K:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.h:33:3:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[Kbosdyn_msgs__msg__DictParam[m[K’
+   33 |   [01;31m[Kbosdyn_msgs__msg__DictParam[m[K value;
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/one_of_param__struct.h:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/custom_param_one_of_value__struct.h:90[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/custom_param__struct.h:22[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_custom_param__struct.h:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/dict_param__struct.h:22[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/image_request__struct.h:28[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/image_source_capture__struct.h:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/acquisition_request_list__struct.h:22[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/acquisition_request_list__functions.h:19[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/acquisition_request_list__functions.c:4[m[K:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.h:33:3:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[Kbosdyn_msgs__msg__DictParam[m[K’
+   33 |   [01;31m[Kbosdyn_msgs__msg__DictParam[m[K value;
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/one_of_param__struct.h:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/custom_param_one_of_value__struct.h:90[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/custom_param__struct.h:22[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_custom_param__struct.h:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/dict_param__struct.h:22[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/image_request__struct.h:28[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/image_source_capture__struct.h:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/acquisition_request_list__struct.h:22[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/acquire_data_request__struct.h:28[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/action_data_acquisition__struct.h:22[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/action_data_acquisition__functions.h:19[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/action_data_acquisition__functions.c:4[m[K:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_c/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.h:33:3:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[Kbosdyn_msgs__msg__DictParam[m[K’
+   33 |   [01;31m[Kbosdyn_msgs__msg__DictParam[m[K value;
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/bosdyn_msgs__rosidl_generator_c.dir/build.make:21602: CMakeFiles/bosdyn_msgs__rosidl_generator_c.dir/rosidl_generator_c/bosdyn_msgs/msg/detail/acquire_data_request__functions.c.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/bosdyn_msgs__rosidl_generator_c.dir/build.make:21742: CMakeFiles/bosdyn_msgs__rosidl_generator_c.dir/rosidl_generator_c/bosdyn_msgs/msg/detail/acquisition_request_list__functions.c.o] Error 1
+gmake[2]: *** [CMakeFiles/bosdyn_msgs__rosidl_generator_c.dir/build.make:21868: CMakeFiles/bosdyn_msgs__rosidl_generator_c.dir/rosidl_generator_c/bosdyn_msgs/msg/detail/action_data_acquisition__functions.c.o] Error 1
+gmake[2]: *** [CMakeFiles/bosdyn_msgs__rosidl_generator_c.dir/build.make:21756: CMakeFiles/bosdyn_msgs__rosidl_generator_c.dir/rosidl_generator_c/bosdyn_msgs/msg/detail/action__functions.c.o] Error 1
+gmake[2]: *** [CMakeFiles/bosdyn_msgs__rosidl_generator_c.dir/build.make:21686: CMakeFiles/bosdyn_msgs__rosidl_generator_c.dir/rosidl_generator_c/bosdyn_msgs/msg/detail/acquire_plugin_data_request__functions.c.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/bosdyn_msgs__rosidl_generator_c.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[35m[1mConsolidate compiler generated dependencies of target bosdyn_msgs__rosidl_typesupport_introspection_cpp[0m
+[  0%] [32mBuilding CXX object CMakeFiles/bosdyn_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bosdyn_msgs/msg/action_data_acquisition__type_support.cpp.o[0m
+[  0%] [32mBuilding CXX object CMakeFiles/bosdyn_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bosdyn_msgs/msg/acquire_plugin_data_request__type_support.cpp.o[0m
+[  0%] [32mBuilding CXX object CMakeFiles/bosdyn_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bosdyn_msgs/msg/action_remote_grpc__type_support.cpp.o[0m
+[  0%] [32mBuilding CXX object CMakeFiles/bosdyn_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bosdyn_msgs/msg/action__type_support.cpp.o[0m
+[  0%] [32mBuilding CXX object CMakeFiles/bosdyn_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bosdyn_msgs/msg/acquire_data_request__type_support.cpp.o[0m
+[  0%] [32mBuilding CXX object CMakeFiles/bosdyn_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bosdyn_msgs/msg/action_sleep__type_support.cpp.o[0m
+[  0%] [32mBuilding CXX object CMakeFiles/bosdyn_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bosdyn_msgs/msg/action_wrapper__type_support.cpp.o[0m
+[  0%] [32mBuilding CXX object CMakeFiles/bosdyn_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bosdyn_msgs/msg/acquisition_request_list__type_support.cpp.o[0m
+[  0%] [32mBuilding CXX object CMakeFiles/bosdyn_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bosdyn_msgs/msg/action_one_of_action__type_support.cpp.o[0m
+[35m[1mConsolidate compiler generated dependencies of target bosdyn_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[  0%] [32mBuilding CXX object CMakeFiles/bosdyn_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bosdyn_msgs/msg/action_id_query__type_support.cpp.o[0m
+[  0%] [32mBuilding CXX object CMakeFiles/bosdyn_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bosdyn_msgs/msg/action_wrapper_arm_sensor_pointing__type_support.cpp.o[0m
+[  0%] [32mBuilding CXX object CMakeFiles/bosdyn_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bosdyn_msgs/msg/action_wrapper_gripper_camera_params__type_support.cpp.o[0m
+[  0%] [32mBuilding CXX object CMakeFiles/bosdyn_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bosdyn_msgs/msg/action_wrapper_gripper_command__type_support.cpp.o[0m
+running egg_info
+[  0%] [32mBuilding CXX object CMakeFiles/bosdyn_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/bosdyn_msgs/msg/detail/acquire_data_request__type_support.cpp.o[0m
+[  0%] [32mBuilding CXX object CMakeFiles/bosdyn_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/bosdyn_msgs/msg/detail/dds_fastrtps/acquire_data_request__type_support.cpp.o[0m
+writing bosdyn_msgs.egg-info/PKG-INFO
+writing dependency_links to bosdyn_msgs.egg-info/dependency_links.txt
+writing top-level names to bosdyn_msgs.egg-info/top_level.txt
+In file included from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/one_of_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param_one_of_value__struct.hpp:34[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/dict_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_request__struct.hpp:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_source_capture__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquisition_request_list__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquire_data_request__struct.hpp:26[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_cpp/bosdyn_msgs/msg/acquire_data_request__type_support.cpp:7[m[K:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:66:23:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   66 |     bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator>;
+      |                       [01;31m[K^~~~~~~~~~[m[K
+      |                       [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:67:3:[m[K [01;31m[Kerror: [m[K‘[01m[K_value_type[m[K’ does not name a type
+   67 |   [01;31m[K_value_type[m[K value;
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:29:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   77 |     const bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator> & _arg)
+      |                             [01;31m[K^~~~~~~~~~[m[K
+      |                             [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+   77 |     const bosdyn_msgs::msg::DictParam_[01;31m[K<[m[KContainerAllocator> & _arg)
+      |                                       [01;31m[K^[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:41:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   41 |   : [01;31m[Kvalue[m[K(_init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:52:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   52 |     [01;31m[Kvalue[m[K(_alloc, _init)
+      |     [01;31m[K^~~~~[m[K
+In file included from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/one_of_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param_one_of_value__struct.hpp:34[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/dict_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_request__struct.hpp:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_source_capture__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquisition_request_list__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquire_data_request__struct.hpp:26[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/action_data_acquisition__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_cpp/bosdyn_msgs/msg/action_data_acquisition__type_support.cpp:7[m[K:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:66:23:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   66 |     bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator>;
+      |                       [01;31m[K^~~~~~~~~~[m[K
+      |                       [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In member function ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::Type& bosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::set__value(int)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:79:19:[m[K [01;31m[Kerror: [m[K‘[01m[K_arg[m[K’ was not declared in this scope
+   79 |     this->value = [01;31m[K_arg[m[K;
+      |                   [01;31m[K^~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:67:3:[m[K [01;31m[Kerror: [m[K‘[01m[K_value_type[m[K’ does not name a type
+   67 |   [01;31m[K_value_type[m[K value;
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:29:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   77 |     const bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator> & _arg)
+      |                             [01;31m[K^~~~~~~~~~[m[K
+      |                             [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+   77 |     const bosdyn_msgs::msg::DictParam_[01;31m[K<[m[KContainerAllocator> & _arg)
+      |                                       [01;31m[K^[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:41:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   41 |   : [01;31m[Kvalue[m[K(_init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:52:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   52 |     [01;31m[Kvalue[m[K(_alloc, _init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In member function ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::Type& bosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::set__value(int)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:79:19:[m[K [01;31m[Kerror: [m[K‘[01m[K_arg[m[K’ was not declared in this scope
+   79 |     this->value = [01;31m[K_arg[m[K;
+      |                   [01;31m[K^~~~[m[K
+reading manifest file 'bosdyn_msgs.egg-info/SOURCES.txt'
+In file included from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/one_of_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param_one_of_value__struct.hpp:34[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/dict_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_request__struct.hpp:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_source_capture__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquisition_request_list__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_cpp/bosdyn_msgs/msg/acquisition_request_list__type_support.cpp:7[m[K:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:66:23:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   66 |     bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator>;
+      |                       [01;31m[K^~~~~~~~~~[m[K
+      |                       [32m[KListParam_[m[K
+writing manifest file 'bosdyn_msgs.egg-info/SOURCES.txt'
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:67:3:[m[K [01;31m[Kerror: [m[K‘[01m[K_value_type[m[K’ does not name a type
+   67 |   [01;31m[K_value_type[m[K value;
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:29:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   77 |     const bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator> & _arg)
+      |                             [01;31m[K^~~~~~~~~~[m[K
+      |                             [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+   77 |     const bosdyn_msgs::msg::DictParam_[01;31m[K<[m[KContainerAllocator> & _arg)
+      |                                       [01;31m[K^[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:41:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   41 |   : [01;31m[Kvalue[m[K(_init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:52:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   52 |     [01;31m[Kvalue[m[K(_alloc, _init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In member function ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::Type& bosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::set__value(int)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:79:19:[m[K [01;31m[Kerror: [m[K‘[01m[K_arg[m[K’ was not declared in this scope
+   79 |     this->value = [01;31m[K_arg[m[K;
+      |                   [01;31m[K^~~~[m[K
+[  0%] [32mBuilding CXX object CMakeFiles/bosdyn_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/bosdyn_msgs/msg/detail/acquire_plugin_data_request__type_support.cpp.o[0m
+In file included from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/one_of_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param_one_of_value__struct.hpp:34[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/dict_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param_collection__struct.hpp:22[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/action_remote_grpc__struct.hpp:22[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_cpp/bosdyn_msgs/msg/action_remote_grpc__type_support.cpp:7[m[K:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:66:23:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   66 |     bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator>;
+      |                       [01;31m[K^~~~~~~~~~[m[K
+      |                       [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:67:3:[m[K [01;31m[Kerror: [m[K‘[01m[K_value_type[m[K’ does not name a type
+   67 |   [01;31m[K_value_type[m[K value;
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:29:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   77 |     const bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator> & _arg)
+      |                             [01;31m[K^~~~~~~~~~[m[K
+      |                             [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+   77 |     const bosdyn_msgs::msg::DictParam_[01;31m[K<[m[KContainerAllocator> & _arg)
+      |                                       [01;31m[K^[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:41:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   41 |   : [01;31m[Kvalue[m[K(_init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:52:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   52 |     [01;31m[Kvalue[m[K(_alloc, _init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In member function ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::Type& bosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::set__value(int)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:79:19:[m[K [01;31m[Kerror: [m[K‘[01m[K_arg[m[K’ was not declared in this scope
+   79 |     this->value = [01;31m[K_arg[m[K;
+      |                   [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/bosdyn_msgs__rosidl_typesupport_cpp.dir/build.make:5527: CMakeFiles/bosdyn_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bosdyn_msgs/msg/acquire_data_request__type_support.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/one_of_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param_one_of_value__struct.hpp:34[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/dict_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_request__struct.hpp:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_source_capture__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquisition_request_list__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquire_data_request__struct.hpp:26[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/action_data_acquisition__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/action_one_of_action__struct.hpp:22[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_cpp/bosdyn_msgs/msg/action_one_of_action__type_support.cpp:7[m[K:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:66:23:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   66 |     bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator>;
+      |                       [01;31m[K^~~~~~~~~~[m[K
+      |                       [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:67:3:[m[K [01;31m[Kerror: [m[K‘[01m[K_value_type[m[K’ does not name a type
+   67 |   [01;31m[K_value_type[m[K value;
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:29:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   77 |     const bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator> & _arg)
+      |                             [01;31m[K^~~~~~~~~~[m[K
+      |                             [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+   77 |     const bosdyn_msgs::msg::DictParam_[01;31m[K<[m[KContainerAllocator> & _arg)
+      |                                       [01;31m[K^[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:41:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   41 |   : [01;31m[Kvalue[m[K(_init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:52:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   52 |     [01;31m[Kvalue[m[K(_alloc, _init)
+      |     [01;31m[K^~~~~[m[K
+In file included from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/one_of_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param_one_of_value__struct.hpp:34[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/dict_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_request__struct.hpp:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_source_capture__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquisition_request_list__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquire_data_request__struct.hpp:26[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/action_data_acquisition__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/action_one_of_action__struct.hpp:22[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/action__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_cpp/bosdyn_msgs/msg/action__type_support.cpp:7[m[K:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:66:23:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   66 |     bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator>;
+      |                       [01;31m[K^~~~~~~~~~[m[K
+      |                       [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:67:3:[m[K [01;31m[Kerror: [m[K‘[01m[K_value_type[m[K’ does not name a type
+   67 |   [01;31m[K_value_type[m[K value;
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:29:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   77 |     const bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator> & _arg)
+      |                             [01;31m[K^~~~~~~~~~[m[K
+      |                             [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+   77 |     const bosdyn_msgs::msg::DictParam_[01;31m[K<[m[KContainerAllocator> & _arg)
+      |                                       [01;31m[K^[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:41:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   41 |   : [01;31m[Kvalue[m[K(_init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:52:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   52 |     [01;31m[Kvalue[m[K(_alloc, _init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In member function ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::Type& bosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::set__value(int)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:79:19:[m[K [01;31m[Kerror: [m[K‘[01m[K_arg[m[K’ was not declared in this scope
+   79 |     this->value = [01;31m[K_arg[m[K;
+      |                   [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/bosdyn_msgs__rosidl_typesupport_cpp.dir/build.make:5793: CMakeFiles/bosdyn_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bosdyn_msgs/msg/action_data_acquisition__type_support.cpp.o] Error 1
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In member function ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::Type& bosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::set__value(int)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:79:19:[m[K [01;31m[Kerror: [m[K‘[01m[K_arg[m[K’ was not declared in this scope
+   79 |     this->value = [01;31m[K_arg[m[K;
+      |                   [01;31m[K^~~~[m[K
+[  0%] [32mBuilding CXX object CMakeFiles/bosdyn_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/bosdyn_msgs/msg/detail/acquisition_request_list__type_support.cpp.o[0m
+[  0%] [32mBuilding CXX object CMakeFiles/bosdyn_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/bosdyn_msgs/msg/detail/dds_fastrtps/acquire_plugin_data_request__type_support.cpp.o[0m
+[  0%] [32mBuilding CXX object CMakeFiles/bosdyn_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/bosdyn_msgs/msg/detail/action__type_support.cpp.o[0m
+gmake[2]: *** [CMakeFiles/bosdyn_msgs__rosidl_typesupport_cpp.dir/build.make:5667: CMakeFiles/bosdyn_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bosdyn_msgs/msg/acquisition_request_list__type_support.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/bosdyn_msgs__rosidl_typesupport_cpp.dir/build.make:5835: CMakeFiles/bosdyn_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bosdyn_msgs/msg/action_remote_grpc__type_support.cpp.o] Error 1
+[  0%] Built target ament_cmake_python_build_bosdyn_msgs_egg
+[  0%] [32mBuilding CXX object CMakeFiles/bosdyn_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/bosdyn_msgs/msg/detail/dds_fastrtps/action__type_support.cpp.o[0m
+[  0%] [32mBuilding CXX object CMakeFiles/bosdyn_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/bosdyn_msgs/msg/detail/action_data_acquisition__type_support.cpp.o[0m
+In file included from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/one_of_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param_one_of_value__struct.hpp:34[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/dict_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_request__struct.hpp:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_source_capture__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquisition_request_list__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquire_plugin_data_request__struct.hpp:28[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_cpp/bosdyn_msgs/msg/acquire_plugin_data_request__type_support.cpp:7[m[K:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:66:23:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   66 |     bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator>;
+      |                       [01;31m[K^~~~~~~~~~[m[K
+      |                       [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:67:3:[m[K [01;31m[Kerror: [m[K‘[01m[K_value_type[m[K’ does not name a type
+   67 |   [01;31m[K_value_type[m[K value;
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[  0%] [32mBuilding CXX object CMakeFiles/bosdyn_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/bosdyn_msgs/msg/detail/dds_fastrtps/action_data_acquisition__type_support.cpp.o[0m
+[  0%] [32mBuilding CXX object CMakeFiles/bosdyn_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/bosdyn_msgs/msg/detail/dds_fastrtps/acquisition_request_list__type_support.cpp.o[0m
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:29:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   77 |     const bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator> & _arg)
+      |                             [01;31m[K^~~~~~~~~~[m[K
+      |                             [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+   77 |     const bosdyn_msgs::msg::DictParam_[01;31m[K<[m[KContainerAllocator> & _arg)
+      |                                       [01;31m[K^[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:41:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   41 |   : [01;31m[Kvalue[m[K(_init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:52:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   52 |     [01;31m[Kvalue[m[K(_alloc, _init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In member function ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::Type& bosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::set__value(int)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:79:19:[m[K [01;31m[Kerror: [m[K‘[01m[K_arg[m[K’ was not declared in this scope
+   79 |     this->value = [01;31m[K_arg[m[K;
+      |                   [01;31m[K^~~~[m[K
+[  0%] [32mBuilding CXX object CMakeFiles/bosdyn_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/bosdyn_msgs/msg/detail/action_one_of_action__type_support.cpp.o[0m
+[  0%] [32mBuilding CXX object CMakeFiles/bosdyn_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/bosdyn_msgs/msg/detail/dds_fastrtps/action_one_of_action__type_support.cpp.o[0m
+gmake[2]: *** [CMakeFiles/bosdyn_msgs__rosidl_typesupport_cpp.dir/build.make:5681: CMakeFiles/bosdyn_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bosdyn_msgs/msg/action__type_support.cpp.o] Error 1
+[  0%] [32mBuilding CXX object CMakeFiles/bosdyn_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/bosdyn_msgs/msg/detail/dds_fastrtps/action_remote_grpc__type_support.cpp.o[0m
+gmake[2]: *** [CMakeFiles/bosdyn_msgs__rosidl_typesupport_cpp.dir/build.make:5821: CMakeFiles/bosdyn_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bosdyn_msgs/msg/action_one_of_action__type_support.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/bosdyn_msgs__rosidl_typesupport_cpp.dir/build.make:5611: CMakeFiles/bosdyn_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bosdyn_msgs/msg/acquire_plugin_data_request__type_support.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/bosdyn_msgs__rosidl_typesupport_cpp.dir/all] Error 2
+[  0%] [32mBuilding CXX object CMakeFiles/bosdyn_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/bosdyn_msgs/msg/detail/dds_fastrtps/action_wrapper__type_support.cpp.o[0m
+[  0%] [32mBuilding CXX object CMakeFiles/bosdyn_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/bosdyn_msgs/msg/detail/action_remote_grpc__type_support.cpp.o[0m
+[  0%] [32mBuilding CXX object CMakeFiles/bosdyn_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/bosdyn_msgs/msg/detail/dds_fastrtps/action_wrapper_arm_sensor_pointing__type_support.cpp.o[0m
+In file included from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/one_of_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param_one_of_value__struct.hpp:34[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/dict_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_request__struct.hpp:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_source_capture__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquisition_request_list__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquire_data_request__struct.hpp:26[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_fastrtps_cpp/bosdyn_msgs/msg/detail/acquire_data_request__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_fastrtps_cpp/bosdyn_msgs/msg/detail/dds_fastrtps/acquire_data_request__type_support.cpp:4[m[K:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:66:23:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   66 |     bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator>;
+      |                       [01;31m[K^~~~~~~~~~[m[K
+      |                       [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:67:3:[m[K [01;31m[Kerror: [m[K‘[01m[K_value_type[m[K’ does not name a type
+   67 |   [01;31m[K_value_type[m[K value;
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:29:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   77 |     const bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator> & _arg)
+      |                             [01;31m[K^~~~~~~~~~[m[K
+      |                             [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+   77 |     const bosdyn_msgs::msg::DictParam_[01;31m[K<[m[KContainerAllocator> & _arg)
+      |                                       [01;31m[K^[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:41:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   41 |   : [01;31m[Kvalue[m[K(_init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:52:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   52 |     [01;31m[Kvalue[m[K(_alloc, _init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In member function ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::Type& bosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::set__value(int)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:79:19:[m[K [01;31m[Kerror: [m[K‘[01m[K_arg[m[K’ was not declared in this scope
+   79 |     this->value = [01;31m[K_arg[m[K;
+      |                   [01;31m[K^~~~[m[K
+In file included from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/one_of_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param_one_of_value__struct.hpp:34[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/dict_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_request__struct.hpp:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_source_capture__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquisition_request_list__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquire_data_request__struct.hpp:26[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_introspection_cpp/bosdyn_msgs/msg/detail/acquire_data_request__type_support.cpp:12[m[K:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:66:23:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   66 |     bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator>;
+      |                       [01;31m[K^~~~~~~~~~[m[K
+      |                       [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:67:3:[m[K [01;31m[Kerror: [m[K‘[01m[K_value_type[m[K’ does not name a type
+   67 |   [01;31m[K_value_type[m[K value;
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:29:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   77 |     const bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator> & _arg)
+      |                             [01;31m[K^~~~~~~~~~[m[K
+      |                             [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+   77 |     const bosdyn_msgs::msg::DictParam_[01;31m[K<[m[KContainerAllocator> & _arg)
+      |                                       [01;31m[K^[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:41:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   41 |   : [01;31m[Kvalue[m[K(_init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:52:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   52 |     [01;31m[Kvalue[m[K(_alloc, _init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In member function ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::Type& bosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::set__value(int)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:79:19:[m[K [01;31m[Kerror: [m[K‘[01m[K_arg[m[K’ was not declared in this scope
+   79 |     this->value = [01;31m[K_arg[m[K;
+      |                   [01;31m[K^~~~[m[K
+In file included from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/one_of_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param_one_of_value__struct.hpp:34[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/dict_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_request__struct.hpp:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_source_capture__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquisition_request_list__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_fastrtps_cpp/bosdyn_msgs/msg/detail/acquisition_request_list__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_fastrtps_cpp/bosdyn_msgs/msg/detail/dds_fastrtps/acquisition_request_list__type_support.cpp:4[m[K:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:66:23:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   66 |     bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator>;
+      |                       [01;31m[K^~~~~~~~~~[m[K
+      |                       [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:67:3:[m[K [01;31m[Kerror: [m[K‘[01m[K_value_type[m[K’ does not name a type
+   67 |   [01;31m[K_value_type[m[K value;
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:29:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   77 |     const bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator> & _arg)
+      |                             [01;31m[K^~~~~~~~~~[m[K
+      |                             [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+   77 |     const bosdyn_msgs::msg::DictParam_[01;31m[K<[m[KContainerAllocator> & _arg)
+      |                                       [01;31m[K^[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:41:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   41 |   : [01;31m[Kvalue[m[K(_init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:52:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   52 |     [01;31m[Kvalue[m[K(_alloc, _init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In member function ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::Type& bosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::set__value(int)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:79:19:[m[K [01;31m[Kerror: [m[K‘[01m[K_arg[m[K’ was not declared in this scope
+   79 |     this->value = [01;31m[K_arg[m[K;
+      |                   [01;31m[K^~~~[m[K
+In file included from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/one_of_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param_one_of_value__struct.hpp:34[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/dict_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_request__struct.hpp:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_source_capture__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquisition_request_list__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquire_plugin_data_request__struct.hpp:28[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_fastrtps_cpp/bosdyn_msgs/msg/detail/acquire_plugin_data_request__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_fastrtps_cpp/bosdyn_msgs/msg/detail/dds_fastrtps/acquire_plugin_data_request__type_support.cpp:4[m[K:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:66:23:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   66 |     bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator>;
+      |                       [01;31m[K^~~~~~~~~~[m[K
+      |                       [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:67:3:[m[K [01;31m[Kerror: [m[K‘[01m[K_value_type[m[K’ does not name a type
+   67 |   [01;31m[K_value_type[m[K value;
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:29:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   77 |     const bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator> & _arg)
+      |                             [01;31m[K^~~~~~~~~~[m[K
+      |                             [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+   77 |     const bosdyn_msgs::msg::DictParam_[01;31m[K<[m[KContainerAllocator> & _arg)
+      |                                       [01;31m[K^[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:41:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   41 |   : [01;31m[Kvalue[m[K(_init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:52:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   52 |     [01;31m[Kvalue[m[K(_alloc, _init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In member function ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::Type& bosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::set__value(int)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:79:19:[m[K [01;31m[Kerror: [m[K‘[01m[K_arg[m[K’ was not declared in this scope
+   79 |     this->value = [01;31m[K_arg[m[K;
+      |                   [01;31m[K^~~~[m[K
+In file included from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/one_of_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param_one_of_value__struct.hpp:34[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/dict_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_request__struct.hpp:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_source_capture__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquisition_request_list__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquire_plugin_data_request__struct.hpp:28[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_introspection_cpp/bosdyn_msgs/msg/detail/acquire_plugin_data_request__type_support.cpp:12[m[K:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:66:23:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   66 |     bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator>;
+      |                       [01;31m[K^~~~~~~~~~[m[K
+      |                       [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:67:3:[m[K [01;31m[Kerror: [m[K‘[01m[K_value_type[m[K’ does not name a type
+   67 |   [01;31m[K_value_type[m[K value;
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:29:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   77 |     const bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator> & _arg)
+      |                             [01;31m[K^~~~~~~~~~[m[K
+      |                             [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+   77 |     const bosdyn_msgs::msg::DictParam_[01;31m[K<[m[KContainerAllocator> & _arg)
+      |                                       [01;31m[K^[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:41:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   41 |   : [01;31m[Kvalue[m[K(_init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:52:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   52 |     [01;31m[Kvalue[m[K(_alloc, _init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In member function ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::Type& bosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::set__value(int)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:79:19:[m[K [01;31m[Kerror: [m[K‘[01m[K_arg[m[K’ was not declared in this scope
+   79 |     this->value = [01;31m[K_arg[m[K;
+      |                   [01;31m[K^~~~[m[K
+In file included from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/one_of_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param_one_of_value__struct.hpp:34[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/dict_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_request__struct.hpp:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_source_capture__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquisition_request_list__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquire_data_request__struct.hpp:26[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/action_data_acquisition__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/action_one_of_action__struct.hpp:22[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/action__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_fastrtps_cpp/bosdyn_msgs/msg/detail/action__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_fastrtps_cpp/bosdyn_msgs/msg/detail/dds_fastrtps/action__type_support.cpp:4[m[K:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:66:23:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   66 |     bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator>;
+      |                       [01;31m[K^~~~~~~~~~[m[K
+      |                       [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:67:3:[m[K [01;31m[Kerror: [m[K‘[01m[K_value_type[m[K’ does not name a type
+   67 |   [01;31m[K_value_type[m[K value;
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:29:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   77 |     const bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator> & _arg)
+      |                             [01;31m[K^~~~~~~~~~[m[K
+      |                             [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+   77 |     const bosdyn_msgs::msg::DictParam_[01;31m[K<[m[KContainerAllocator> & _arg)
+      |                                       [01;31m[K^[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:41:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   41 |   : [01;31m[Kvalue[m[K(_init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:52:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   52 |     [01;31m[Kvalue[m[K(_alloc, _init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In member function ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::Type& bosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::set__value(int)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:79:19:[m[K [01;31m[Kerror: [m[K‘[01m[K_arg[m[K’ was not declared in this scope
+   79 |     this->value = [01;31m[K_arg[m[K;
+      |                   [01;31m[K^~~~[m[K
+In file included from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/one_of_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param_one_of_value__struct.hpp:34[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/dict_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_request__struct.hpp:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_source_capture__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquisition_request_list__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquire_data_request__struct.hpp:26[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/action_data_acquisition__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/action_one_of_action__struct.hpp:22[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/action__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_introspection_cpp/bosdyn_msgs/msg/detail/action__type_support.cpp:12[m[K:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:66:23:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   66 |     bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator>;
+      |                       [01;31m[K^~~~~~~~~~[m[K
+      |                       [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:67:3:[m[K [01;31m[Kerror: [m[K‘[01m[K_value_type[m[K’ does not name a type
+   67 |   [01;31m[K_value_type[m[K value;
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:29:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   77 |     const bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator> & _arg)
+      |                             [01;31m[K^~~~~~~~~~[m[K
+      |                             [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+   77 |     const bosdyn_msgs::msg::DictParam_[01;31m[K<[m[KContainerAllocator> & _arg)
+      |                                       [01;31m[K^[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:41:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   41 |   : [01;31m[Kvalue[m[K(_init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:52:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   52 |     [01;31m[Kvalue[m[K(_alloc, _init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In member function ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::Type& bosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::set__value(int)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:79:19:[m[K [01;31m[Kerror: [m[K‘[01m[K_arg[m[K’ was not declared in this scope
+   79 |     this->value = [01;31m[K_arg[m[K;
+      |                   [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/bosdyn_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make:9546: CMakeFiles/bosdyn_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/bosdyn_msgs/msg/detail/dds_fastrtps/acquire_data_request__type_support.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/one_of_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param_one_of_value__struct.hpp:34[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/dict_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_request__struct.hpp:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_source_capture__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquisition_request_list__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquire_data_request__struct.hpp:26[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/action_data_acquisition__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/action_one_of_action__struct.hpp:22[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_fastrtps_cpp/bosdyn_msgs/msg/detail/action_one_of_action__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_fastrtps_cpp/bosdyn_msgs/msg/detail/dds_fastrtps/action_one_of_action__type_support.cpp:4[m[K:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:66:23:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   66 |     bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator>;
+      |                       [01;31m[K^~~~~~~~~~[m[K
+      |                       [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:67:3:[m[K [01;31m[Kerror: [m[K‘[01m[K_value_type[m[K’ does not name a type
+   67 |   [01;31m[K_value_type[m[K value;
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:29:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   77 |     const bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator> & _arg)
+      |                             [01;31m[K^~~~~~~~~~[m[K
+      |                             [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+   77 |     const bosdyn_msgs::msg::DictParam_[01;31m[K<[m[KContainerAllocator> & _arg)
+      |                                       [01;31m[K^[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:41:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   41 |   : [01;31m[Kvalue[m[K(_init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:52:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   52 |     [01;31m[Kvalue[m[K(_alloc, _init)
+      |     [01;31m[K^~~~~[m[K
+[  0%] [32mBuilding CXX object CMakeFiles/bosdyn_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/bosdyn_msgs/msg/detail/action_sleep__type_support.cpp.o[0m
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In member function ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::Type& bosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::set__value(int)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:79:19:[m[K [01;31m[Kerror: [m[K‘[01m[K_arg[m[K’ was not declared in this scope
+   79 |     this->value = [01;31m[K_arg[m[K;
+      |                   [01;31m[K^~~~[m[K
+In file included from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/one_of_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param_one_of_value__struct.hpp:34[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/dict_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_request__struct.hpp:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_source_capture__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquisition_request_list__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquire_data_request__struct.hpp:26[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/action_data_acquisition__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_introspection_cpp/bosdyn_msgs/msg/detail/action_data_acquisition__type_support.cpp:12[m[K:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:66:23:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   66 |     bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator>;
+      |                       [01;31m[K^~~~~~~~~~[m[K
+      |                       [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:67:3:[m[K [01;31m[Kerror: [m[K‘[01m[K_value_type[m[K’ does not name a type
+   67 |   [01;31m[K_value_type[m[K value;
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:29:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   77 |     const bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator> & _arg)
+      |                             [01;31m[K^~~~~~~~~~[m[K
+      |                             [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+   77 |     const bosdyn_msgs::msg::DictParam_[01;31m[K<[m[KContainerAllocator> & _arg)
+      |                                       [01;31m[K^[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:41:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   41 |   : [01;31m[Kvalue[m[K(_init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:52:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   52 |     [01;31m[Kvalue[m[K(_alloc, _init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In member function ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::Type& bosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::set__value(int)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:79:19:[m[K [01;31m[Kerror: [m[K‘[01m[K_arg[m[K’ was not declared in this scope
+   79 |     this->value = [01;31m[K_arg[m[K;
+      |                   [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/bosdyn_msgs__rosidl_typesupport_introspection_cpp.dir/build.make:9546: CMakeFiles/bosdyn_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/bosdyn_msgs/msg/detail/acquire_data_request__type_support.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/one_of_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param_one_of_value__struct.hpp:34[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/dict_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_request__struct.hpp:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_source_capture__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquisition_request_list__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquire_data_request__struct.hpp:26[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/action_data_acquisition__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_fastrtps_cpp/bosdyn_msgs/msg/detail/action_data_acquisition__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_fastrtps_cpp/bosdyn_msgs/msg/detail/dds_fastrtps/action_data_acquisition__type_support.cpp:4[m[K:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:66:23:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   66 |     bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator>;
+      |                       [01;31m[K^~~~~~~~~~[m[K
+      |                       [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:67:3:[m[K [01;31m[Kerror: [m[K‘[01m[K_value_type[m[K’ does not name a type
+   67 |   [01;31m[K_value_type[m[K value;
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:29:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   77 |     const bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator> & _arg)
+      |                             [01;31m[K^~~~~~~~~~[m[K
+      |                             [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+   77 |     const bosdyn_msgs::msg::DictParam_[01;31m[K<[m[KContainerAllocator> & _arg)
+      |                                       [01;31m[K^[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:41:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   41 |   : [01;31m[Kvalue[m[K(_init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:52:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   52 |     [01;31m[Kvalue[m[K(_alloc, _init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In member function ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::Type& bosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::set__value(int)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:79:19:[m[K [01;31m[Kerror: [m[K‘[01m[K_arg[m[K’ was not declared in this scope
+   79 |     this->value = [01;31m[K_arg[m[K;
+      |                   [01;31m[K^~~~[m[K
+In file included from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/one_of_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param_one_of_value__struct.hpp:34[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/dict_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_request__struct.hpp:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_source_capture__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquisition_request_list__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_introspection_cpp/bosdyn_msgs/msg/detail/acquisition_request_list__type_support.cpp:12[m[K:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:66:23:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   66 |     bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator>;
+      |                       [01;31m[K^~~~~~~~~~[m[K
+      |                       [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:67:3:[m[K [01;31m[Kerror: [m[K‘[01m[K_value_type[m[K’ does not name a type
+   67 |   [01;31m[K_value_type[m[K value;
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:29:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   77 |     const bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator> & _arg)
+      |                             [01;31m[K^~~~~~~~~~[m[K
+      |                             [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+   77 |     const bosdyn_msgs::msg::DictParam_[01;31m[K<[m[KContainerAllocator> & _arg)
+      |                                       [01;31m[K^[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:41:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   41 |   : [01;31m[Kvalue[m[K(_init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:52:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   52 |     [01;31m[Kvalue[m[K(_alloc, _init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In member function ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::Type& bosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::set__value(int)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:79:19:[m[K [01;31m[Kerror: [m[K‘[01m[K_arg[m[K’ was not declared in this scope
+   79 |     this->value = [01;31m[K_arg[m[K;
+      |                   [01;31m[K^~~~[m[K
+In file included from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/one_of_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param_one_of_value__struct.hpp:34[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/dict_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param_collection__struct.hpp:22[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/action_remote_grpc__struct.hpp:22[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_fastrtps_cpp/bosdyn_msgs/msg/detail/action_remote_grpc__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_fastrtps_cpp/bosdyn_msgs/msg/detail/dds_fastrtps/action_remote_grpc__type_support.cpp:4[m[K:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:66:23:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   66 |     bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator>;
+      |                       [01;31m[K^~~~~~~~~~[m[K
+      |                       [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:67:3:[m[K [01;31m[Kerror: [m[K‘[01m[K_value_type[m[K’ does not name a type
+   67 |   [01;31m[K_value_type[m[K value;
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:29:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   77 |     const bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator> & _arg)
+      |                             [01;31m[K^~~~~~~~~~[m[K
+      |                             [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+   77 |     const bosdyn_msgs::msg::DictParam_[01;31m[K<[m[KContainerAllocator> & _arg)
+      |                                       [01;31m[K^[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:41:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   41 |   : [01;31m[Kvalue[m[K(_init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:52:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   52 |     [01;31m[Kvalue[m[K(_alloc, _init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In member function ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::Type& bosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::set__value(int)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:79:19:[m[K [01;31m[Kerror: [m[K‘[01m[K_arg[m[K’ was not declared in this scope
+   79 |     this->value = [01;31m[K_arg[m[K;
+      |                   [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/bosdyn_msgs__rosidl_typesupport_introspection_cpp.dir/build.make:9630: CMakeFiles/bosdyn_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/bosdyn_msgs/msg/detail/acquire_plugin_data_request__type_support.cpp.o] Error 1
+In file included from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/one_of_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param_one_of_value__struct.hpp:34[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/dict_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param_collection__struct.hpp:22[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/action_remote_grpc__struct.hpp:22[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_introspection_cpp/bosdyn_msgs/msg/detail/action_remote_grpc__type_support.cpp:12[m[K:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:66:23:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   66 |     bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator>;
+      |                       [01;31m[K^~~~~~~~~~[m[K
+      |                       [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:67:3:[m[K [01;31m[Kerror: [m[K‘[01m[K_value_type[m[K’ does not name a type
+   67 |   [01;31m[K_value_type[m[K value;
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:29:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   77 |     const bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator> & _arg)
+      |                             [01;31m[K^~~~~~~~~~[m[K
+      |                             [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+   77 |     const bosdyn_msgs::msg::DictParam_[01;31m[K<[m[KContainerAllocator> & _arg)
+      |                                       [01;31m[K^[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:41:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   41 |   : [01;31m[Kvalue[m[K(_init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:52:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   52 |     [01;31m[Kvalue[m[K(_alloc, _init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In member function ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::Type& bosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::set__value(int)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:79:19:[m[K [01;31m[Kerror: [m[K‘[01m[K_arg[m[K’ was not declared in this scope
+   79 |     this->value = [01;31m[K_arg[m[K;
+      |                   [01;31m[K^~~~[m[K
+In file included from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/one_of_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param_one_of_value__struct.hpp:34[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_custom_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/dict_param__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_request__struct.hpp:24[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/image_source_capture__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquisition_request_list__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/acquire_data_request__struct.hpp:26[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/action_data_acquisition__struct.hpp:20[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/action_one_of_action__struct.hpp:22[m[K,
+                 from [01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_typesupport_introspection_cpp/bosdyn_msgs/msg/detail/action_one_of_action__type_support.cpp:12[m[K:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:66:23:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   66 |     bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator>;
+      |                       [01;31m[K^~~~~~~~~~[m[K
+      |                       [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:67:3:[m[K [01;31m[Kerror: [m[K‘[01m[K_value_type[m[K’ does not name a type
+   67 |   [01;31m[K_value_type[m[K value;
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:29:[m[K [01;31m[Kerror: [m[K‘[01m[KDictParam_[m[K’ in namespace ‘[01m[Kbosdyn_msgs::msg[m[K’ does not name a template type; did you mean ‘[01m[KListParam_[m[K’?
+   77 |     const bosdyn_msgs::msg::[01;31m[KDictParam_[m[K<ContainerAllocator> & _arg)
+      |                             [01;31m[K^~~~~~~~~~[m[K
+      |                             [32m[KListParam_[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:77:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+   77 |     const bosdyn_msgs::msg::DictParam_[01;31m[K<[m[KContainerAllocator> & _arg)
+      |                                       [01;31m[K^[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:41:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   41 |   : [01;31m[Kvalue[m[K(_init)
+      |     [01;31m[K^~~~~[m[K
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In constructor ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::KeyStringValueBosdynMsgsDictParam_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:52:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>[m[K’ does not have any field named ‘[01m[Kvalue[m[K’
+   52 |     [01;31m[Kvalue[m[K(_alloc, _init)
+      |     [01;31m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/bosdyn_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make:9686: CMakeFiles/bosdyn_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/bosdyn_msgs/msg/detail/dds_fastrtps/acquisition_request_list__type_support.cpp.o] Error 1
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:[m[K In member function ‘[01m[Kbosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::Type& bosdyn_msgs::msg::KeyStringValueBosdynMsgsDictParam_<ContainerAllocator>::set__value(int)[m[K’:
+[01m[K/workspaces/bdai/bosdyn_msgs/build/bosdyn_msgs/rosidl_generator_cpp/bosdyn_msgs/msg/detail/key_string_value_bosdyn_msgs_dict_param__struct.hpp:79:19:[m[K [01;31m[Kerror: [m[K‘[01m[K_arg[m[K’ was not declared in this scope
+   79 |     this->value = [01;31m[K_arg[m[K;
+      |                   [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/bosdyn_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make:9630: CMakeFiles/bosdyn_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/bosdyn_msgs/msg/detail/dds_fastrtps/acquire_plugin_data_request__type_support.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/bosdyn_msgs__rosidl_typesupport_introspection_cpp.dir/build.make:9700: CMakeFiles/bosdyn_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/bosdyn_msgs/msg/detail/action__type_support.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/bosdyn_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make:9700: CMakeFiles/bosdyn_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/bosdyn_msgs/msg/detail/dds_fastrtps/action__type_support.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/bosdyn_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make:9840: CMakeFiles/bosdyn_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/bosdyn_msgs/msg/detail/dds_fastrtps/action_one_of_action__type_support.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/bosdyn_msgs__rosidl_typesupport_introspection_cpp.dir/build.make:9840: CMakeFiles/bosdyn_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/bosdyn_msgs/msg/detail/action_one_of_action__type_support.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/bosdyn_msgs__rosidl_typesupport_introspection_cpp.dir/build.make:9812: CMakeFiles/bosdyn_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/bosdyn_msgs/msg/detail/action_data_acquisition__type_support.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/bosdyn_msgs__rosidl_typesupport_introspection_cpp.dir/build.make:9854: CMakeFiles/bosdyn_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/bosdyn_msgs/msg/detail/action_remote_grpc__type_support.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/bosdyn_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make:9812: CMakeFiles/bosdyn_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/bosdyn_msgs/msg/detail/dds_fastrtps/action_data_acquisition__type_support.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/bosdyn_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make:9854: CMakeFiles/bosdyn_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/bosdyn_msgs/msg/detail/dds_fastrtps/action_remote_grpc__type_support.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:291: CMakeFiles/bosdyn_msgs__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2
+gmake[2]: *** [CMakeFiles/bosdyn_msgs__rosidl_typesupport_introspection_cpp.dir/build.make:9686: CMakeFiles/bosdyn_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/bosdyn_msgs/msg/detail/acquisition_request_list__type_support.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/bosdyn_msgs__rosidl_typesupport_introspection_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

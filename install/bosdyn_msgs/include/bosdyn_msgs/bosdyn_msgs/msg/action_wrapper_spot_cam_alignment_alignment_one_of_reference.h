@@ -1,0 +1,12 @@
+// generated from rosidl_generator_c/resource/idl.h.em
+// with input from bosdyn_msgs:msg/ActionWrapperSpotCamAlignmentAlignmentOneOfReference.idl
+// generated code does not contain a copyright notice
+
+#ifndef BOSDYN_MSGS__MSG__ACTION_WRAPPER_SPOT_CAM_ALIGNMENT_ALIGNMENT_ONE_OF_REFERENCE_H_
+#define BOSDYN_MSGS__MSG__ACTION_WRAPPER_SPOT_CAM_ALIGNMENT_ALIGNMENT_ONE_OF_REFERENCE_H_
+
+#include "bosdyn_msgs/msg/detail/action_wrapper_spot_cam_alignment_alignment_one_of_reference__struct.h"
+#include "bosdyn_msgs/msg/detail/action_wrapper_spot_cam_alignment_alignment_one_of_reference__functions.h"
+#include "bosdyn_msgs/msg/detail/action_wrapper_spot_cam_alignment_alignment_one_of_reference__type_support.h"
+
+#endif  // BOSDYN_MSGS__MSG__ACTION_WRAPPER_SPOT_CAM_ALIGNMENT_ALIGNMENT_ONE_OF_REFERENCE_H_

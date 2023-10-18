@@ -1,0 +1,12 @@
+// generated from rosidl_generator_c/resource/idl.h.em
+// with input from bosdyn_msgs:msg/UpdateCallbackResponseUpdateLocalizationLocalizationChange.idl
+// generated code does not contain a copyright notice
+
+#ifndef BOSDYN_MSGS__MSG__UPDATE_CALLBACK_RESPONSE_UPDATE_LOCALIZATION_LOCALIZATION_CHANGE_H_
+#define BOSDYN_MSGS__MSG__UPDATE_CALLBACK_RESPONSE_UPDATE_LOCALIZATION_LOCALIZATION_CHANGE_H_
+
+#include "bosdyn_msgs/msg/detail/update_callback_response_update_localization_localization_change__struct.h"
+#include "bosdyn_msgs/msg/detail/update_callback_response_update_localization_localization_change__functions.h"
+#include "bosdyn_msgs/msg/detail/update_callback_response_update_localization_localization_change__type_support.h"
+
+#endif  // BOSDYN_MSGS__MSG__UPDATE_CALLBACK_RESPONSE_UPDATE_LOCALIZATION_LOCALIZATION_CHANGE_H_

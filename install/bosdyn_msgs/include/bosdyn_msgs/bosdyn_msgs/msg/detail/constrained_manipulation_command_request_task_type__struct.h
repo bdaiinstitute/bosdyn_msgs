@@ -1,0 +1,144 @@
+// generated from rosidl_generator_c/resource/idl__struct.h.em
+// with input from bosdyn_msgs:msg/ConstrainedManipulationCommandRequestTaskType.idl
+// generated code does not contain a copyright notice
+
+#ifndef BOSDYN_MSGS__MSG__DETAIL__CONSTRAINED_MANIPULATION_COMMAND_REQUEST_TASK_TYPE__STRUCT_H_
+#define BOSDYN_MSGS__MSG__DETAIL__CONSTRAINED_MANIPULATION_COMMAND_REQUEST_TASK_TYPE__STRUCT_H_
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+
+
+// Constants defined in the message
+
+/// Constant 'TASK_TYPE_UNKNOWN'.
+enum
+{
+  bosdyn_msgs__msg__ConstrainedManipulationCommandRequestTaskType__TASK_TYPE_UNKNOWN = 0
+};
+
+/// Constant 'TASK_TYPE_SE3_CIRCLE_FORCE_TORQUE'.
+/**
+  * This task type corresponds to circular tasks where
+  * both the end-effector position and orientation rotate about a circle to manipulate.
+  * The constrained manipulation logic will generate forces and torques in this case.
+  * Example tasks are: A lever or a ball valve with a solid grasp
+  * This task type will require an initial force vector specified
+  * in init_wrench_direction_in_frame_name. A torque vector can be specified
+  * as well if a good initial guess of the axis of rotation of the task is available.
+ */
+enum
+{
+  bosdyn_msgs__msg__ConstrainedManipulationCommandRequestTaskType__TASK_TYPE_SE3_CIRCLE_FORCE_TORQUE = 1
+};
+
+/// Constant 'TASK_TYPE_R3_CIRCLE_EXTRADOF_FORCE'.
+/**
+  * This task type corresponds to circular tasks that have an extra degree of freedom.
+  * In these tasks the end-effector position rotates about a circle
+  * but the orientation does not need to follow a circle (can remain fixed).
+  * The constrained manipulation logic will generate translational forces in this case.
+  * Example tasks are: A crank that has a loose handle and moves in a circle
+  * and the end-effector is free to rotate about the handle in one direction.
+  * This task type will require an initial force vector specified
+  * in init_wrench_direction_in_frame_name.
+ */
+enum
+{
+  bosdyn_msgs__msg__ConstrainedManipulationCommandRequestTaskType__TASK_TYPE_R3_CIRCLE_EXTRADOF_FORCE = 2
+};
+
+/// Constant 'TASK_TYPE_SE3_ROTATIONAL_TORQUE'.
+/**
+  * This task type corresponds to purely rotational tasks.
+  * In these tasks the orientation of the end-effector follows a circle,
+  * and the position remains fixed. The robot will apply a torque at the
+  * end-effector in these tasks.
+  * Example tasks are: rotating a knob or valve that does not have a lever arm.
+  * This task type will require an initial torque vector specified
+  * in init_wrench_direction_in_frame_name.
+ */
+enum
+{
+  bosdyn_msgs__msg__ConstrainedManipulationCommandRequestTaskType__TASK_TYPE_SE3_ROTATIONAL_TORQUE = 3
+};
+
+/// Constant 'TASK_TYPE_R3_CIRCLE_FORCE'.
+/**
+  * This task type corresponds to circular tasks where
+  * the end-effector position and orientation rotate about a circle
+  * but the orientation does always strictly follow the circle due to slips.
+  * The constrained manipulation logic will generate translational forces in this case.
+  * Example tasks are: manipulating a cabinet where the grasp on handle is not very rigid
+  * or can often slip.
+  * This task type will require an initial force vector specified
+  * in init_wrench_direction_in_frame_name.
+ */
+enum
+{
+  bosdyn_msgs__msg__ConstrainedManipulationCommandRequestTaskType__TASK_TYPE_R3_CIRCLE_FORCE = 4
+};
+
+/// Constant 'TASK_TYPE_R3_LINEAR_FORCE'.
+/**
+  * This task type corresponds to linear tasks where
+  * the end-effector position moves in a line
+  * but the orientation does not need to change.
+  * The constrained manipulation logic will generate a force in this case.
+  * Example tasks are: A crank that has a loose handle, or manipulating
+  * a cabinet where the grasp of the handle is loose and the end-effector is free
+  * to rotate about the handle in one direction.
+  * This task type will require an initial force vector specified
+  * in init_wrench_direction_in_frame_name.
+ */
+enum
+{
+  bosdyn_msgs__msg__ConstrainedManipulationCommandRequestTaskType__TASK_TYPE_R3_LINEAR_FORCE = 5
+};
+
+/// Constant 'TASK_TYPE_HOLD_POSE'.
+/**
+  * This option simply holds the hand in place with stiff impedance control.
+  * You can use this mode at the beginning of a constrained manipulation task or to
+  * hold position while transitioning between two different constrained manipulation
+  * tasks. The target pose to hold will be the measured hand pose upon transitioning to
+  * constrained manipulation or upon switching to this task type. This mode should only
+  * be used during constrained manipulation tasks, since it uses impedance control to
+  * hold the hand in place. This is not intended to stop the arm during position control
+  * moves.
+ */
+enum
+{
+  bosdyn_msgs__msg__ConstrainedManipulationCommandRequestTaskType__TASK_TYPE_HOLD_POSE = 6
+};
+
+/// Struct defined in msg/ConstrainedManipulationCommandRequestTaskType in the package bosdyn_msgs.
+/**
+  * AUTOMATICALLY GENERATED BY PROTO CONVERSION
+ */
+typedef struct bosdyn_msgs__msg__ConstrainedManipulationCommandRequestTaskType
+{
+  int8_t value;
+} bosdyn_msgs__msg__ConstrainedManipulationCommandRequestTaskType;
+
+// Struct for a sequence of bosdyn_msgs__msg__ConstrainedManipulationCommandRequestTaskType.
+typedef struct bosdyn_msgs__msg__ConstrainedManipulationCommandRequestTaskType__Sequence
+{
+  bosdyn_msgs__msg__ConstrainedManipulationCommandRequestTaskType * data;
+  /// The number of valid items in data
+  size_t size;
+  /// The number of allocated items in data
+  size_t capacity;
+} bosdyn_msgs__msg__ConstrainedManipulationCommandRequestTaskType__Sequence;
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif  // BOSDYN_MSGS__MSG__DETAIL__CONSTRAINED_MANIPULATION_COMMAND_REQUEST_TASK_TYPE__STRUCT_H_
