@@ -18,5 +18,3 @@ bool ground_mu_hint_is_set
 # perception data.
 # The selected option for grated surfaces mode
 bosdyn_msgs/TerrainParamsGratedSurfacesMode grated_surfaces_mode
-
-

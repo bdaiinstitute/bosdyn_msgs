@@ -14,3 +14,6 @@ bool error_existing_edge_is_set
 # The results/status of the lease provided.
 bosdyn_msgs/LeaseUseResult lease_use_result
 bool lease_use_result_is_set
+# General statistics of the map loaded in GraphNav.
+bosdyn_msgs/MapStats map_stats
+bool map_stats_is_set

@@ -6,13 +6,14 @@ string name
 bosdyn_msgs/Vec2 resolution
 bool resolution_is_set
 
-# The frame name for the parent frame of this camera. This frame will show up in the FrameTreeSnapshot
-# grabbed from the payload registration service.
+# The frame name for the parent frame of this camera. This frame will show up in the
+# FrameTreeSnapshot grabbed from the payload registration service.
 string base_frame_name
 
 # 'base_tfrom_sensor' defines the transform from the specific camera to the named base from.
-# This is deprecated in favor of 'base_tform_sensor' which follows the intended naming convention
-# and FrameTree directionality convention of the Spot system as defined in geometry.proto.
+# DEPRECATED as of 3.0.1 in favor of 'base_tform_sensor' which follows the intended naming
+# convention and FrameTree directionality convention of the Spot system as defined in
+# geometry.proto.
 
 # The transform from the named base frame to this specific camera
 geometry_msgs/Pose base_tform_sensor

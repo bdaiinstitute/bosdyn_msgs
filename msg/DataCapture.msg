@@ -6,3 +6,8 @@
 # Name of the data to be captured. This should match the uniquely identifying name from
 # the DataAcquisitionCapability.
 string name
+
+# Values passed to the service at capture time.
+# See the DictParam.Spec in DataAcquisitionCapability.
+bosdyn_msgs/DictParam custom_params
+bool custom_params_is_set

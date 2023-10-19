@@ -40,4 +40,8 @@ int8 INCOMPATIBLE_HARDWARE_ERROR=10
 # of a commanded power OFF, robot will report SUCCESS if power is disabled.
 int8 STATUS_OVERRIDDEN=11
 
+# ERROR: Cannot power on while a Keepalive policy with a motors-off action is active.
+# See the Keepalive API service for more details.
+int8 STATUS_KEEPALIVE_MOTORS_OFF=12
+
 int8 value

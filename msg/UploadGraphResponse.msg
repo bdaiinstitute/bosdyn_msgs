@@ -29,3 +29,14 @@ bool sensor_status_is_set
 # Errors about Area Callbacks in the map.
 bosdyn_msgs/AreaCallbackServiceError area_callback_error
 bool area_callback_error_is_set
+
+# General map statistics.
+bosdyn_msgs/MapStats map_stats
+bool map_stats_is_set
+# Detailed information about why STATUS_INVALID_GRAPH was returned. This will only
+# contain information if the UploadGraph request could not be validated.
+# If the returned status is STATUS_INVALID_GRAPH, this contains the detailed information about why the
+# graph was invalid. Note that some graph validation errors are warnings and the robot will be able to navigate
+# on the graph even when they are present.
+bosdyn_msgs/UploadGraphResponseValidationStatus validation_status
+bool validation_status_is_set

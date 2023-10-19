@@ -20,3 +20,9 @@ bool recording_environment_is_set
 # are presently visible before starting to record. This is useful for verifying
 # that the robot is where the user thinks it is in an area with known fiducials.
 int32[] require_fiducials
+# If provided, this timestamp will be used in every waypoint snapshot as the
+# "started_recording_on" timestamp. Otherwise, a new timestmap will be generated
+# after "StartRecording" is called. This is to allow association between waypoint
+# snapshots based on recording session time.
+builtin_interfaces/Time session_start_time
+bool session_start_time_is_set

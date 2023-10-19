@@ -11,7 +11,8 @@ string description
 # The pose of the payload relative to the body frame.
 geometry_msgs/Pose mount_tform_payload
 bool mount_tform_payload_is_set
-# Optional - mount frame_name (if not included, payload is assumed to be in the body mount frame)
+# Optional - mount frame_name (if not included, payload is assumed to be in the body mount
+# frame)
 bosdyn_msgs/MountFrameName mount_frame_name
 # The mass and volume properties of the payload.
 bosdyn_msgs/PayloadMassVolumeProperties mass_volume_properties

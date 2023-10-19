@@ -7,9 +7,9 @@ bosdyn_msgs/FullBodyCommandFeedback full_body_feedback
 # A synchronized command, for partial or full control of robot.
 bosdyn_msgs/SynchronizedCommandFeedback synchronized_feedback
 
-# *** Deprecation Warning ***
-# DEPRECATED as of 2.1.0: Command to control mobility system of a robot.
-# The following fields will be deprecated and moved to 'reserved' in a future release.
+# DEPRECATED as of 2.1.0.  Will be removed in 4.0.  Please use
+# RobotCommand.synchronized_command and synchronized_feedback instead.
+# Command to control mobility system of a robot.
 
 int8 COMMAND_NOT_SET=0
 int8 COMMAND_FULL_BODY_FEEDBACK_SET=1

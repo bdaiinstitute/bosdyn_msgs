@@ -9,7 +9,8 @@ bool header_is_set
 # A passphrase is a human-readable string used to generate
 # an encryption key. An empty passphrase disables encryption.
 
-# If the encryption key is set, everything new written to the drive gets encrypted. this includes
+# If the encryption key is set, everything new written to the drive gets encrypted. this
+# includes
 
 # 1) the sql database
 # 2) logged data

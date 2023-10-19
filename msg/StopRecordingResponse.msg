@@ -13,3 +13,11 @@ string error_waypoint_localized_id
 # The results/status of the lease provided.
 bosdyn_msgs/LeaseUseResult lease_use_result
 bool lease_use_result_is_set
+# This is the robot local timestamp that graph_nav began recording on. If the
+# StartRecordingRequest's session start time is provided, this should be the same as the
+# request's session start time.
+builtin_interfaces/Time session_start_time
+bool session_start_time_is_set
+# General statistics of the map loaded in GraphNav.
+bosdyn_msgs/MapStats map_stats
+bool map_stats_is_set

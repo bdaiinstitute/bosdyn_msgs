@@ -2,3 +2,9 @@
 
 # Current status of the command.
 bosdyn_msgs/DoorCommandFeedbackStatus status
+
+# This is the distance the robot (i.e. the origin of the 'body' frame) is past the door
+# frame threshold. When it's negative the robot is on the starting side of the door, 0 when
+# the robot is in the middle of the door, and positive when the robot is on the finishing
+# side.
+float64 distance_past_threshold

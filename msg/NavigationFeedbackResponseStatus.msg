@@ -14,7 +14,8 @@ int8 STATUS_NO_ROUTE=3
 int8 STATUS_NO_LOCALIZATION=4
 # Robot appears to be lost.
 int8 STATUS_LOST=5
-# Robot appears stuck against an obstacle.
+# Robot appears stuck and unable to make progress, but can still navigate to other destinations.
+# stuck_reason provides more details on the reason that caused the robot to become stuck.
 int8 STATUS_STUCK=6
 # The command expired.
 int8 STATUS_COMMAND_TIMED_OUT=7
@@ -29,7 +30,9 @@ int8 STATUS_COMMAND_OVERRIDDEN=10
 int8 STATUS_NOT_LOCALIZED_TO_ROUTE=11
 # The lease is no longer valid.
 int8 STATUS_LEASE_ERROR=12
-# An error occurred with an Area Callback. Lease errors will be reported via STATUS_LEASE_ERROR instead.
+# An error occurred with an Area Callback in a way that graph nav was unable to recover
+# from. Navigating to another location may also fail.
+# Lease errors will be reported via STATUS_LEASE_ERROR instead.
 int8 STATUS_AREA_CALLBACK_ERROR=13
 
 int8 value

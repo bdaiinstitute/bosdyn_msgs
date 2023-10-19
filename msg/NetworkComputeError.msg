@@ -11,4 +11,3 @@ bosdyn_msgs/NetworkComputeStatus network_compute_status
 
 # Description of the error.
 string message
-

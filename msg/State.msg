@@ -29,3 +29,4 @@ int64 tick_counter
 # The mission's ID.
 # -1 indicates no mission has been loaded.
 int64 mission_id
+

@@ -12,4 +12,8 @@ int8 STATUS_INVALID_CONFIGURATION=2
 # The area callback end time already expired.
 int8 STATUS_EXPIRED_END_TIME=3
 
+# One or more keys or values in custom_params are unsupported by the area callback.
+# See the custom_param_error for details.
+int8 STATUS_CUSTOM_PARAMS_ERROR=4
+
 int8 value

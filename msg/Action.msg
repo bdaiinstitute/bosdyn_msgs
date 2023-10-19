@@ -9,7 +9,7 @@
 # nothing else), they would populate an ActionWrapper with Pose
 # and set the desired duration here accordingly.
 
-# For actions associated with the Data Acquisition Service (DAQ).
+# For actions associated with the Data Acquisition Service.
 
 
 bosdyn_msgs/ActionOneOfAction action

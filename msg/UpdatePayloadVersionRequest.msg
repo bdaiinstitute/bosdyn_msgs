@@ -13,8 +13,10 @@ bosdyn_msgs/PayloadCredentials payload_credentials
 bool payload_credentials_is_set
 
 # The GUID of the payload to be updated.
+# DEPRECATED as of 3.0.0. Please use payload_credentials instead.
 
 # The payload secret for the specified payload.
+# DEPRECATED as of 3.0.0. Please use payload_credentials instead.
 
 # The new software version that the payload is being updated to.
 bosdyn_msgs/SoftwareVersion updated_version

@@ -3,17 +3,23 @@
 int8 STATUS_UNKNOWN=0 # An unknown / unexpected error occurred.
 int8 STATUS_OK=1 # Request was accepted.
 
-int8 STATUS_INVALID_REQUEST=2 # [Programming Error] Request was invalid / malformed in some way.
-int8 STATUS_UNSUPPORTED=3 # [Programming Error] The robot does not understand this command.
+# [Programming Error]
+int8 STATUS_INVALID_REQUEST=2 # Request was invalid / malformed in some way.
+int8 STATUS_UNSUPPORTED=3 # The robot does not understand this command.
 
-int8 STATUS_NO_TIMESYNC=4 # [Timesync Error] Client has not done timesync with robot.
-int8 STATUS_EXPIRED=5 # [Timesync Error] The command was received after its end_time had already passed.
-int8 STATUS_TOO_DISTANT=6 # [Timesync Error] The command end time was too far in the future.
+# [Timesync Error]
+int8 STATUS_NO_TIMESYNC=4 # Client has not done timesync with robot.
+int8 STATUS_EXPIRED=5 # The command was received after its end_time had already passed.
+int8 STATUS_TOO_DISTANT=6 # The command end time was too far in the future.
 
-int8 STATUS_NOT_POWERED_ON=7 # [Hardware Error] The robot must be powered on to accept a command.
-int8 STATUS_BEHAVIOR_FAULT=8 # [Robot State Error] The robot must not have behavior faults.
-int8 STATUS_DOCKED=9 # [Robot State Error] The robot cannot be docked for certain commands.
+# [Hardware Error]
+int8 STATUS_NOT_POWERED_ON=7 # The robot must be powered on to accept a command.
 
-int8 STATUS_UNKNOWN_FRAME=10 # [Frame Error] The frame_name for a command was not a known frame.
+# [Robot State Error]
+int8 STATUS_BEHAVIOR_FAULT=8 # The robot must not have behavior faults.
+int8 STATUS_DOCKED=9 # The robot cannot be docked for certain commands.
+
+## [Frame Error]
+int8 STATUS_UNKNOWN_FRAME=10 # The frame_name for a command was not a known frame.
 
 int8 value

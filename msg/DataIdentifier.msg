@@ -7,12 +7,19 @@ bosdyn_msgs/CaptureActionId action_id
 bool action_id_is_set
 
 # Data buffer channel associated with the DataBlob. The channel is used to group data across
-# actions by a specific source, and it can be used in queries to retrieve some subset of data. For example,
-# the channel could be "ptz" and queries can be made for all PTZ images.
+# actions by a specific source, and it can be used in queries to retrieve some subset of data.
+# For example, the channel could be "ptz" and queries can be made for all PTZ images.
 string channel
 
-# Data-specific identifier that can optionally be used to disambiguate cases where the action_id and
-# channel are insufficient. For example, you save cropped SpotCAM pano image that are detected as gauges to
-# a "detected_gauges" channel, but want a way to further individually identify them as each specific gauge,
-# so you give each detection a unique data_name.
+# Data-specific identifier that can optionally be used to disambiguate cases where the
+# action_id and channel are insufficient. For example, you save cropped SpotCAM pano image that
+# are detected as gauges to a "detected_gauges" channel, but want a way to further individually
+# identify them as each specific gauge, so you give each detection a unique data_name.
 string data_name
+
+# Unique identifier specified by the Data Acquisition Store service for this individual piece
+# of data. It is a monotonically-increasing value that is incremented for each stored capture.
+# This value is intended to be unique to a robot and not globally unique. We do not guarantee
+# uniqueness pre and post software upgrades or factory resets. This id does not necessarily
+# start at 0.
+uint64 id

@@ -2,7 +2,7 @@
 
 # Velocity limits to use while traversing the edge.
 # These are maxima and minima, NOT target speeds.
-# NOTE: as of 2.4 this is deprecated. Please use mobility_params.vel_limit.
+# DEPRECATED as of 2.4 and will be removed in 4.0. Please use mobility_params.vel_limit.
 
 # Defines any parameters of the stairs
 # Stairs information/parameters specific to the edge.
@@ -17,26 +17,27 @@ bosdyn_msgs/EdgeAnnotationsDirectionConstraint direction_constraint
 bool require_alignment
 bool require_alignment_is_set
 
-# If true, the edge crosses flat ground and the robot shouldn't try to climb over obstacles.
-bool flat_ground
-bool flat_ground_is_set
+# If true, the edge crosses flat ground and the robot shouldn't try to climb over
+# obstacles.
+# DEPRECATED as of 3.3.  Replaced by ground_clutter_mode.
 
 # Terrain coefficient of friction user hint. This value must be postive and will clamped if
 # necessary on the robot side. Best suggested values lie in the range between 0.4 and 0.8
 # (which is the robot's default.)
-# WARNING: deprecated as of 2.1. Use mobility_params instead, which includes ground_mu_hint
-# as part of the terrain_params.
+# DEPRECATED as of 2.1 and will be removed in 4.0. Use mobility_params instead, which
+# includes ground_mu_hint as part of the terrain_params.
 
 # If true, the edge crosses over grated metal. This changes some parameters of the robot's
 # perception system to allow it to see grated floors bettter.
-# WARNING: deprecated as of 2.1. Use mobility_params instead, which includes grated_floor
-# as part of the terrain_params.
+# DEPRECATED as of 2.1 and will be removed in 4.0. Use mobility_params instead, which
+# includes grated_floor as part of the terrain_params.
 # Overrides the following fields of the mobility parameters to whatever is
 # stored in the map. For example, if this FieldMask contains "stairs_mode" and
 # "terrain_params.enable_grated_floor", then the map will be
-# annotated with "stairs_mode" and "enable_grated_floor" settings. An empty FieldMask means all fields are active
-# annotations. Note that the more conservative of the velocity limit stored in the mobility parameters and the
-# TravelParams of the entire route will be used for this edge (regardless of what override_mobility_params says).
+# annotated with "stairs_mode" and "enable_grated_floor" settings. An empty FieldMask means
+# all fields are active annotations. Note that the more conservative of the velocity limit
+# stored in the mobility parameters and the TravelParams of the entire route will be used
+# for this edge (regardless of what override_mobility_params says).
 #         google.protobuf.FieldMask override_mobility_params = 9;
 # Contains terrain parameters, swing height, obstacle avoidance parameters, etc.
 # When the robot crosses this edge, it will use the mobility parameters here.

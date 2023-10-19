@@ -12,5 +12,6 @@ bosdyn_msgs/Lease[] leases
 
 # Use this to provide other data (e.g. from the blackboard).
 # The RemoteGrpc node will provide the name of the node automatically.
-bosdyn_msgs/VariableDeclaration[] inputs
+# DEPRECATED as of 3.3.  Please use 'params' in [TickRequest] instead.
+
 

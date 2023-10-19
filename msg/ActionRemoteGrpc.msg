@@ -18,4 +18,17 @@ string[] lease_resources
 # The list of variables the remote host should receive.
 # Variables given can be available at either run-time or compile-time.
 # The "key" in KeyValue is the name of the variable as used by the remote system.
-bosdyn_msgs/KeyValue[] inputs
+# DEPRECATED as of 3.3.  Please use 'parameters' instead.
+
+# All specifications and any values chosen at record time.
+bosdyn_msgs/CustomParamCollection parameters
+bool parameters_is_set
+
+# Any images taken at action creation time.  For RemoteGRPC's, this will only happen
+# if the RemoteGRPC advertises parameters that require a region of interest for a specific
+# camera.
+#
+# This data is meant to allow UI's to give users context about their actions, AND
+# provide them a canvas to edit region of interests with after the fact.  It is
+# not used at mission playback time.
+bosdyn_msgs/ImageCaptureAndSource[] record_time_images

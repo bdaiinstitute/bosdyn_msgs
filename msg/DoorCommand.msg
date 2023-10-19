@@ -2,13 +2,13 @@
 
 #  Door Command specific request and Feedback.
 
-
 # Specify if the hinge is on the left or right side of the door, when looking at the door,
 # relative to the door handle.
 
 # Specify if the door is push or pull, when looking at the door.
 
 # Specify type of door handle.
+
 
 # The robot searches along a ray for the door handle and automatically grasp it before
 # executing door opening.
@@ -19,6 +19,5 @@
 # Open doors that do not require a grasp, just a push. This could be a door with no latching
 # mechanism that just requires a push, or a door with a pushbar.
 # The robot will automatically push the door open and walk through.
-
 
 

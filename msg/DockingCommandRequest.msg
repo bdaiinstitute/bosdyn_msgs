@@ -30,3 +30,5 @@ bool end_time_is_set
 # [Optional] Specify the prep pose behavior
 bosdyn_msgs/PrepPoseBehavior prep_pose_behavior
 
+# Require the detection of the dock's fiducial
+bool require_fiducial

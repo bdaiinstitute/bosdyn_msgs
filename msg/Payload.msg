@@ -32,8 +32,17 @@ bool body_tform_payload_is_set
 # The pose of the payload relative to the mount frame.
 geometry_msgs/Pose mount_tform_payload
 bool mount_tform_payload_is_set
-# Optional - mount frame_name (if not included, payload is assumed to be in the body mount frame)
+# Optional - mount frame_name (if not included, payload is assumed to be in the body mount
+# frame)
 bosdyn_msgs/MountFrameName mount_frame_name
+# Number of seconds to wait between heartbeats before assuming payload is no longer live
+# If unset (0) liveness checks will be disabled for this service.
+float64 liveness_timeout_secs
+# IP address of the payload for the robot to ping
+# If left empty, assume that the payload will send heartbeats
+string ipv4_address
+# In mbps (10, 100, 1000, etc)
+int32 link_speed
 # The mass and volume properties of the payload.
 bosdyn_msgs/PayloadMassVolumeProperties mass_volume_properties
 bool mass_volume_properties_is_set

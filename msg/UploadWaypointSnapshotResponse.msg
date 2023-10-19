@@ -13,3 +13,6 @@ bool lease_use_result_is_set
 bosdyn_msgs/UploadWaypointSnapshotResponseStatus status
 bosdyn_msgs/SensorCompatibilityStatus sensor_status
 bool sensor_status_is_set
+# General map statistics after upload.
+bosdyn_msgs/MapStats map_stats
+bool map_stats_is_set

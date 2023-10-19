@@ -19,3 +19,16 @@ string[] lease_resources
 # Variables given can be available at either run-time or compile-time.
 # The "key" in KeyValue is the name of the variable as used by the remote system.
 bosdyn_msgs/KeyValue[] inputs
+
+# Define a format string that will be used together with the blackboard to generate
+# a group_name.  If a value is specified in this field, it will override the group_name value
+# specified in the group_name of the TickRequest.  Values from the blackboard will
+# replace the keys in braces {}.
+# Example: "telop-{date}", where "date" is a blackboard variable.
+# Example: "{date}_loop_{loop_counter}", where "loop_counter" is a blackboard variable from a
+# Repeat node.
+string group_name_format
+
+# Should match the advertised spec for the RemoteMissionService in question.
+bosdyn_msgs/DictParam params
+bool params_is_set

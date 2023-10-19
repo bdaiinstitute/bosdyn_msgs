@@ -20,3 +20,4 @@ bosdyn_msgs/Lease[] leases
 # Settings active until the next PlayMission or RestartMission request.
 bosdyn_msgs/PlaySettings settings
 bool settings_is_set
+

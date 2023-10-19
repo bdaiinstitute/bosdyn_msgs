@@ -4,7 +4,7 @@
 # Common frames for this include "odom", "vision", "body", and "flat_body".
 string root_frame_name
 
-# This transform specifies the pose of the task frame realtive to the root frame.
+# This transform specifies the pose of the task frame relative to the root frame.
 # If unset, it defaults to identity, and the task frame coincides with the root frame.
 # The `desired_tool` frame will be specified relative to the task frame. For peg in
 # hole tasks for example, the task frame could be a frame attached to the top of the

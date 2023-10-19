@@ -7,3 +7,6 @@ bosdyn_msgs/Result result
 string error
 # ID from NodeInfo.
 int64 id
+# Nodes can write and read from the blackboard. Every node has a scoped blackboard.
+bosdyn_msgs/StateNodeStatesAtTickNodeStateBlackboardState blackboard
+bool blackboard_is_set

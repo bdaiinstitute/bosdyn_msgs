@@ -6,5 +6,8 @@ bosdyn_msgs/ConstrainedManipulationCommandFeedbackStatus status
 geometry_msgs/Wrench desired_wrench_odom_frame
 bool desired_wrench_odom_frame_is_set
 
-# Add a signal indicating that constrained manipulation is using
-# its estimated direction for applying wrench.
+# A boolean signal indicating constrained manipulation has seen
+# enough motion to estimate the constraint and that the wrench
+# is being applied along the estimated directions.
+bool estimation_activated
+bool estimation_activated_is_set

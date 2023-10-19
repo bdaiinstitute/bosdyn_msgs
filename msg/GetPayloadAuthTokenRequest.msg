@@ -13,5 +13,7 @@ bosdyn_msgs/PayloadCredentials payload_credentials
 bool payload_credentials_is_set
 
 # The GUID to identify which payload to get the auth token for.
+# DEPRECATED as of 3.0.0. Please use payload_credentials instead.
 
 # The payload secret for the specified payload.
+# DEPRECATED as of 3.0.0. Please use payload_credentials instead.

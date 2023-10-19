@@ -9,6 +9,10 @@ bool header_is_set
 # Generic robot command feedback.
 bosdyn_msgs/RobotCommandFeedbackStatusStatus status
 
+# Details about how the lease was used (unset if unknown).
+bosdyn_msgs/LeaseUseResult lease_use_result
+bool lease_use_result_is_set
+
 # Specific door full body command feedback.
 bosdyn_msgs/DoorCommandFeedback feedback
 bool feedback_is_set

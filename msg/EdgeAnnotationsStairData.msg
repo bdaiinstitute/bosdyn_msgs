@@ -3,6 +3,9 @@
 # Check this before reading other fields.
 bosdyn_msgs/AnnotationState state
 
-#  Parameters describing a straight staircase.
-bosdyn_msgs/StraightStaircase straight_staircase
-bool straight_staircase_is_set
+# Parameters describing a straight staircase.
+# DEPRECATED as of 3.3.  Please use staircase_with_landings.
+
+# Parameters describing an arbitrary staircase.
+bosdyn_msgs/StaircaseWithLandings staircase_with_landings
+bool staircase_with_landings_is_set

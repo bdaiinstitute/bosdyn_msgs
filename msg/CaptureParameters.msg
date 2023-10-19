@@ -8,3 +8,7 @@ bool exposure_duration_is_set
 
 # Sensor gain in dB.
 float64 gain
+
+# Any other custom parameters used in the image capture.
+bosdyn_msgs/DictParam custom_params
+bool custom_params_is_set

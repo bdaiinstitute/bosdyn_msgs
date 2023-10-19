@@ -4,7 +4,7 @@
 #
 # This node exists because of a subtle implmentation detail in Selector(always_restart = true).
 # The astute reader might believe that they can construct a switch node by using a selector
-# with sequences & conditions as children.  This is ALMOST true, EXCEPT that a selector 
+# with sequences & conditions as children.  This is ALMOST true, EXCEPT that a selector
 # (with always_restart = true) can leave multiple children in the running state IF:
 #
 #  - A later selector child was RUNNING last tick

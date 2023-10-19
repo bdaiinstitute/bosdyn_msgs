@@ -9,3 +9,7 @@ bosdyn_msgs/ICEServerServertype type
 string address
 # Only the least significant 16 bits are used.
 uint32 port
+bosdyn_msgs/ICEServerIcetransport transport
+# auth is optional, and is only used for TURN
+bosdyn_msgs/ICEServerAuthParams auth
+bool auth_is_set

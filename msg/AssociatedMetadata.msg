@@ -5,7 +5,8 @@
 
 # The data that this metadata refers to.
 # The timestamp field is ignored.
-# If only the action_id is filled out, this metadata is associated with the entire capture action.
+# If only the action_id is filled out, this metadata is associated with the entire capture
+# action.
 bosdyn_msgs/DataIdentifier reference_id
 bool reference_id_is_set
 

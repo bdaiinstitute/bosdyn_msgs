@@ -2,27 +2,21 @@
 
 
 # Unknown motor power state. Do not use this field.
-int8 STATE_UNKNOWN=0
-int8 MOTOR_POWER_STATE_UNKNOWN=1
+int8 MOTOR_POWER_STATE_UNKNOWN=0
 
 # Motors are off, the robot is safe to approach.
-int8 STATE_OFF=2
-int8 MOTOR_POWER_STATE_OFF=3
+int8 MOTOR_POWER_STATE_OFF=1
 
 # The motors are powered.
-int8 STATE_ON=4
-int8 MOTOR_POWER_STATE_ON=5
+int8 MOTOR_POWER_STATE_ON=2
 
 # The robot has received an ON command, and is turning on.
-int8 STATE_POWERING_ON=6
-int8 MOTOR_POWER_STATE_POWERING_ON=7
+int8 MOTOR_POWER_STATE_POWERING_ON=3
 
 # In the process of powering down, not yet safe to approach.
-int8 STATE_POWERING_OFF=8
-int8 MOTOR_POWER_STATE_POWERING_OFF=9
+int8 MOTOR_POWER_STATE_POWERING_OFF=4
 
 # The robot is in an error state and must be powered off before attempting to re-power.
-int8 STATE_ERROR=10
-int8 MOTOR_POWER_STATE_ERROR=11
+int8 MOTOR_POWER_STATE_ERROR=5
 
 int8 value

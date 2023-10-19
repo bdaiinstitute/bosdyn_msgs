@@ -7,7 +7,6 @@ bosdyn_msgs/ImageSourceAndService image_source_and_service
 # Image to process, if you are not using an image source.
 bosdyn_msgs/Image image
 
-
 int8 INPUT_NOT_SET=0
 int8 INPUT_IMAGE_SOURCE_AND_SERVICE_SET=1
 int8 INPUT_IMAGE_SET=2
