@@ -1,6 +1,6 @@
 # bosdyn_msgs
 
-These messages were generated from [spot-sdk 3.2.0](https://github.com/boston-dynamics/spot-sdk/releases/tag/v3.2.0)
+These messages were generated from [spot-sdk 3.3.2](https://github.com/boston-dynamics/spot-sdk/releases/tag/v3.3.2)
 
 ## How to build `.deb`
 
