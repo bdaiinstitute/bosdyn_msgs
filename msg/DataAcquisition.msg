@@ -14,13 +14,36 @@ bool request_is_set
 bosdyn_msgs/DataAcquisitionCompletionBehavior completion_behavior
 
 # Define a format string that will be used together with the blackboard to generate
-# a group name.  Values from the blackboard will replace the keys in braces {}.
+# a group_name.  If a value is specified in this field, it will override the group_name value
+# specified in the CaptureActionId of the AcquireDataRequest.  Values from the blackboard will
+# replace the keys in braces {}.
 # Example: "telop-{date}", where "date" is a blackboard variable.
 # Example: "{date}_loop_{loop_counter}", where "loop_counter" is a blackboard variable from a
-# Repeat.
+# Repeat node.
 string group_name_format
 
-# If populated, name of the variable in the blackboard in which to store the
-# AcquireDataRequest.
+# If populated, name of the variable in the blackboard in which to store the AcquireDataRequest
+# after it's created, and sent to the Data Acquisition service.
 string request_name_in_blackboard
+
+# The name of the metadata object in the blackboard to be stored.
+# The metadata object can be any protobuf message.
+# The metadata will be merged with the AcquireDataRequest's metadata field.
+string metadata_name_in_blackboard
+
+# Define a format string that will be used together with the blackboard to generate
+# an action_name.  If a value is specified in this field, it will override the action_name
+# value specified in the CaptureActionId of the AcquireDataRequest.  Values from the blackboard
+# will replace the keys in braces {}.
+# Example: "element 0 attempt {loop_counter}", where "loop_counter" is a blackboard variable
+# from a Retry.
+string action_name_format
+
+# If set to false (default), this node will cancel an outgoing AcquireDataRequest when the node
+# is paused / stopped.  When the node is resumed, it will restart the AcquireDataRequest.
+#
+# If set to true, this node will NOT cancel outgoing AcquireDataRequest's when the node is
+# paused / stopped.  When the node is resumed, it will check feedback on the original outgoing
+# AcquireDataReqeust.
+bool disable_cancel_on_pause_or_stop
 

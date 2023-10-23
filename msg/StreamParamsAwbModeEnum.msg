@@ -9,6 +9,5 @@ int8 DAYLIGHT=5
 int8 CLOUDY=6
 int8 TWILIGHT=7
 int8 SHADE=8
-int8 DARK=9
 
 int8 value

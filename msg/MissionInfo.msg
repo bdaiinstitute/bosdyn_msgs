@@ -8,3 +8,4 @@ int64 id
 # The root node of the mission.
 bosdyn_msgs/NodeInfo root
 bool root_is_set
+

@@ -30,4 +30,8 @@ int8 STATUS_UNSUPPORTED_PIXEL_FORMAT_REQUESTED=6
 # The requested ratio is out of bounds [0,1] or unsupported by the image service
 int8 STATUS_UNSUPPORTED_RESIZE_RATIO_REQUESTED=7
 
+# One or more keys or values in custom_params are unsupported by the image service.
+# See the custom_param_error for details.
+int8 STATUS_CUSTOM_PARAMS_ERROR=8
+
 int8 value

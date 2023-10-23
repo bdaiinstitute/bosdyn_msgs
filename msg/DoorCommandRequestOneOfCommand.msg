@@ -7,7 +7,6 @@ bosdyn_msgs/DoorCommandWarmstartCommand warmstart_command
 
 bosdyn_msgs/DoorCommandAutoPushCommand auto_push_command
 
-
 int8 COMMAND_NOT_SET=0
 int8 COMMAND_AUTO_GRASP_COMMAND_SET=1
 int8 COMMAND_WARMSTART_COMMAND_SET=2

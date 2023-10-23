@@ -10,9 +10,9 @@ string image_service
 bosdyn_msgs/ImageRequest image_request
 bool image_request_is_set
 
-# Deprecated.  Use image_request instead.
+# DEPRECATED as of 3.2.0.  Use image_request instead.
 # Specific image source to use from the list reported by the image service within the
 # ImageAcquisitionCapability message.
 
-# Deprecated.  Use image_request instead.
+# DEPRECATED as of 3.2.0.  Use image_request instead.
 # Specific pixel format to capture reported by the ImageAcquisitionCapability message.

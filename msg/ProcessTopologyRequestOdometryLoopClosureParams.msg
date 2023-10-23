@@ -28,3 +28,7 @@ bool max_loop_closure_edge_length_is_set
 # RPC multiple times to achieve the same effect.
 int32 num_extra_loop_closure_iterations
 bool num_extra_loop_closure_iterations_is_set
+# If true, redundant edges will be ignored, and only the "best" in a small area
+# will be selected (true by default).
+bool prune_edges
+bool prune_edges_is_set

@@ -5,11 +5,12 @@ bosdyn_msgs/AnnotationState state
 
 # Use the default region to localize in.
 # Do not localize to this waypoint.
-# Indicates the number of meters away we can be from this waypoint we can be before scan
-# matching.
+# Indicates the number of meters away we can be from this waypoint we can be before
+# scan matching.
 # - If zero, the default value is used.
 # - If less than zero, no scan matching will be performed at this waypoint.
-# - If greater than zero, scan matching will only be performed if the robot is at most this
+# - If greater than zero, scan matching will only be performed if the robot is at most
+# this
 #   far away from the waypoint.
 # Distance calculation is done in the 2d plane with respect to the waypoint.
 

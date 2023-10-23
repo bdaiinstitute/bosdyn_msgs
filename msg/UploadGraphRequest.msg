@@ -16,3 +16,7 @@ bool lease_is_set
 
 # If this is true, generate an (overwrite the) anchoring on upload.
 bool generate_new_anchoring
+
+# If true, validation warnings will be treated as errors, and STATUS_INVALID_GRAPH will be returned. This is false by
+# default.
+bool treat_validation_warnings_as_errors

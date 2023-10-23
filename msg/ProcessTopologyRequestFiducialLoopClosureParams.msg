@@ -20,3 +20,7 @@ bool max_fiducial_distance_is_set
 # stairs, etc. or closing loops where there is significant odometry drift.
 float64 max_loop_closure_height_change
 bool max_loop_closure_height_change_is_set
+# If true, redundant edges will be ignored, and only the "best" in a small area
+# will be selected (true by default).
+bool prune_edges
+bool prune_edges_is_set

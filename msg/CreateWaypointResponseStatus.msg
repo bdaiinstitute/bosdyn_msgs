@@ -19,5 +19,4 @@ int8 STATUS_REMOTE_CLOUD_FAILURE_NO_DATA=7
 # All fiducials are visible but their pose could not be determined accurately.
 int8 STATUS_FIDUCIAL_POSE_NOT_OK=8
 
-
 int8 value

@@ -4,9 +4,13 @@ int8 STATUS_UNKNOWN=0
 int8 STATUS_OK=1
 # Can't upload the graph because it was too large for the license.
 int8 STATUS_MAP_TOO_LARGE_LICENSE=2
-# The graph is invalid topologically, for example containing missing waypoints referenced by edges.
+# The graph or its anchoring are invalid. See the ValidationStatus for more details.
 int8 STATUS_INVALID_GRAPH=3
+# The sensor data associated with this graph is incompatible with the current robot. A common example
+# would be trying to upload a map recorded on a robot that had LIDAR to a robot that did not, or vice
+# versa.
 int8 STATUS_INCOMPATIBLE_SENSORS=4
+# There is an error associated with one of the area callbacks in this graph.
 int8 STATUS_AREA_CALLBACK_ERROR=5
 
 int8 value

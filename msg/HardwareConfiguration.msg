@@ -14,3 +14,4 @@ bool can_power_command_request_cycle_robot # Power cycle the robot. Same as phys
 bool can_power_command_request_payload_ports # Control power to the payload ports.
 bool can_power_command_request_wifi_radio # Control power to the hardware Wi-Fi radio.
 
+bool has_audio_visual_system # Robot has audio visual system installed.

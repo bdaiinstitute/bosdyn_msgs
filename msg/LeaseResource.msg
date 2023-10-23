@@ -27,5 +27,11 @@ bool lease_owner_is_set
 #
 # Commands & RetainLeaseRequests issued with a stale lease will still be accepted.
 # Stale leases, when used, will cause the used lease to no longer be stale.
-builtin_interfaces/Time stale_time
-bool stale_time_is_set
+#
+# DEPRECATED as of 3.3. Lease staleness is now set by the Keepalive service.
+# This value is only an estimate, and may not be correct if a Keepalive client has changed it.
+# Please use the is_stale flag for an instantaneous report on staleness, or check the
+# GetStatusResponse in the Keepalive service to get a time.
+
+# This lease has been marked stale, and may be acquired by another client.
+bool is_stale

@@ -17,13 +17,14 @@
 bosdyn_msgs/Matrix matrix
 bool matrix_is_set
 # Variance of the yaw component of the SE3 Pose.
-# Warning: deprecated in 2.1. This should equal cov_rzrz, inside `matrix`.
-# Warning: deprecated in 2.1. Use 'matrix.'
-# Warning: deprecated in 2.1. Use 'matrix.'
-# Warning: deprecated in 2.1. Use 'matrix.'
-# Warning: deprecated in 2.1. Use 'matrix.'
-# Warning: deprecated in 2.1. Use 'matrix.'
-# Warning: deprecated in 2.1. Use 'matrix.'
-# Warning: deprecated in 2.1. Use 'matrix.'
-# Warning: deprecated in 2.1. Use 'matrix.'
-# Warning: deprecated in 2.1. Use 'matrix.'
+# Warning: DEPRECATED as of 2.1. This should equal cov_rzrz, inside `matrix`. Will be removed
+# in 4.0.
+# Warning: DEPRECATED as of 2.1. Use 'matrix.' Will be removed in 4.0.
+# Warning: DEPRECATED as of 2.1. Use 'matrix.' Will be removed in 4.0.
+# Warning: DEPRECATED as of 2.1. Use 'matrix.' Will be removed in 4.0.
+# Warning: DEPRECATED as of 2.1. Use 'matrix.' Will be removed in 4.0.
+# Warning: DEPRECATED as of 2.1. Use 'matrix.' Will be removed in 4.0.
+# Warning: DEPRECATED as of 2.1. Use 'matrix.' Will be removed in 4.0.
+# Warning: DEPRECATED as of 2.1. Use 'matrix.' Will be removed in 4.0.
+# Warning: DEPRECATED as of 2.1. Use 'matrix.' Will be removed in 4.0.
+# Warning: DEPRECATED as of 2.1. Use 'matrix.' Will be removed in 4.0.

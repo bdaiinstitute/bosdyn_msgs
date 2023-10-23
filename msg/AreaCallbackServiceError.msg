@@ -8,3 +8,6 @@
 # but does not respond to a AreaCallbackInformation request.
 string[] missing_services
 
+# Area Callback services that were requested but are reporting critical faults.
+bosdyn_msgs/ServiceFault[] faulted_services
+

@@ -12,9 +12,7 @@ string host
 # reference ID that this metadata is associated with will be copied from the request.
 string acquire_data_request_name
 
-# The name of the metadata object in the blackboard to be stored.
-# The metadata object can be any protobuf message.
-string metadata_name
+bosdyn_msgs/StoreMetadataOneOfData data
 
 # The data buffer channel on which to store the metadata.
 string metadata_channel

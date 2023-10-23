@@ -8,5 +8,5 @@ bool header_is_set
 # acquisition request can be done using the GetStatus RPC.
 bosdyn_msgs/AcquireDataResponseStatus status
 
-# Identifier which can be used to check the status of or cancel the acquisition action..
+# Identifier which can be used to check the status of or cancel the acquisition action.
 uint32 request_id

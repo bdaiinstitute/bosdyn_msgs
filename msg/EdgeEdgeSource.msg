@@ -11,5 +11,9 @@ int8 EDGE_SOURCE_FIDUCIAL_LOOP_CLOSURE=3
 int8 EDGE_SOURCE_ALTERNATE_ROUTE_FINDING=4
 # Created via a CreateEdge RPC.
 int8 EDGE_SOURCE_USER_REQUEST=5
+# Created when we start recording after recording has been paused.
+# For example, an "extension" of a graph will start with an edge
+# of type EDGE_SOURCE_LOCALIZATION.
+int8 EDGE_SOURCE_LOCALIZATION=6
 
 int8 value

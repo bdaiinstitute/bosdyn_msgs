@@ -20,12 +20,13 @@ float32 saturation
 bool saturation_is_set
 
 # Set the image gain level.
+# This paramater is only effective when manual exposure is used.
 # Min 0, max 1
 float32 gain
 bool gain_is_set
 
 # Whether the camera should use auto exposure.
-# Defaults to true.
+# Unset is equivalent to setting exposure_auto = true
 bool exposure_auto
 bool exposure_auto_is_set
 
@@ -40,7 +41,7 @@ bosdyn_msgs/RoiParameters exposure_roi
 bool exposure_roi_is_set
 
 # Whether the camera should automatically focus the image.
-# Default true
+# Unset is equivalent to setting focus_auto = true
 bool focus_auto
 bool focus_auto_is_set
 
@@ -55,7 +56,7 @@ bosdyn_msgs/RoiParameters focus_roi
 bool focus_roi_is_set
 
 # Set to true to draw a rectangle in the image where the focus ROI is.
-# Default: false
+# Unset is equivalent to setting draw_focus_roi_rectangle = false
 bool draw_focus_roi_rectangle
 bool draw_focus_roi_rectangle_is_set
 
@@ -71,4 +72,26 @@ bosdyn_msgs/GripperCameraParamsLedMode led_mode
 #       To turn off the LED, set the led_mode to LED_MODE_OFF
 float32 led_torch_brightness
 bool led_torch_brightness_is_set
+
+# Whether the camera should use auto white balance
+# Unset is equivalent to setting white_balance_temperature_auto = true
+bool white_balance_temperature_auto
+bool white_balance_temperature_auto_is_set
+
+# Set the image gamma level.
+# Min 0, max 1
+float32 gamma
+bool gamma_is_set
+
+# Manually set the white balance focus. This value is only used if white_balance_temperature_auto is false.
+# Min 0, max 1
+# 0 corresponds to focus at infinity, 1 corresponds to a focal point close to the camera.
+float32 white_balance_temperature
+bool white_balance_temperature_is_set
+
+# Set the image sharpness level.
+# Min 0, max 1
+float32 sharpness
+bool sharpness_is_set
+
 

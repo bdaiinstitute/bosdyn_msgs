@@ -9,3 +9,6 @@ bool header_is_set
 # Details about how the lease was used.
 bosdyn_msgs/LeaseUseResult lease_use_result
 bool lease_use_result_is_set
+# General map statistics after upload.
+bosdyn_msgs/MapStats map_stats
+bool map_stats_is_set

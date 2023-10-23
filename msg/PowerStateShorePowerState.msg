@@ -2,16 +2,13 @@
 
 
 # Unknown shore power state. Do not use.
-int8 STATE_UNKNOWN_SHORE_POWER=0
-int8 SHORE_POWER_STATE_UNKNOWN=1
+int8 SHORE_POWER_STATE_UNKNOWN=0
 
 # The robot is connected to shore power. The robot will not power on while connected to
 # shore power.
-int8 STATE_ON_SHORE_POWER=2
-int8 SHORE_POWER_STATE_ON=3
+int8 SHORE_POWER_STATE_ON=1
 
 # The robot is disconnected from shore power and motors can be powered up.
-int8 STATE_OFF_SHORE_POWER=4
-int8 SHORE_POWER_STATE_OFF=5
+int8 SHORE_POWER_STATE_OFF=2
 
 int8 value

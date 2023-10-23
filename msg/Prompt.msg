@@ -36,10 +36,14 @@ bool for_autonomous_processing
 # Severity for this prompt. Used to determine what sort of alerting
 # this prompt will trigger.
 # Here are guidelines for severity as it pertains to missions:
-# INFO: Normal operation.  For example, waiting for charge; waiting on the dock for logs to download.
-# WARN: Something went wrong, but the mission will try to recover autonomously.
+# INFO: Normal operation.  For example, waiting for charge; waiting on the dock for logs to
+# download. WARN: Something went wrong, but the mission will try to recover autonomously.
 # ERROR: Something went wrong, and the mission can't recover without human intervention.
 # Intervention is not time sensitive and can be resolved when convenient.
 # CRITICAL: Something went wrong, and the mission can't recover without human intervention.
 # Human needs to rescue the robot before battery runs out because it's not charging.
 bosdyn_msgs/AlertDataSeverityLevel severity
+
+# If specified, this node will write its current question (bosdyn.api.mission.Question proto)
+# to the blackboard while it is being ticked.
+string question_name_in_blackboard

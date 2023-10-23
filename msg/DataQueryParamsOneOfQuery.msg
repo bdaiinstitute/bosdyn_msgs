@@ -4,7 +4,6 @@
 # Time range to query.
 bosdyn_msgs/TimeRangeQuery time_range
 
-
 # List of action ids to query.
 bosdyn_msgs/ActionIdQuery action_ids
 

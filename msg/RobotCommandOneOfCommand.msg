@@ -7,9 +7,8 @@ bosdyn_msgs/FullBodyCommandRequest full_body_command
 # A synchronized command, for partial or full control of robot.
 bosdyn_msgs/SynchronizedCommandRequest synchronized_command
 
-# *** Deprecation Warning ***
-# DEPRECATED as of 2.1.0: A mobility command for a robot to execute.
-# The following fields will be deprecated and moved to 'reserved' in a future release.
+# DEPRECATED as of 2.1.0, will be removed in 4.0.  Please use synchronized_command instead.
+# A mobility command for a robot to execute.
 
 int8 COMMAND_NOT_SET=0
 int8 COMMAND_FULL_BODY_COMMAND_SET=1

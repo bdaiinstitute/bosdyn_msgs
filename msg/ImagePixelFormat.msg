@@ -15,7 +15,7 @@ int8 PIXEL_FORMAT_RGBA_U8=3
 # Little-endian uint16 z-distance from camera (mm).
 int8 PIXEL_FORMAT_DEPTH_U16=4
 
-# Two bytes per pixel.
+# Big-endian uint16
 int8 PIXEL_FORMAT_GREYSCALE_U16=5
 
 int8 value

@@ -11,4 +11,5 @@ string username
 string password
 # Token to authenticate with. Can be used in place of the password, to re-mint a token.
 string token
-# Deprecated as of 2.0.1. Application Token for authenticating with robots on older releases.
+# Application Token for authenticating with robots on older releases.
+# DEPRECATED as of 2.0.1. Will be removed in 4.0.

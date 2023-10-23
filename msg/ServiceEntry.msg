@@ -4,7 +4,6 @@
 # discoverable by this system are expected to be grpc "services" provided by
 # some server.
 
-
 # The unique user-friendly name of this service.
 string name
 
@@ -27,9 +26,6 @@ bool last_update_is_set
 bool user_token_required
 
 
-# DEPRECATED as of 2.1.0: The application_token_required field has been removed and is not required anymore.
-# Authorization checks were updated in 1.2.
-
 # If 'permission_required' field is non-empty, any requests to this service must
 # have the same string in the "per" claim of the user token.
 string permission_required
@@ -43,3 +39,5 @@ float64 liveness_timeout_secs
 # robot. This value is set automatically based on the user token and cannot be set or updated
 # via the API, so it should not be populated by the client at registration time.
 string host_payload_guid
+
+# Reserved field numbers for removed fields.

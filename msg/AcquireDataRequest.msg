@@ -8,7 +8,8 @@ bool header_is_set
 bosdyn_msgs/CaptureActionId action_id
 bool action_id_is_set
 
-# Metadata to store with the data capture. The main DAQ service saves it in the DataBuffer.
+# Metadata to store with the data capture. The main Data Acquisition service saves it in the
+# DataBuffer.
 bosdyn_msgs/Metadata metadata
 bool metadata_is_set
 

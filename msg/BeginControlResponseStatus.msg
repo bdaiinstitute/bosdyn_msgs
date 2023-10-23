@@ -12,7 +12,7 @@ int8 STATUS_INVALID_COMMAND_ID=2
 # The supplied lease does not match the leases requested in AreaCallbackInformation.
 int8 STATUS_MISSING_LEASE_RESOURCES=3
 
-# A lease use error occured.
+# A lease use error occurred.
 int8 STATUS_LEASE_ERROR=4
 
 int8 value

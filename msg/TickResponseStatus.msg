@@ -14,5 +14,8 @@ int8 STATUS_INVALID_SESSION_ID=4
 int8 STATUS_MISSING_LEASES=5
 # The request was missing required inputs.
 int8 STATUS_MISSING_INPUTS=6
+# There was another error with the input parameters.
+# See the params_error field for details.
+int8 STATUS_CUSTOM_PARAMS_ERROR=7
 
 int8 value

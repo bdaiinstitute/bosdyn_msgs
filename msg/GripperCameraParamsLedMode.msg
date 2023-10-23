@@ -9,5 +9,4 @@ int8 LED_MODE_OFF=1
 # Constantly on. Brightness level can be set in the led_torch_brightness field.
 int8 LED_MODE_TORCH=2
 
-
 int8 value

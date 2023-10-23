@@ -42,3 +42,6 @@ bool destination_waypoint_tform_body_goal_is_set
 # of an existing command. If this is a continuation of an existing command, all parameters will be
 # ignored, and the old parameters will be preserved.
 uint32 command_id
+
+# Defines robot behavior when route is blocked. Defaults to reroute when route is blocked.
+bosdyn_msgs/RouteFollowingParamsRouteBlockedBehavior route_blocked_behavior

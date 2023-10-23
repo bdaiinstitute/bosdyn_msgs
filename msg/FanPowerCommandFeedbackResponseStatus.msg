@@ -12,7 +12,8 @@ int8 STATUS_RUNNING=2
 # ERROR: Command stopped before finish due to temperature becoming too high
 int8 STATUS_TEMPERATURE_STOP=3
 
-# ERROR: A newer Fan Power Request took over before the full duration of this request was up.
+# ERROR: A newer Fan Power Request took over before the full duration of this request was
+# up.
 int8 STATUS_OVERRIDDEN_BY_COMMAND=4
 
 int8 value

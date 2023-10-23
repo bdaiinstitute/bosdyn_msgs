@@ -28,8 +28,9 @@ bosdyn_msgs/LocalGrid[] robot_local_grids
 
 # If true, the point cloud of this snapshot has been processed.
 bool is_point_cloud_processed
-# If this snapshot is a modified version of the raw snapshot with the given ID (for example, it has been processed),
-# a new unique ID will we assigned to this field. If the field is empty, this is the raw version of the snapshot.
+# If this snapshot is a modified version of the raw snapshot with the given ID (for example, it
+# has been processed), a new unique ID will we assigned to this field. If the field is empty,
+# this is the raw version of the snapshot.
 string version_id
 
 # If true, the point cloud contains data from a remote point cloud service,

@@ -7,3 +7,10 @@
 string id
 # Arbitrary data. We recommend keeping it small, to avoid bloating the size of the mission.
 byte[] bytestring
+# The source representation is a high level representation of this mission.
+# By analogy, it is the "source code" to this "compiled" mission.
+# At this time this field can either contain:
+#      - Nothing
+#      - A [bosdyn.api.autowalk.Walk] if the mission was compiled using the Autowalk service.
+#     google.protobuf.Any source_representation = 4;
+

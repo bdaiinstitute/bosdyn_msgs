@@ -17,8 +17,14 @@ bosdyn_msgs/ImageFormat image_format
 # If the original image is 1920x1080, a resize_ratio of (2/3) will return an image with size 1280x720
 # The range is clipped to [0.01, 1] while maintaining the original aspect ratio.
 # For backwards compatibliity, a value of 0 means no resizing.
+# Note: this field is not supported by the robot body cameras image service (`image`).
 float64 resize_ratio
 
 # Specify the desired pixel format (e.g. GREYSCALE_U8, RGB_U8). If no format is specified
 # (e.g. PIXEL_FORMAT_UNKNOWN), the image service will choose the best format for the data.
 bosdyn_msgs/ImagePixelFormat pixel_format
+
+# Parameters unique to the servicer that do not match any of the above fields.
+# Whether or not these are valid may depend on the values of the above fields.
+bosdyn_msgs/DictParam custom_params
+bool custom_params_is_set

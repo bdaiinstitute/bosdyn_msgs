@@ -16,3 +16,4 @@ bosdyn_msgs/TargetOneOfTarget target
 # After relocalizing, the robot will re-navigate to the target.
 bosdyn_msgs/TargetRelocalize relocalize
 bool relocalize_is_set
+

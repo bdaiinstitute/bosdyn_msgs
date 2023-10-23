@@ -16,6 +16,7 @@ bosdyn_msgs/AcquireLeaseResponseStatus status
 bosdyn_msgs/Lease lease
 bool lease_is_set
 
-# The owner for the lease. Set if status field == OK or status field == RESOURCE_ALREADY_CLAIMED.
+# The owner for the lease. Set if status field == OK or status field ==
+# RESOURCE_ALREADY_CLAIMED.
 bosdyn_msgs/LeaseOwner lease_owner
 bool lease_owner_is_set

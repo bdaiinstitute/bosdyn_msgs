@@ -18,3 +18,6 @@ bool idrinterval_is_set
 # Optional setting of automatic white balancing mode.
 bosdyn_msgs/StreamParamsAwbMode awb
 bool awb_is_set
+
+
+bosdyn_msgs/StreamParamsOneOfExposure exposure

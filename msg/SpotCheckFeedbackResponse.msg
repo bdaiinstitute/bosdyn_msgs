@@ -34,11 +34,13 @@ bosdyn_msgs/KeyStringValueBosdynMsgsJointKinematicCheckResult[] kinematic_cal_re
 bosdyn_msgs/PayloadCheckResult payload_result
 bool payload_result_is_set
 
-# Deprecated. Results of foot height validation.
+# Results of foot height validation.
 # The key string is the name of the leg (e.g. fl, fr, hl, ...)
+# DEPRECATED as of 2.3.  Will be removed in 4.0.  Field is no longer being populated.
 
-# Deprecated. Results of leg pair validation.
+# Results of leg pair validation.
 # The key string is the name of the leg pair (e.g. fl-fr, fl-hl, ...)
+# DEPRECATED as of 2.3.  Will be removed in 4.0. Field is no longer being populated.
 
 # Results of the hip range of motion check
 # The key string is the name of the leg (e.g. fl, fr, hl, ...)

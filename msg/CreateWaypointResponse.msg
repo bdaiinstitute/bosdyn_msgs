@@ -31,3 +31,7 @@ int32[] bad_pose_fiducials
 # is requested after the graph gets too large, it will fail, and license
 # status will be filled out.
 bosdyn_msgs/LicenseInfoStatus license_status
+
+# General statistics of the map loaded in GraphNav.
+bosdyn_msgs/MapStats map_stats
+bool map_stats_is_set

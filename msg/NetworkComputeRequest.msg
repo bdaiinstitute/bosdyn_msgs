@@ -3,9 +3,35 @@
 bosdyn_msgs/RequestHeader header # Common request header.
 bool header_is_set
 
-# Input data.
-bosdyn_msgs/NetworkComputeInputData input_data
-bool input_data_is_set
+# There are two forms of input for NetworkComputeRequest.
+#
+#   Input             | Worker has NetworkCompute | Worker has WorkerCompute | Result
+#   ------------------+---------------------------+--------------------------+-------
+#   input_data        | True                      | True                     | 1
+#   input_data        | True                      | False                    | 2
+#   input_data        | False                     | True                     | 3
+#   input_data_bridge | True                      | True                     | 4
+#   input_data_bridge | True                      | False                    | 5
+#   input_data_bridge | False                     | True                     | 6
+#   -------------+--------------------------------+--------------------------+-------
+#
+# Notes: If the client specifies the old deprecated input_data field, the NetworkComputeBridge
+# will responds with the older output format.  This is because the NetworkComputeBridge does
+# not know if the client can handle the new output format.
+#
+# 1. NetworkComputeBridge will call the worker's deprecated [NetworkCompute] RPC, and use
+#    deprecated output fields.
+# 2. NetworkComputeBridge will call the worker's deprecated [NetworkCompute] RPC, and use
+#    deprecated output fields.
+# 3. Returns an RPC error.  This row represents older clients talking to newer workers.
+#    Upgrade the client in this cast.
+# 4. NetworkComputeBridge will call the [WorkerCompute] RPC, and use the new output fields.
+# 5. NetworkComputeBridge will call the [WorkerCompute] RPC which will return an Unimplemented
+#    error.  The NetworkComputeBridge will then silently gobble up that error, call the
+#    worker's old deprecated [NetworkCompute] RPC, and convert the output of that RPC to the
+#    new format.
+# 6. NetworkComputeBridge will call the [WorkerCompute] RPC, and use the new output fields.
+bosdyn_msgs/NetworkComputeRequestOneOfInput input
 
 # Configuration about which server to use.
 bosdyn_msgs/NetworkComputeServerConfiguration server_config

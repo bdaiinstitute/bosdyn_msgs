@@ -21,5 +21,5 @@ string[] missing_lease_resources
 bosdyn_msgs/LeaseUseResult[] lease_use_results
 
 # The inputs required by the contacted node that were not mentioned in the request.
-bosdyn_msgs/VariableDeclaration[] missing_inputs
+# DEPRECATED as of 3.3.  Please use 'params_error' instead.
 

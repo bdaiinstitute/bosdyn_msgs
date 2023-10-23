@@ -16,5 +16,9 @@ int8 IMPAIRED_STATUS_REMOTE_CLOUDS_NOT_WORKING=5
 int8 IMPAIRED_STATUS_SERVICE_FAULT=6
 # A behavior fault caused the robot to stop. See behavior_faults for details.
 int8 IMPAIRED_STATUS_BEHAVIOR_FAULT=7
+# The autonomous system expected to have a payload providing an entity detector.
+# The detector is either not present, or not working. Note that if the detector
+# exists but is throwing a system fault, the status will be IMPAIRED_STATUS_SYSTEM_FAULT.
+int8 IMPAIRED_STATUS_ENTITY_DETECTOR_NOT_WORKING=8
 
 int8 value

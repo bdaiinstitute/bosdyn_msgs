@@ -7,7 +7,7 @@
 # instructs graph nav to wait or continue on.
 bosdyn_msgs/UpdateCallbackResponseNavPolicy policy
 
-# An error has occured. Graph Nav will stop calling UpdateCallback and will call EndCallback.
+# An error has occurred. Graph Nav will stop calling UpdateCallback and will call EndCallback.
 bosdyn_msgs/UpdateCallbackResponseError error
 
 # The area callback is complete. Graph Nav will stop calling UpdateCallback and will call

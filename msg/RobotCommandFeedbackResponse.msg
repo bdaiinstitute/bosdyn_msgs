@@ -10,9 +10,11 @@ bool header_is_set
 bosdyn_msgs/LeaseUseResult lease_use_result
 bool lease_use_result_is_set
 
-# DEPRECATED as of 2.1.0: General status whether or not command is still processing.
+# DEPRECATED as of 2.1.0. Will be removed in 4.0.  Please use RobotCommandResponse.status.
+# General status whether or not command is still processing.
 
-# DEPRECATED as of 2.1.0: Human-readable status message.  Not for programmatic analysis.
+# DEPRECATED as of 2.1.0. Will be removed in 4.0. RobotCommandResponse.message.
+# Human-readable status message.  Not for programmatic analysis.
 
 # Command specific feedback.
 bosdyn_msgs/RobotCommandFeedback feedback

@@ -9,6 +9,7 @@ bool header_is_set
 
 # Possible results from the node. The FAILURE, RUNNING, and SUCCESS statuses map to the
 # behavior tree terms, all others indicate an error in the TickRequest.
+
 # Result of the current tick.
 bosdyn_msgs/TickResponseStatus status
 
@@ -25,3 +26,7 @@ bosdyn_msgs/VariableDeclaration[] missing_inputs
 
 # If you need to report other error details, you can use this field.
 string error_message
+
+# Filled out if status is STATUS_CUSTOM_PARAMS_ERROR.
+bosdyn_msgs/CustomParamError custom_param_error
+bool custom_param_error_is_set
