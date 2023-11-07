@@ -113,6 +113,35 @@ dpkg-deb: building package 'ros-humble-bosdyn-msgs' in '../ros-humble-bosdyn-msg
 
 You should now have a `.deb` file containing the `bosdyn_msgs` package. You need to upload that as a release to GitHub [here](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository). Please increment the version of the release. At some point we may consider automating this process but we don't have a formalized way of doing these precompilations yet.
 
+## Build package for AMD64
+The recommended build method is through a docker container. This preserves the intended build environment without 
+modifications from external pip installs. 
+
+1.  Build the docker image with AMD64 target running Ubuntu 22.04 and ROS Humble.
+
+    ```bash
+    docker build -t bosdyn_msgs/amd64 --platform linux/amd64 -f docker/amd64/Dockerfile .
+    ```
+
+2.  From the root of the `bosdyn_msgs` repo, run the docker container.
+
+    ```bash
+    docker run -it bosdyn_msgs/amd64 /bin/bash
+    ```
+
+3.  The docker container clones the latest `bosdyn_msgs` repo into `/bosdyn_msgs` You must checkout the correct version.
+
+4.  Inside the container follow the steps in the **Create debian structure** section.
+
+    ```bash
+    bloom-generate rosdebian --os-name ubuntu --os-version jammy --ros-distro humble
+    fakeroot debian/rules binary
+    ```
+
+5.  Copy the generated `.deb` file from the container to the host machine
+
+6.  Install the `.deb` file using your tool of choice.
+
 ## Build package for ARM64
 
 If you want to build the package for ARM64 architecture in non ARM64 host system you can do so through a docker container.
@@ -146,3 +175,5 @@ If you want to build the package for ARM64 architecture in non ARM64 host system
     ```
 
 6.  Copy the generated `.deb` file from the container to the host machine
+
+7.  Install the `.deb` file using your tool of choice.
