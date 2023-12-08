@@ -1,0 +1,3 @@
+package_mapping:
+  bosdyn.api: bosdyn_api_msgs
+  bosdyn.api.docking: bosdyn_api_msgs
