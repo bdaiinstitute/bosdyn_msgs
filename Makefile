@@ -51,7 +51,7 @@ all: bosdyn_msgs-bundle-amd64.run bosdyn_msgs-bundle-arm64.run
 		bloom-generate rosdebian --os-name $(OS_NAME) --os-version $(OS_VERSION) --ros-distro $(DISTRO); \
 		sed -i 's/dh_auto_build$$/true  # no dh_auto_build, builds on install/g' debian/rules; \
 		sed -i 's/dh_auto_install$$/dh_auto_install --parallel/g' debian/rules; \
-		DEB_BUILD_OPTIONS="nocheck notest parallel=$(NUM_JOBS)" debian/rules binary; \
+		DEB_BUILD_OPTIONS="parallel=$(NUM_JOBS)" debian/rules binary; \
 		popd; \
 		sudo apt install -y $(BUILD_DIR)/$(AS)/bloom/ros-$(DISTRO)-$${name//_/-}*.deb; \
 	done
