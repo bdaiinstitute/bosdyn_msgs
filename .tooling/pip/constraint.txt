@@ -1,0 +1,2 @@
+# ensure protoc 3.12.4 compatibility
+protobuf<=4.22.4

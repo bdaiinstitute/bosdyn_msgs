@@ -24,7 +24,12 @@ def ros_transform_to_se3_pose(transform: Transform) -> SE3Pose:
         transform.translation.x,
         transform.translation.y,
         transform.translation.z,
-        Quat(transform.rotation.w, transform.rotation.x, transform.rotation.y, transform.rotation.z),
+        Quat(
+            transform.rotation.w,
+            transform.rotation.x,
+            transform.rotation.y,
+            transform.rotation.z
+        )
     )
 
 
@@ -33,7 +38,12 @@ def ros_pose_to_se3_pose(pose: Pose) -> SE3Pose:
         pose.position.x,
         pose.position.y,
         pose.position.z,
-        Quat(pose.orientation.w, pose.orientation.x, pose.orientation.y, pose.orientation.z),
+        Quat(
+            pose.orientation.w,
+            pose.orientation.x,
+            pose.orientation.y,
+            pose.orientation.z
+        )
     )
 
 
@@ -43,34 +53,51 @@ def se2_pose_to_ros_pose2(se2_pose: SE2Pose) -> Pose2D:
 
 def se3_pose_to_ros_pose(se3_pose: SE3Pose) -> Pose:
     return Pose(
-        position=Point(x=float(se3_pose.x), y=float(se3_pose.y), z=float(se3_pose.z)),
+        position=Point(
+            x=float(se3_pose.x),
+            y=float(se3_pose.y),
+            z=float(se3_pose.z)
+        ),
         orientation=Quaternion(
-            w=float(se3_pose.rot.w), x=float(se3_pose.rot.x), y=float(se3_pose.rot.y), z=float(se3_pose.rot.z)
+            w=float(se3_pose.rot.w),
+            x=float(se3_pose.rot.x),
+            y=float(se3_pose.rot.y),
+            z=float(se3_pose.rot.z)
         ),
     )
 
 
 def se3_pose_to_ros_transform(se3_pose: SE3Pose) -> Transform:
     return Transform(
-        translation=Vector3(x=float(se3_pose.x), y=float(se3_pose.y), z=float(se3_pose.z)),
+        translation=Vector3(
+            x=float(se3_pose.x),
+            y=float(se3_pose.y),
+            z=float(se3_pose.z)
+        ),
         rotation=Quaternion(
-            w=float(se3_pose.rot.w), x=float(se3_pose.rot.x), y=float(se3_pose.rot.y), z=float(se3_pose.rot.z)
+            w=float(se3_pose.rot.w),
+            x=float(se3_pose.rot.x),
+            y=float(se3_pose.rot.y),
+            z=float(se3_pose.rot.z)
         ),
     )
 
 
-def bosdyn_pose_to_msg(frame_t_pose: SE3Pose, frame: Optional[str], local_stamp: Optional[Time] = None) -> PoseStamped:
-    """A helper function that converts an SE3Pose object into a ROS PoseStamped
-    message.  Note that the user is expected to pass in the local timestamp for
-    the resulting message.
+def bosdyn_pose_to_msg(
+    frame_t_pose: SE3Pose, frame: Optional[str], local_stamp: Optional[Time] = None
+) -> PoseStamped:
+    """
+    Convert an SE3Pose object into a ROS PoseStamped message.
+
+    Note that the user is expected to pass in the local timestamp for the resulting message.
 
     Args:
         frame_t_pose: SE3Pose in frame 'frame'
         frame: the name of the frame the pose is with respect to
         local_stamp: the local timestamp for the returned message.
+
     Returns:
         PoseStamped message: google.protobuf.Timestamp
-
     """
     pose_stamped = PoseStamped()
     pose_stamped.header.stamp = local_stamp
@@ -86,18 +113,24 @@ def bosdyn_pose_to_msg(frame_t_pose: SE3Pose, frame: Optional[str], local_stamp:
 
 
 def bosdyn_pose_to_tf(
-    frame_t_pose: SE3Pose, frame: Optional[str], child_frame: Optional[str], local_stamp: Optional[Time] = None
+    frame_t_pose: SE3Pose,
+    frame: Optional[str],
+    child_frame: Optional[str],
+    local_stamp: Optional[Time] = None
 ) -> TransformStamped:
-    """A helper function that converts an SE3Pose object into a
-    ROS TransformStamped object. The transform would be between
-    frame->child_frame.  Note that the user is expected
-    to pass in the local timestamp for the returned message.
+    """
+    Convert an SE3Pose object into a ROS TransformStamped object.
+
+    The transform would be between frame->child_frame.  Note that
+    the user is expected to pass in the local timestamp for the
+    returned message.
 
     Args:
         frame_t_pose: SE3Pose in frame 'frame'
         frame: the name of the frame this transform is with respect to
         child_frame: the name of the frame whose origin is defined by the given pose
         local_stamp: the local timestamp for the returned message.
+
     Returns:
         TransformStamped message
     """
@@ -117,14 +150,19 @@ def bosdyn_pose_to_tf(
 
 def bosdyn_localization_to_pose_msg(
     localization: nav_pb2.Localization,
-    robot_to_local_time: Callable[[google.protobuf.timestamp_pb2.Timestamp], google.protobuf.timestamp_pb2.Timestamp],
+    robot_to_local_time: Callable[
+        [google.protobuf.timestamp_pb2.Timestamp],
+        google.protobuf.timestamp_pb2.Timestamp
+    ],
     in_seed_frame: bool = True,
     seed_frame: Optional[str] = None,
     body_frame: Optional[str] = None,
     return_tf: bool = True,
 ) -> Optional[Union[PoseStamped, Tuple[PoseStamped, TransformStamped]]]:
-    """Extracts pose from the Localization proto object, and
-    return a PoseStamped message and optionally a TransformStamped message.
+    """
+    Extract PoseStamped pose from a Localization proto object.
+
+    Returns a PoseStamped message and optionally a TransformStamped message.
     If 'in_seed_frame' is True, then the pose would be with respect to the seed
     frame (given by 'seed_frame'). Otherwise, the pose would be with respect to
     localization.waypoint_id, which is the waypoint the Localization object is
@@ -137,8 +175,10 @@ def bosdyn_localization_to_pose_msg(
         robot_to_local_time: Function to convert the robot time to the local time
         in_seed_frame: True if the resulting pose should be in seed frame
         seed_frame: The name of the seed frame in ROS context.
-        body_frame: the origin of a frame defined by the pose; only necessary when 'return_tf' is True
+        body_frame: the origin of a frame defined by the pose;
+        only necessary when 'return_tf' is True
         return_tf: returns a TransformStamped message as well
+
     Returns:
         if return_tf is True:
            (PoseStamped, TransformStamped)
@@ -168,7 +208,8 @@ def bosdyn_localization_to_pose_msg(
         waypoint_t_body_proto = localization.waypoint_tform_body
         pose_msg = bosdyn_pose_to_msg(waypoint_t_body_proto, waypoint_frame, local_stamp)
         if return_tf:
-            trans_msg = bosdyn_pose_to_tf(waypoint_t_body_proto, waypoint_frame, body_frame, local_stamp)
+            trans_msg = bosdyn_pose_to_tf(
+                waypoint_t_body_proto, waypoint_frame, body_frame, local_stamp)
     if return_tf:
         return pose_msg, trans_msg
     else:
