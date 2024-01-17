@@ -1,5 +1,4 @@
 .build
-.tmp
-*.run4
+*.run
 **/debian
 **/.obj*
