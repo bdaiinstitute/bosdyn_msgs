@@ -18,6 +18,7 @@ DEFAULT_ROSDEP_PATH:=/etc/ros/rosdep
 TOOLING_DIR:=$(MAKEFILE_DIR)/.tooling
 SCRIPTS_DIR:=$(TOOLING_DIR)/scripts
 DOCKER_DIR:=$(TOOLING_DIR)/docker
+PIP_DIR:=$(TOOLING_DIR)/pip
 
 SOURCE_DIR:=$(shell pwd)
 BUILD_DIR:=$(SOURCE_DIR)/.build
@@ -39,12 +40,17 @@ all: bosdyn_msgs-bundle-amd64.run bosdyn_msgs-bundle-arm64.run
 %-bundle-native.run: FORCE
 	$(eval AS ?= $*-bundle_$(VERSION)-native.run)
 	mkdir -p $(BUILD_DIR)/$(AS)/{bloom,rosdep} $(BUILD_DIR)/$(AS)/out/{pip,apt,rosdep}
+	rosdep update
 	rosdep keys --from-paths $(SOURCE_DIR) | grep -e '-pip$$' > $(BUILD_DIR)/$(AS)/rosdep/skip.txt
 	rosdep resolve $$(cat $(BUILD_DIR)/$(AS)/rosdep/skip.txt | grep pip) | grep -v \# | tr ' ' '\n' > $(BUILD_DIR)/$(AS)/out/pip/requirements.txt
-	if [ -s $(BUILD_DIR)/$(AS)/out/pip/requirements.txt ]; then pip install -r $(BUILD_DIR)/$(AS)/out/pip/requirements.txt; fi
+	cp -f $(PIP_DIR)/constraint.txt $(BUILD_DIR)/$(AS)/out/pip/constraint.txt
+	if [ -s $(BUILD_DIR)/$(AS)/out/pip/requirements.txt ]; then \
+		pip install -c $(BUILD_DIR)/$(AS)/out/pip/constraint.txt -r $(BUILD_DIR)/$(AS)/out/pip/requirements.txt; \
+	fi
 	$(SCRIPTS_DIR)/rosdep2null -o $(BUILD_DIR)/$(AS)/rosdep -v $(OS_NAME) \
 		$$(colcon --log-base /dev/null list -t -n --packages-up-to $*) $$(cat $(BUILD_DIR)/$(AS)/rosdep/skip.txt)
 	ROSDEP_SOURCE_PATH=$(BUILD_DIR)/$(AS)/rosdep/sources.list.d:$${ROSDEP_SOURCE_PATH:-$(DEFAULT_ROSDEP_PATH)/sources.list.d} rosdep update
+	sudo apt update
 	colcon --log-base /dev/null list -t --packages-up-to $* | tr -d '\r' | while read name path ignored; do \
 		cp -rf $$path $(BUILD_DIR)/$(AS)/bloom/.; \
 		pushd $(BUILD_DIR)/$(AS)/bloom/$$(basename $$path); \
