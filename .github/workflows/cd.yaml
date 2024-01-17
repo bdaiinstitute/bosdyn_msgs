@@ -1,4 +1,4 @@
-name: bosdyn_msgs release workflow
+name: bosdyn_msgs CD
 
 on:
   push:
@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Build bosdyn_msgs bundle
+      - name: Build bosdyn_msgs bundles
         run: make -j8 VERSION=${{ github.ref_name }}
       - name: Release bosdyn_msgs bundles
         uses: softprops/action-gh-release@v1
