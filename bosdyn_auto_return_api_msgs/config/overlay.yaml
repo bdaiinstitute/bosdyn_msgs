@@ -1,3 +1,9 @@
 package_mapping:
   bosdyn.api: bosdyn_api_msgs
   bosdyn.api.docking: bosdyn_api_msgs
+python_imports:
+  - bosdyn_api_msgs.msg
+inline_python_imports:
+  - bosdyn_api_msgs.conversions
+package_specifications:
+  - bosdyn_api_msgs.specifications
