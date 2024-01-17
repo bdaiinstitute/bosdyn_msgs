@@ -31,5 +31,5 @@ jobs:
         run: |
           source /opt/ros/humble/setup.bash
           colcon build --symlink-install --packages-up-to bosdyn_msgs
-          colcon test --event-handlers console_direct+
+          colcon test --event-handlers console_direct+ --packages-up-to bosdyn_msgs
           colcon test-result --all --verbose
