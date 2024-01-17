@@ -6,7 +6,7 @@ Copyright (c) 2023 Boston Dynamics AI Institute LLC. All rights reserved.
 <package format="3">
   <name>bosdyn_cmake_module</name>
   <version>0.1.0</version>
-  <description>ROS 2 interoperability support for Boston Dynamics Spot SDK core APIs</description>
+  <description>CMake modules for Boston Dynamics Spot SDK</description>
   <maintainer email="engineering@theaiinstitute.com">BD AI Institute</maintainer>
   <license>MIT</license>
 
