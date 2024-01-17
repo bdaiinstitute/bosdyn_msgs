@@ -21,6 +21,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           path: src/bosdyn_msgs
+          submodules: true
       - name: Install dependencies
         run: |
           apt update && apt install -y python3-pip
