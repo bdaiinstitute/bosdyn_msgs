@@ -28,8 +28,8 @@ all: bosdyn_msgs-bundle-amd64.run bosdyn_msgs-bundle-arm64.run
 .NOTPARALLEL: all
 
 %-bundle-amd64.run: FORCE
-	docker build -t amd64-bundler-image -f $(DOCKER_DIR)/amd64/Dockerfile $(MAKEFILE_DIR)
-	docker run --rm -v $(MAKEFILE_DIR):/workspace:cached -w /workspace -it amd64-bundler-image \
+	docker build -t amd64-bundler-image --platform linux/amd64 -f $(DOCKER_DIR)/amd64/Dockerfile $(MAKEFILE_DIR)
+	docker run --rm -v $(MAKEFILE_DIR):/workspace:cached -w /workspace --platform linux/amd64 -it amd64-bundler-image \
 		make $*-bundle-native.run VERSION=$(VERSION) AS=$*-bundle_$(VERSION)-amd64.run NUM_JOBS=$(NUM_JOBS)
 
 %-bundle-arm64.run: FORCE  # extremely slow
