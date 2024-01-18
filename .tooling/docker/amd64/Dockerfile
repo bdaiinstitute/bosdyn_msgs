@@ -9,6 +9,6 @@ RUN apt-get update && apt-get install -y \
     debhelper
 
 COPY .tooling/pip/pip.conf /etc/pip.conf
-COPY .tooling/pip/constraint.txt /etc/pip/constraint.txt
+COPY pip-constraint.txt /etc/pip/constraint.txt
 
 CMD ["bash"]

@@ -16,7 +16,8 @@ binary bundles will be made available as release assets. As of January 2024, rel
 bundles compatible with ROS 2 Humble Hawksbill on Ubuntu Jammy 22.04 for AMD64 and ARM64 architectures. 
 
 **Attention**: it is strongly advised to keep package versions and tags in lockstep with the version of the
-latest Boston Dynamics Spot SDK release to PyPI.
+latest Boston Dynamics Spot SDK release to PyPI. This can be achieved by updating versions in `package.xml`
+files and `pip-constraint.txt` file to match each other and the tag.
 
 ## How to install
 
@@ -67,7 +68,7 @@ git -C src clone --recursive https://github.com/bdaiinstitute/bosdyn_msgs.git
 When installing package dependencies, make sure `pip` constraints are enforced:
 
 ``` bash
-PIP_CONSTRAINT=src/bosdyn_msgs/.tooling/pip/constraint.txt rosdep install -i -y --from-path src
+PIP_CONSTRAINT=src/bosdyn_msgs/pip-constraint.txt rosdep install -i -y --from-path src
 ```
 
 This will ensure `apt` and `pip` managed packages are compatible with each other.

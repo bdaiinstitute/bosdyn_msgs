@@ -43,7 +43,8 @@ all: bosdyn_msgs-bundle-amd64.run bosdyn_msgs-bundle-arm64.run
 	rosdep update
 	rosdep keys --from-paths $(SOURCE_DIR) | grep -e '-pip$$' > $(BUILD_DIR)/$(AS)/rosdep/skip.txt
 	rosdep resolve $$(cat $(BUILD_DIR)/$(AS)/rosdep/skip.txt | grep pip) | grep -v \# | tr ' ' '\n' > $(BUILD_DIR)/$(AS)/out/pip/requirements.txt
-	cp -f $(PIP_DIR)/constraint.txt $(BUILD_DIR)/$(AS)/out/pip/constraint.txt
+	touch $(BUILD_DIR)/$(AS)/out/pip/constraint.txt
+	[ -f $(SOURCE_DIR)/pip-constraint.txt ] && cp -f $(SOURCE_DIR)/pip-constraint.txt $(BUILD_DIR)/$(AS)/out/pip/constraint.txt
 	if [ -s $(BUILD_DIR)/$(AS)/out/pip/requirements.txt ]; then \
 		pip install -c $(BUILD_DIR)/$(AS)/out/pip/constraint.txt -r $(BUILD_DIR)/$(AS)/out/pip/requirements.txt; \
 	fi

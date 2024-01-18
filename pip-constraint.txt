@@ -1,2 +1,4 @@
+bosdyn-api==3.3.2
+bosdyn-choreography-protos==3.3.2
 # ensure protoc 3.12.4 compatibility
 protobuf<=4.22.4
