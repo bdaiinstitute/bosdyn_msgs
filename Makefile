@@ -23,22 +23,22 @@ PIP_DIR:=$(TOOLING_DIR)/pip
 SOURCE_DIR:=$(shell pwd)
 BUILD_DIR:=$(SOURCE_DIR)/.build
 
-all: bosdyn_msgs-bundle-amd64.run bosdyn_msgs-bundle-arm64.run
+all: ros-$(DISTRO)-bosdyn_msgs-$(OS_VERSION)_amd64.run ros-$(DISTRO)-bosdyn_msgs-$(OS_VERSION)_arm64.run
 
 .NOTPARALLEL: all
 
-%-bundle-amd64.run: FORCE
+ros-$(DISTRO)-%-$(OS_VERSION)_amd64.run: FORCE
 	docker build -t amd64-bundler-image --platform linux/amd64 -f $(DOCKER_DIR)/amd64/Dockerfile $(MAKEFILE_DIR)
 	docker run --rm -v $(MAKEFILE_DIR):/workspace:cached -w /workspace --platform linux/amd64 -it amd64-bundler-image \
-		make $*-bundle-native.run VERSION=$(VERSION) AS=$*-bundle_$(VERSION)-amd64.run NUM_JOBS=$(NUM_JOBS)
+		make ros-$(DISTRO)-$*-$(OS_VERSION)_native.run AS=ros-$(DISTRO)-$*_$(VERSION)-$(OS_VERSION)_amd64.run NUM_JOBS=$(NUM_JOBS)
 
-%-bundle-arm64.run: FORCE  # extremely slow
+ros-$(DISTRO)-%-$(OS_VERSION)_arm64.run: FORCE  # extremely slow
 	docker build -t arm64-bundler-image --platform linux/arm64/v8 -f $(DOCKER_DIR)/amd64/Dockerfile $(MAKEFILE_DIR)
 	docker run --rm -v $(MAKEFILE_DIR):/workspace:cached -w /workspace --platform linux/arm64/v8 -it arm64-bundler-image \
-		make $*-bundle-native.run VERSION=$(VERSION) AS=$*-bundle_$(VERSION)-arm64.run NUM_JOBS=$(NUM_JOBS)
+		make ros-$(DISTRO)-$*-$(OS_VERSION)_native.run AS=ros-$(DISTRO)-$*_$(VERSION)-$(OS_VERSION)_arm64.run NUM_JOBS=$(NUM_JOBS)
 
-%-bundle-native.run: FORCE
-	$(eval AS ?= $*-bundle_$(VERSION)-native.run)
+ros-$(DISTRO)-%-$(OS_VERSION)_native.run: FORCE
+	$(eval AS ?= ros-$(DISTRO)-$*_$(VERSION)-$(OS_VERSION)_native.run)
 	mkdir -p $(BUILD_DIR)/$(AS)/{bloom,rosdep} $(BUILD_DIR)/$(AS)/out/{pip,apt,rosdep}
 	rosdep update
 	rosdep keys --from-paths $(SOURCE_DIR) | grep -e '-pip$$' > $(BUILD_DIR)/$(AS)/rosdep/skip.txt
