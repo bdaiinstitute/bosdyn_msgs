@@ -1,0 +1,21 @@
+package_mapping:
+  bosdyn.api: bosdyn_api_msgs
+  bosdyn.api.docking: bosdyn_api_msgs
+  bosdyn.api.graph_nav: bosdyn_graph_nav_api_msgs
+  bosdyn.api.spot: bosdyn_spot_api_msgs
+  bosdyn.api.spot_cam: bosdyn_spot_cam_api_msgs
+python_imports:
+  - bosdyn_api_msgs.msg
+  - bosdyn_graph_nav_api_msgs.msg
+  - bosdyn_spot_api_msgs.msg
+  - bosdyn_spot_cam_api_msgs.msg
+inline_python_imports:
+  - bosdyn_api_msgs.conversions
+  - bosdyn_graph_nav_api_msgs.conversions
+  - bosdyn_spot_api_msgs.conversions
+  - bosdyn_spot_cam_api_msgs.conversions
+package_specifications:
+  - bosdyn_api_msgs.specifications
+  - bosdyn_graph_nav_api_msgs.specifications
+  - bosdyn_spot_api_msgs.specifications
+  - bosdyn_spot_cam_api_msgs.specifications

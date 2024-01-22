@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+Copyright (c) 2023 Boston Dynamics AI Institute LLC. All rights reserved.
+-->
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>bosdyn_cmake_module</name>
+  <version>3.3.2</version>
+  <description>CMake modules for Boston Dynamics Spot SDK</description>
+  <maintainer email="engineering@theaiinstitute.com">BD AI Institute</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>python3-bosdyn-api-pip</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
