@@ -29,12 +29,12 @@ all: ros-$(DISTRO)-bosdyn_msgs-$(OS_VERSION)_amd64.run ros-$(DISTRO)-bosdyn_msgs
 
 ros-$(DISTRO)-%-$(OS_VERSION)_amd64.run: FORCE
 	docker build -t amd64-bundler-image --platform linux/amd64 -f $(DOCKER_DIR)/amd64/Dockerfile $(MAKEFILE_DIR)
-	docker run --rm -v $(MAKEFILE_DIR):/workspace:cached -w /workspace --platform linux/amd64 -it amd64-bundler-image \
+	docker run --rm -v $(MAKEFILE_DIR):/workspace:cached -w /workspace --platform linux/amd64 $$(tty -s && echo "-it") amd64-bundler-image \
 		make ros-$(DISTRO)-$*-$(OS_VERSION)_native.run AS=ros-$(DISTRO)-$*_$(VERSION)-$(OS_VERSION)_amd64.run NUM_JOBS=$(NUM_JOBS)
 
 ros-$(DISTRO)-%-$(OS_VERSION)_arm64.run: FORCE  # extremely slow
 	docker build -t arm64-bundler-image --platform linux/arm64/v8 -f $(DOCKER_DIR)/arm64/Dockerfile $(MAKEFILE_DIR)
-	docker run --rm -v $(MAKEFILE_DIR):/workspace:cached -w /workspace --platform linux/arm64/v8 -it arm64-bundler-image \
+	docker run --rm -v $(MAKEFILE_DIR):/workspace:cached -w /workspace --platform linux/arm64/v8 $$(tty -s && echo "-it") arm64-bundler-image \
 		make ros-$(DISTRO)-$*-$(OS_VERSION)_native.run AS=ros-$(DISTRO)-$*_$(VERSION)-$(OS_VERSION)_arm64.run NUM_JOBS=$(NUM_JOBS)
 
 ros-$(DISTRO)-%-$(OS_VERSION)_native.run: FORCE
