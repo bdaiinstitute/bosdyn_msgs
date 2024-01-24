@@ -13,7 +13,8 @@ defaults:
 jobs:
   build_and_test:
     name: Build and test bosdyn_msgs packages
-    runs-on: ubuntu-latest
+    runs-on:
+      group: bdai-gh-large-runners
     container:
       image: ros:humble-ros-base-jammy
     steps:
