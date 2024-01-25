@@ -5,9 +5,14 @@ on:
     tags:
       - '*'
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 jobs:
   release-bundles:
-    runs-on: ubuntu-latest
+    runs-on:
+      group: bdai-gh-large-runners
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
