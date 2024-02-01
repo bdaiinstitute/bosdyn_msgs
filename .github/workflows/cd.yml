@@ -14,11 +14,10 @@ jobs:
     strategy:
       matrix:
         config:
-        - { group: "bdai-gh-large-runners", arch: "amd64" }
-        - { group: "k8s-t2a-standard-16", arch: "arm64" }
+        - { runner: "ubuntu-22-04-large-runner", arch: "amd64" }
+        - { runner: "k8s-t2a-standard-16", arch: "arm64" }
     name: Build ${{ matrix.config.arch }} Bundles
-    runs-on:
-      group: ${{ matrix.config.group }}
+    runs-on: ${{ matrix.config.runner }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
