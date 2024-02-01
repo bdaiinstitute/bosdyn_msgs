@@ -19,7 +19,7 @@ jobs:
     name: Build and test bosdyn_msgs packages
     strategy:
       matrix:
-        arch: [{group: "bdai-gh-large-runners, image": "ros:humble-ros-base-jammy", label: "AMD64"}, {group: "k8s-t2a-standard-16", image: "arm64v8/ros:humble-ros-base-jammy", label: "ARM64"}]
+        arch: [{group: "bdai-gh-large-runners, image: "ros:humble-ros-base-jammy", label: "AMD64"}, {group: "k8s-t2a-standard-16", image: "arm64v8/ros:humble-ros-base-jammy", label: "ARM64"}]
     runs-on:
       group: ${{ matrix.arch.group }}
     container:
