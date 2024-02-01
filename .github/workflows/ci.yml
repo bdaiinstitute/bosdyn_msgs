@@ -27,11 +27,13 @@ jobs:
         with:
           path: src/bosdyn_msgs
           submodules: true
+      
       - name: Install dependencies
         run: |
           apt update && apt install -y python3-pip
           export PIP_CONSTRAINT=src/bosdyn_msgs/pip-constraint.txt
           rosdep update && rosdep install -i -y --from-path src
+      
       - name: Build and run tests
         run: |
           source /opt/ros/humble/setup.bash

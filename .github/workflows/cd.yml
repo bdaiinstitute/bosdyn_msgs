@@ -12,18 +12,16 @@ concurrency:
 jobs:
   release-bundles:
     runs-on:
-      group: bdai-gh-large-runners
+      group: k8s-t2a-standard-16
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          submodules: true
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v3
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
+          submodules: true 
+      
       - name: Build bosdyn_msgs bundles
         run: make -j8 VERSION=${{ github.ref_name }}
+      
       - name: Release bosdyn_msgs bundles
         uses: softprops/action-gh-release@v1
         with:
