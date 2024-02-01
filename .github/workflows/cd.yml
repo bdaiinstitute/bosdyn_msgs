@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  release-bundles-amd:
+  release-bundles-amd64:
     runs-on:
       group: bdai-gh-large-runners
   steps:
@@ -29,7 +29,7 @@ jobs:
         files: '*.run'
 
 
-  release-bundles-arm:
+  release-bundles-arm64:
     runs-on:
       group: k8s-t2a-standard-16
     steps:
