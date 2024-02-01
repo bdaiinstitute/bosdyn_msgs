@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  release-bundles-amd64:
+  build-bundles-amd64:
     runs-on:
       group: bdai-gh-large-runners
   steps:
@@ -22,14 +22,14 @@ jobs:
     - name: Build bosdyn_msgs bundles
       run: make -j8 VERSION=${{ github.ref_name }} amd64
 
-    - name: Release bosdyn_msgs bundles
-      uses: softprops/action-gh-release@v1
+    - name: Upload bundle artifact
+      uses: actions/upload-artifact@v4
       with:
-        name: Release ${{ github.ref_name }} Amd64
-        files: '*.run'
+        name: amd64
+        path: '*.run'
 
 
-  release-bundles-arm64:
+  build-bundles-arm64:
     runs-on:
       group: k8s-t2a-standard-16
     steps:
@@ -41,8 +41,25 @@ jobs:
       - name: Build bosdyn_msgs bundles
         run: make -j8 VERSION=${{ github.ref_name }} arm64
       
+      - name: Upload bundle artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: arm64
+          path: '*.run'   
+
+  release-bundles:
+    runs-on: ubuntu-latest
+    needs: [build-bundles-amd64, build-bundles-arm64] 
+    steps:
+      - name: Download bundles
+        uses: actions/download-artifact@v4
+        with:
+          # With no `name` specified all artifacts for the run are downloaded.
+          pattern: '*.run'
+          merge-multiple: true
+
       - name: Release bosdyn_msgs bundles
         uses: softprops/action-gh-release@v1
         with:
-          name: Release ${{ github.ref_name }} Arm64
+          name: Release ${{ github.ref_name }}
           files: '*.run'
