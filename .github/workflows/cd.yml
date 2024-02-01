@@ -11,25 +11,27 @@ concurrency:
 
 jobs:
   build-bundles-amd64:
+    name: Bulld AMD64 Bundles
     runs-on:
       group: bdai-gh-large-runners
-  steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
-      with:
-        submodules: true
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          submodules: true
 
-    - name: Build bosdyn_msgs bundles
-      run: make -j8 VERSION=${{ github.ref_name }} amd64
+      - name: Build bosdyn_msgs bundles
+        run: make -j8 VERSION=${{ github.ref_name }} amd64
 
-    - name: Upload bundle artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: amd64
-        path: '*.run'
+      - name: Upload bundle artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: amd64
+          path: '*.run'
 
 
   build-bundles-arm64:
+    name; Build ARM64 Bundles
     runs-on:
       group: k8s-t2a-standard-16
     steps:
@@ -48,6 +50,7 @@ jobs:
           path: '*.run'   
 
   release-bundles:
+    name: Release Bundles
     runs-on: ubuntu-latest
     needs: [build-bundles-amd64, build-bundles-arm64] 
     steps:
