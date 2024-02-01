@@ -25,7 +25,7 @@ jobs:
     - name: Release bosdyn_msgs bundles
       uses: softprops/action-gh-release@v1
       with:
-        name: Release ${{ github.ref_name }}
+        name: Release ${{ github.ref_name }} Amd64
         files: '*.run'
 
 
@@ -44,5 +44,5 @@ jobs:
       - name: Release bosdyn_msgs bundles
         uses: softprops/action-gh-release@v1
         with:
-          name: Release ${{ github.ref_name }}
+          name: Release ${{ github.ref_name }} Arm64
           files: '*.run'
