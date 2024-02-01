@@ -17,13 +17,16 @@ concurrency:
 jobs:
   build_and_test:
     strategy:
+      fail-fast: false
       matrix:
-        arch: [{group: "bdai-gh-large-runners, image: "ros:humble-ros-base-jammy", label: "AMD64"}, {group: "k8s-t2a-standard-16", image: "arm64v8/ros:humble-ros-base-jammy", label: "ARM64"}]
-    name: Build and test bosdyn_msgs packages for ${{ matrix.arch.label }}
+        config:
+        - {group: "bdai-gh-large-runners, image: "ros:humble-ros-base-jammy", arch: "AMD64"}
+        - {group: "k8s-t2a-standard-16", image: "arm64v8/ros:humble-ros-base-jammy", arch: "ARM64"}
+    name: Build and test bosdyn_msgs packages for ${{ matrix.config.arch }}
     runs-on:
-      group: ${{ matrix.arch.group }}
+      group: ${{ matrix.config.group }}
     container:
-      image: ${{ matrix.arch.image }}
+      image: ${{ matrix.config.image }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -37,7 +40,7 @@ jobs:
           export PIP_CONSTRAINT=src/bosdyn_msgs/pip-constraint.txt
           rosdep update && rosdep install -i -y --from-path src
       
-      - name: Build and run tests for ${{ matrix.arch.label }}
+      - name: Build and run tests for ${{ matrix.config.arch }}
         run: |
           source /opt/ros/humble/setup.bash
           colcon build --symlink-install --packages-up-to bosdyn_msgs
