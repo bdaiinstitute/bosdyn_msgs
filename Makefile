@@ -23,9 +23,13 @@ PIP_DIR:=$(TOOLING_DIR)/pip
 SOURCE_DIR:=$(shell pwd)
 BUILD_DIR:=$(SOURCE_DIR)/.build
 
-all: ros-$(DISTRO)-bosdyn_msgs-$(OS_VERSION)_amd64.run ros-$(DISTRO)-bosdyn_msgs-$(OS_VERSION)_arm64.run
+all: amd64 arm64
 
 .NOTPARALLEL: all
+
+amd64: ros-$(DISTRO)-bosdyn_msgs-$(OS_VERSION)_amd64.run
+
+arm64: ros-$(DISTRO)-bosdyn_msgs-$(OS_VERSION)_arm64.run
 
 ros-$(DISTRO)-%-$(OS_VERSION)_amd64.run: FORCE
 	docker build -t amd64-bundler-image --platform linux/amd64 -f $(DOCKER_DIR)/amd64/Dockerfile $(MAKEFILE_DIR)

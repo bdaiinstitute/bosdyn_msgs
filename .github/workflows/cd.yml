@@ -10,7 +10,26 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  release-bundles:
+  release-bundles-amd:
+    runs-on:
+      group: bdai-gh-large-runners
+  steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        submodules: true
+
+    - name: Build bosdyn_msgs bundles
+      run: make -j8 VERSION=${{ github.ref_name }} amd64
+
+    - name: Release bosdyn_msgs bundles
+      uses: softprops/action-gh-release@v1
+      with:
+        name: Release ${{ github.ref_name }}
+        files: '*.run'
+
+
+  release-bundles-arm:
     runs-on:
       group: k8s-t2a-standard-16
     steps:
@@ -20,7 +39,7 @@ jobs:
           submodules: true 
       
       - name: Build bosdyn_msgs bundles
-        run: make -j8 VERSION=${{ github.ref_name }}
+        run: make -j8 VERSION=${{ github.ref_name }} arm64
       
       - name: Release bosdyn_msgs bundles
         uses: softprops/action-gh-release@v1
