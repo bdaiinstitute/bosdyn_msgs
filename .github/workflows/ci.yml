@@ -23,10 +23,10 @@ jobs:
         - { group: "bdai-gh-large-runners, image: "ros:humble-ros-base-jammy", arch: "AMD64" }
         - { group: "k8s-t2a-standard-16", image: "arm64v8/ros:humble-ros-base-jammy", arch: "ARM64" }
     name: Build and test bosdyn_msgs packages for ${{ matrix.config.arch }}
-    # runs-on:
-    #   group: ${{ matrix.config.group }}
-    # container:
-    #   image: ${{ matrix.config.image }}
+    runs-on:
+      group: ${{ matrix.config.group }}
+    container:
+      image: ${{ matrix.config.image }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
