@@ -21,7 +21,7 @@ jobs:
           submodules: true
 
       - name: Build bosdyn_msgs bundles
-        run: make -j8 VERSION=${{ github.ref_name }} amd64
+        run: make -j VERSION=${{ github.ref_name }} amd64
 
       - name: Upload bundle artifact
         uses: actions/upload-artifact@v4
@@ -41,7 +41,7 @@ jobs:
           submodules: true 
       
       - name: Build bosdyn_msgs bundles
-        run: make -j8 VERSION=${{ github.ref_name }} arm64
+        run: make -j VERSION=${{ github.ref_name }} arm64
       
       - name: Upload bundle artifact
         uses: actions/upload-artifact@v4
