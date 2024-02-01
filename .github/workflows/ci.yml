@@ -15,12 +15,15 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build_and_test_amd64:
-    name: Build and test bosdyn_msgs packages for Amd64
+  build_and_test:
+    name: Build and test bosdyn_msgs packages
+    strategy:
+      matrix:
+        arch: [{group: bdai-gh-large-runners, image: ros:humble-ros-base-jammy, label: AMD64}, {group: k8s-t2a-standard-16, image: arm64v8/ros:humble-ros-base-jammy, label: ARM64}]
     runs-on:
-      group: bdai-gh-large-runners
+      group: ${{ matrix.arch.group }}
     container:
-      image: ros:humble-ros-base-jammy
+      image: ${{ matrix.arch.image }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -34,35 +37,61 @@ jobs:
           export PIP_CONSTRAINT=src/bosdyn_msgs/pip-constraint.txt
           rosdep update && rosdep install -i -y --from-path src
       
-      - name: Build and run tests
+      - name: Build and run tests for ${{ matrix.arch.label }}
         run: |
           source /opt/ros/humble/setup.bash
           colcon build --symlink-install --packages-up-to bosdyn_msgs
           colcon test --event-handlers console_direct+ --packages-up-to bosdyn_msgs
           colcon test-result --all --verbose
 
-  build_and_test_arm64:
-    name: Build and test bosdyn_msgs packags for Arm64
-    runs-on:
-      group: k8s-t2a-standard-16
-    contianer:
-      image: arm64v8/ros:humble-ros-base-jammy
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          path: src/bosdyn_msgs
-           submodules: true
+  # build_and_test_amd64:
+  #   name: Build and test bosdyn_msgs packages for Amd64
+  #   runs-on:
+  #     group: bdai-gh-large-runners
+  #   container:
+  #     image: ros:humble-ros-base-jammy
+  #   steps:
+  #     - name: Checkout repository
+  #       uses: actions/checkout@v3
+  #       with:
+  #         path: src/bosdyn_msgs
+  #         submodules: true
+      
+  #     - name: Install dependencies
+  #       run: |
+  #         apt update && apt install -y python3-pip
+  #         export PIP_CONSTRAINT=src/bosdyn_msgs/pip-constraint.txt
+  #         rosdep update && rosdep install -i -y --from-path src
+      
+  #     - name: Build and run tests
+  #       run: |
+  #         source /opt/ros/humble/setup.bash
+  #         colcon build --symlink-install --packages-up-to bosdyn_msgs
+  #         colcon test --event-handlers console_direct+ --packages-up-to bosdyn_msgs
+  #         colcon test-result --all --verbose
 
-      - name: Install dependencies
-        run: |
-          apt update && apt install -y python3-pip
-          export PIP_CONSTRAINT=src/bosdyn_msgs/pip-constraint.txt
-          rosdep update && rosdep install -i -y --from-path src
+  # build_and_test_arm64:
+  #   name: Build and test bosdyn_msgs packags for Arm64
+  #   runs-on:
+  #     group: k8s-t2a-standard-16
+  #   contianer:
+  #     image: arm64v8/ros:humble-ros-base-jammy
+  #   steps:
+  #     - name: Checkout repository
+  #       uses: actions/checkout@v3
+  #       with:
+  #         path: src/bosdyn_msgs
+  #          submodules: true
 
-      - name: Build and run tests
-        run: |
-          source /opt/ros/humble/setup.bash
-          colcon build --symlink-install --packages-up-to bosdyn_msgs
-          colcon test --event-handlers console_direct+ --packages-up-to bosdyn_msgs
-          colcon test-result --all --verbose
+  #     - name: Install dependencies
+  #       run: |
+  #         apt update && apt install -y python3-pip
+  #         export PIP_CONSTRAINT=src/bosdyn_msgs/pip-constraint.txt
+  #         rosdep update && rosdep install -i -y --from-path src
+
+  #     - name: Build and run tests
+  #       run: |
+  #         source /opt/ros/humble/setup.bash
+  #         colcon build --symlink-install --packages-up-to bosdyn_msgs
+  #         colcon test --event-handlers console_direct+ --packages-up-to bosdyn_msgs
+  #         colcon test-result --all --verbose
