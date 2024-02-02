@@ -20,8 +20,8 @@ jobs:
       fail-fast: false
       matrix:
         config:
-        - { runner: "ubuntu-22-04-large-runner", image: "ros:humble-ros-base-jammy", arch: "AMD64" }
-        - { runner: "k8s-t2a-standard-16", image: "arm64v8/ros:humble-ros-base-jammy", arch: "ARM64" }
+        - { runner: "ubuntu-22-04-large-runner", image: "ros:humble-ros-base-jammy", arch: "amd64" }
+        - { runner: "k8s-t2a-standard-16", image: "arm64v8/ros:humble-ros-base-jammy", arch: "arm64" }
     name: Build and test bosdyn_msgs packages for ${{ matrix.config.arch }}
     runs-on: ${{ matrix.config.runner }}
     container:
