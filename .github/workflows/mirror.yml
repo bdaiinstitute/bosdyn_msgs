@@ -1,0 +1,27 @@
+name: bosdyn_msgs mirroring
+
+on:
+  push:
+    branch: main
+    tags:
+      - '*'
+
+env:
+  # github.repository as <account>/<repo>
+  MIRROR_REPOSITORY: bdaiinstitute/bosdyn_msgs
+
+jobs:
+  mirror-repo:
+    name: Mirror bosdyn_msgs repository
+    runs-on: ubuntu-22-04-large-runner
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          submodules: true
+      - name: Push to mirror repository
+        uses: ad-m/github-push-action@v0.8.0
+        with:
+          github_token: ${{ secrets.MIRROR_PAT }}
+          repository: ${{ env.MIRROR_REPOSITORY }}
+          tags: true
