@@ -24,4 +24,5 @@ jobs:
         with:
           github_token: ${{ secrets.MIRROR_PAT }}
           repository: ${{ env.MIRROR_REPOSITORY }}
+          branch: ${{ github.ref }}
           tags: true
