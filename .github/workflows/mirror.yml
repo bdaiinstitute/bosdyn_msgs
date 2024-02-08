@@ -19,6 +19,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           submodules: true
+          persist-credentials: false
       - name: Push to mirror repository
         run: |
           git push --tags --follow-tags --recurse-submodules=on-demand \
