@@ -22,5 +22,5 @@ jobs:
       - name: Push to mirror repository
         run: |
           git push --tags --follow-tags --recurse-submodules=on-demand \
-          https://${{ secrets.MIRROR_PAT }}@github.com/${{ env.MIRROR_REPOSITORY }}.git \
+          https://${{ secrets.MIRROR_USERNAME }}:${{ secrets.MIRROR_PAT }}@github.com/${{ env.MIRROR_REPOSITORY }}.git \
           HEAD:main
