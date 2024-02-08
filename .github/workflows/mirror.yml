@@ -20,9 +20,7 @@ jobs:
         with:
           submodules: true
       - name: Push to mirror repository
-        uses: ad-m/github-push-action@v0.8.0
-        with:
-          github_token: ${{ secrets.MIRROR_PAT }}
-          repository: ${{ env.MIRROR_REPOSITORY }}
-          branch: ${{ github.ref }}
-          tags: true
+        run: |
+          git push --tags --follow-tags --recurse-submodules=on-demand \
+          https://${{ secrets.MIRROR_PAT }}@github.com/${{ env.MIRROR_REPOSITORY }}.git \
+          HEAD:main
