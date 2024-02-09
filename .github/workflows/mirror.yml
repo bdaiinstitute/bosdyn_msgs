@@ -20,6 +20,8 @@ jobs:
         with:
           submodules: true
           persist-credentials: false
+          fetch-depth: 0
+          fetch-tags: true
       - name: Push to mirror repository
         run: |
           git push --tags --follow-tags --recurse-submodules=on-demand \
