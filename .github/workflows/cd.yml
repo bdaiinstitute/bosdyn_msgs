@@ -27,8 +27,6 @@ jobs:
     permissions:
       contents: read
       id-token: write
-    container:
-      image: docker:dind
     steps:
       - name: Prepare environment
         run: |
