@@ -18,8 +18,9 @@ jobs:
     steps:
       - name: Pull release assets
         uses: robinraju/release-downloader@v1.9
-        tag: ${{ github.ref_name }}
-        fileName: '*.run'
+        with:
+          tag: ${{ github.ref_name }}
+          fileName: '*.run'
       - name: Create mirror release
         uses: softprops/action-gh-release@v1
         with:
