@@ -12,9 +12,31 @@ env:
   MIRROR_REPOSITORY: bdaiinstitute/bosdyn_msgs
 
 jobs:
-  mirror-release:
-    name: Mirror bosdyn_msgs release
-    runs-on: ubuntu-22-04-large-runner
+  mirror-latest-release:
+    name: Mirror latest bosdyn_msgs release
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    permissions:
+      contents: write
+    steps:
+      - name: Pull release assets
+        uses: robinraju/release-downloader@v1.9
+        with:
+          latest: true
+          fileName: '*.run'
+      - name: Create mirror release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: Release ${{ github.ref_name }}
+          repository: ${{ env.MIRROR_REPOSITORY }}
+          token: ${{ secrets.MIRROR_PAT }}
+          files: '*.run'
+  mirror-published-release:
+    name: Mirror published bosdyn_msgs release
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'release' }}
+    permissions:
+      contents: write
     steps:
       - name: Pull release assets
         uses: robinraju/release-downloader@v1.9
