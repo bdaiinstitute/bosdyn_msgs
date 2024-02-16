@@ -22,15 +22,17 @@ jobs:
     steps:
       - name: Pull release assets
         uses: robinraju/release-downloader@v1.9
+        id: download
         with:
           latest: true
           fileName: '*.run'
       - name: Create mirror release
         uses: softprops/action-gh-release@v1
         with:
-          name: Release ${{ github.ref_name }}
+          name: ${{ steps.download.outputs.release_name }}
           repository: ${{ env.MIRROR_REPOSITORY }}
           token: ${{ secrets.MIRROR_PAT }}
+          tag_name: ${{ steps.download.outputs.tag_name }}
           files: '*.run'
   mirror-published-release:
     name: Mirror published bosdyn_msgs release
@@ -41,13 +43,15 @@ jobs:
     steps:
       - name: Pull release assets
         uses: robinraju/release-downloader@v1.9
+        id: download
         with:
           tag: ${{ github.ref_name }}
           fileName: '*.run'
       - name: Create mirror release
         uses: softprops/action-gh-release@v1
         with:
-          name: Release ${{ github.ref_name }}
+          name: ${{ steps.download.outputs.release_name }}
           repository: ${{ env.MIRROR_REPOSITORY }}
           token: ${{ secrets.MIRROR_PAT }}
+          tag_name: ${{ steps.download.outputs.tag_name }}
           files: '*.run'
