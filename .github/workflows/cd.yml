@@ -130,7 +130,7 @@ jobs:
       - name: Upload ${{ matrix.config.arch }} bundle artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ matrix.config.arch }}
+          name: ${{ matrix.config.arch }}-bundle-artifact
           path: '*.run'
           retention-days: 1
   release-bundles:
@@ -142,7 +142,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           # With no `name` specified all artifacts for the run are downloaded.
-          pattern: '*.run'
+          pattern: *-bundle-artifact
           merge-multiple: true
       - name: Release bundles to Github
         uses: softprops/action-gh-release@v1
