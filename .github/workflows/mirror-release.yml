@@ -1,6 +1,9 @@
 name: bosdyn_msgs release mirroring
 
 on:
+  workflow_run:
+    workflows: [bosdyn_msgs CD]
+    types: [completed]
   release:
     types: [published]
 
