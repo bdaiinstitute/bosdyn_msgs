@@ -1,6 +1,7 @@
 name: bosdyn_msgs release mirroring
 
 on:
+  workflow_dispatch:
   workflow_run:
     workflows: [bosdyn_msgs CD]
     types: [completed]
@@ -15,7 +16,7 @@ jobs:
   mirror-latest-release:
     name: Mirror latest bosdyn_msgs release
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     permissions:
       contents: write
     steps:
