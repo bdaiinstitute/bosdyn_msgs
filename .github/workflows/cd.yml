@@ -142,7 +142,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           # With no `name` specified all artifacts for the run are downloaded.
-          pattern: *-bundle-artifact
+          pattern: '*-bundle-artifact'
           merge-multiple: true
       - name: Release bundles to Github
         uses: softprops/action-gh-release@v1
