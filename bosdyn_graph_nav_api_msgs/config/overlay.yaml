@@ -1,6 +1,7 @@
 package_mapping:
   bosdyn.api: bosdyn_api_msgs
   bosdyn.api.docking: bosdyn_api_msgs
+  bosdyn.api.gps: bosdyn_api_msgs
   bosdyn.api.spot: bosdyn_spot_api_msgs
 python_imports:
   - bosdyn_api_msgs.msg
