@@ -1,11 +1,12 @@
+# This workflow keeps the public repository releases in sync with those in the private repository
 name: bosdyn_msgs release mirroring
 
 on:
-  workflow_dispatch:
-  workflow_run:
+  workflow_dispatch:  # to enable manual release mirroring
+  workflow_run:  # to trigger release mirroring after an automated release
     workflows: [bosdyn_msgs CD]
     types: [completed]
-  release:
+  release:  # to trigger release mirroring after a manual release
     types: [published]
 
 env:
@@ -13,7 +14,7 @@ env:
   MIRROR_REPOSITORY: bdaiinstitute/bosdyn_msgs
 
 jobs:
-  mirror-latest-release:
+  mirror-latest-release:  # only applies to workflow events
     name: Mirror latest bosdyn_msgs release
     runs-on: ubuntu-latest
     if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
@@ -24,7 +25,7 @@ jobs:
         uses: robinraju/release-downloader@v1.9
         id: download
         with:
-          latest: true
+          latest: true  # release tag unknown, default to latest
           fileName: '*.run'
       - name: Create mirror release
         uses: softprops/action-gh-release@v1
@@ -34,7 +35,7 @@ jobs:
           token: ${{ secrets.MIRROR_PAT }}
           tag_name: ${{ steps.download.outputs.tag_name }}
           files: '*.run'
-  mirror-published-release:
+  mirror-published-release:  # only applies to release events
     name: Mirror published bosdyn_msgs release
     runs-on: ubuntu-latest
     if: ${{ github.event_name == 'release' }}
@@ -45,7 +46,7 @@ jobs:
         uses: robinraju/release-downloader@v1.9
         id: download
         with:
-          tag: ${{ github.ref_name }}
+          tag: ${{ github.ref_name }}  # use the release tag
           fileName: '*.run'
       - name: Create mirror release
         uses: softprops/action-gh-release@v1

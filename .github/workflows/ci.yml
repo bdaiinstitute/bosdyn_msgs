@@ -2,6 +2,8 @@ name: bosdyn_msgs CI
 
 on:
   pull_request:
+    branches:
+      - main
   push:
     branches:
       - main
@@ -20,7 +22,7 @@ jobs:
       fail-fast: false
       matrix:
         config:
-        - { runner: "ubuntu-22-04-large-runner", image: "ros:humble-ros-base-jammy", arch: "amd64" }
+        - { runner: "k8s-n1-standard-16", image: "ros:humble-ros-base-jammy", arch: "amd64" }
         - { runner: "k8s-t2a-standard-16", image: "arm64v8/ros:humble-ros-base-jammy", arch: "arm64" }
     name: Build and test bosdyn_msgs packages for ${{ matrix.config.arch }}
     runs-on: ${{ matrix.config.runner }}
@@ -32,16 +34,14 @@ jobs:
         with:
           path: src/bosdyn_msgs
           submodules: true
-      
       - name: Install dependencies
         run: |
           apt update && apt install -y python3-pip
           export PIP_CONSTRAINT=src/bosdyn_msgs/pip-constraint.txt
           rosdep update && rosdep install -i -y --from-path src
-      
       - name: Build and run tests for ${{ matrix.config.arch }}
         run: |
           source /opt/ros/humble/setup.bash
           colcon build --symlink-install --packages-up-to bosdyn_msgs
           colcon test --event-handlers console_direct+ --packages-up-to bosdyn_msgs
-          colcon test-result --all --verbose
+          colcon test-result --all --verbose  # to ensure the job fails if any test does

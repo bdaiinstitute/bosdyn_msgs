@@ -1,3 +1,4 @@
+# This workflow keeps the public repository commit history in sync with that of the private repository.
 name: bosdyn_msgs mirroring
 
 on:
@@ -19,9 +20,9 @@ jobs:
         uses: actions/checkout@v3
         with:
           submodules: true
-          persist-credentials: false
-          fetch-depth: 0
-          fetch-tags: true
+          persist-credentials: false  # to avoid CI credentials from overriding the PAT in secrets
+          fetch-depth: 0  # to bring the entire repository history on checkout
+          fetch-tags: true  # to bring tags on checkout, not only branches
       - name: Push to mirror repository
         run: |
           git push --tags --follow-tags --recurse-submodules=on-demand \
