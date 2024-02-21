@@ -1,3 +1,9 @@
+message_mapping:
+  bosdyn.api.Vec3: geometry_msgs/Vector3
+  bosdyn.api.Quaternion: geometry_msgs/Quaternion
+  bosdyn.api.SE3Pose: geometry_msgs/Pose
+  bosdyn.api.SE3Velocity: geometry_msgs/Twist
+  bosdyn.api.Wrench: geometry_msgs/Wrench
 package_mapping:
   bosdyn.api: bosdyn_api_msgs
   bosdyn.api.docking: bosdyn_api_msgs
