@@ -78,7 +78,7 @@ ros-$(DISTRO)-%-$(OS_VERSION).run: FORCE
 		-s $*-bundle $$(colcon --log-base /dev/null list -t -n --packages-up-to $*)
 	cp $(SCRIPTS_DIR)/install-bundle $(BUILD_DIR)/$(ALIAS)/out/install
 	chmod a+w $(BUILD_DIR) && chmod -R a+w $(BUILD_DIR)/$(ALIAS)
-	makeself $(BUILD_DIR)/$(ALIAS)/out $(ALIAS) "$*-bundle installer" ./install
+	makeself --keep-umask $(BUILD_DIR)/$(ALIAS)/out $(ALIAS) "$*-bundle installer" ./install
 	chmod a+w $(ALIAS)
 
 clean: FORCE
