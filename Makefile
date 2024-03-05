@@ -12,7 +12,7 @@ DISTRO:=humble
 ARCH ?= unknown
 VERSION ?= unknown
 
-NUM_JOBS ?= $(or $(subst -j,,$(filter -j%,$(subst -j ,-j$(shell nproc),$(MAKEFLAGS)))),1)
+NUM_JOBS ?= $(or $(subst -j,,$(filter -j%,$(subst -j ,-j$(shell nproc),$(MAKEFLAGS) ))),1)
 
 DEFAULT_ROSDEP_PATH:=/etc/ros/rosdep
 
