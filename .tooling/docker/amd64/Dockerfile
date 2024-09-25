@@ -7,7 +7,8 @@ RUN apt-get update && apt-get install -y \
     python3-bloom \
     makeself \
     dpkg-dev \
-    debhelper && \
+    debhelper \
+    wget && \
   rm -rf /var/lib/apt/lists/*
 
 COPY .tooling/pip/pip.conf /etc/pip.conf

@@ -7,5 +7,14 @@ message_mapping:
 python_imports:
   - bosdyn.api.geometry_pb2
   - geometry_msgs.msg
+cpp_headers:
+  - bosdyn/api/geometry.pb.h
+  - geometry_msgs/msg/polygon.hpp
+  - geometry_msgs/msg/pose.hpp
+  - geometry_msgs/msg/quaternion.hpp
+  - geometry_msgs/msg/twist.hpp
+  - geometry_msgs/msg/vector3.hpp
+  - geometry_msgs/msg/wrench.hpp
+  - bosdyn_api_msgs/manual_conversions.hpp
 inline_python_imports:
   - bosdyn_api_msgs.manual_conversions

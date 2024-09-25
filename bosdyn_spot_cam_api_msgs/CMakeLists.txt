@@ -10,6 +10,7 @@ find_package(ament_cmake REQUIRED)
 find_package(bosdyn_api_msgs REQUIRED)
 find_package(proto2ros REQUIRED)
 
+find_package(bosdyn REQUIRED PATHS /opt/spot-cpp-sdk)
 find_package(bosdyn_cmake_module REQUIRED)
 
 fetch_spot_sdk(spotsdk)
@@ -20,6 +21,7 @@ proto2ros_vendor_package(${PROJECT_NAME}
   PROTOS ${${PROJECT_NAME}_PROTOS}
   IMPORT_DIRS ${${PROJECT_NAME}_PROTO_DIR}
   CONFIG_OVERLAYS config/overlay.yaml
+  CPP_DEPENDENCIES bosdyn::bosdyn_api
   ROS_DEPENDENCIES bosdyn_api_msgs
 )
 

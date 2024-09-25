@@ -24,6 +24,19 @@ inline_python_imports:
   - bosdyn_mission_api_msgs.conversions
   - bosdyn_spot_api_msgs.conversions
   - bosdyn_spot_cam_api_msgs.conversions
+cpp_headers:
+  - bosdyn_api_msgs/conversions.hpp
+  - bosdyn_api_msgs/manual_conversions.hpp
+  - bosdyn_graph_nav_api_msgs/conversions.hpp
+  - bosdyn_mission_api_msgs/conversions.hpp
+  - bosdyn_spot_api_msgs/conversions.hpp
+  - bosdyn_spot_cam_api_msgs/conversions.hpp
+inline_cpp_namespaces:
+  - bosdyn_api_msgs::conversions
+  - bosdyn_graph_nav_api_msgs::conversions
+  - bosdyn_mission_api_msgs::conversions
+  - bosdyn_spot_api_msgs::conversions
+  - bosdyn_spot_cam_api_msgs::conversions
 package_specifications:
   - bosdyn_api_msgs.specifications
   - bosdyn_graph_nav_api_msgs.specifications

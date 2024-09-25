@@ -36,9 +36,12 @@ jobs:
           submodules: true
       - name: Install dependencies
         run: |
-          apt update && apt install -y python3-pip
+          apt update && apt install -y python3-pip wget
           export PIP_CONSTRAINT=src/bosdyn_msgs/pip-constraint.txt
-          rosdep update && rosdep install -i -y --from-path src
+          rosdep update && rosdep install -i -y --from-path src --skip-keys "$(cat src/bosdyn_msgs/rosdep-skip.txt)"
+          for url in $(cat src/bosdyn_msgs/${{ matrix.config.arch }}-dpkg.txt); do 
+            wget $url && apt install -y ./$(basename $url);
+          done 
       - name: Build and run tests for ${{ matrix.config.arch }}
         run: |
           source /opt/ros/humble/setup.bash

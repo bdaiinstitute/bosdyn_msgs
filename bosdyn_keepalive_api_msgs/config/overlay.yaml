@@ -15,6 +15,13 @@ python_imports:
 inline_python_imports:
   - bosdyn_api_msgs.conversions
   - bosdyn_auto_return_api_msgs.conversions
+cpp_headers:
+  - bosdyn_api_msgs/conversions.hpp
+  - bosdyn_api_msgs/manual_conversions.hpp
+  - bosdyn_auto_return_api_msgs/conversions.hpp
+inline_cpp_namespaces:
+  - bosdyn_api_msgs::conversions
+  - bosdyn_auto_return_api_msgs::conversions
 package_specifications:
   - bosdyn_api_msgs.specifications
   - bosdyn_auto_return_api_msgs.specifications

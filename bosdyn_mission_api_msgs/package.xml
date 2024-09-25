@@ -12,6 +12,7 @@
   <buildtool_depend>bosdyn_cmake_module</buildtool_depend>
   <buildtool_depend>rosidl_default_generators</buildtool_depend>
 
+  <depend>bosdyn-spot-cpp</depend>
   <depend>bosdyn_api_msgs</depend>
   <depend>bosdyn_graph_nav_api_msgs</depend>
   <depend>bosdyn_spot_api_msgs</depend>

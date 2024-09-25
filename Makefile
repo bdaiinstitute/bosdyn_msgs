@@ -49,11 +49,16 @@ ros-$(DISTRO)-%-$(OS_VERSION).run: FORCE
 	mkdir -p $(BUILD_DIR)/$(ALIAS)/{bloom,rosdep} $(BUILD_DIR)/$(ALIAS)/out/{pip,apt,rosdep}
 	rosdep update
 	rosdep keys --from-paths $(SOURCE_DIR) | grep -e '-pip$$' > $(BUILD_DIR)/$(ALIAS)/rosdep/skip.txt
+	[ -f $(SOURCE_DIR)/rosdep-skip.txt ] && cat < $(SOURCE_DIR)/rosdep-skip.txt >> $(BUILD_DIR)/$(ALIAS)/rosdep/skip.txt
 	rosdep resolve $$(cat $(BUILD_DIR)/$(ALIAS)/rosdep/skip.txt | grep pip) | grep -v \# | tr ' ' '\n' > $(BUILD_DIR)/$(ALIAS)/out/pip/requirements.txt
 	touch $(BUILD_DIR)/$(ALIAS)/out/pip/constraint.txt
 	[ -f $(SOURCE_DIR)/pip-constraint.txt ] && cp -f $(SOURCE_DIR)/pip-constraint.txt $(BUILD_DIR)/$(ALIAS)/out/pip/constraint.txt
 	if [ -s $(BUILD_DIR)/$(ALIAS)/out/pip/requirements.txt ]; then \
 		pip install -c $(BUILD_DIR)/$(ALIAS)/out/pip/constraint.txt -r $(BUILD_DIR)/$(ALIAS)/out/pip/requirements.txt; \
+	fi
+	if [ -f $(SOURCE_DIR)/${ARCH}-dpkg.txt ]; then \
+		cp -f $(SOURCE_DIR)/${ARCH}-dpkg.txt $(BUILD_DIR)/$(ALIAS)/out/apt/files.txt; \
+		for url in $$(cat $(SOURCE_DIR)/${ARCH}-dpkg.txt); do wget -P /tmp $$url && sudo apt install -y /tmp/$$(basename $$url); done; \
 	fi
 	$(SCRIPTS_DIR)/rosdep2null -o $(BUILD_DIR)/$(ALIAS)/rosdep -v $(OS_NAME) \
 		$$(colcon --log-base /dev/null list -t -n --packages-up-to $*) $$(cat $(BUILD_DIR)/$(ALIAS)/rosdep/skip.txt)
@@ -65,7 +70,8 @@ ros-$(DISTRO)-%-$(OS_VERSION).run: FORCE
 		bloom-generate rosdebian --os-name $(OS_NAME) --os-version $(OS_VERSION) --ros-distro $(DISTRO); \
 		sed -i 's/dh_auto_build$$/true  # no dh_auto_build, builds on install/g' debian/rules; \
 		sed -i 's/dh_auto_install$$/dh_auto_install --parallel/g' debian/rules; \
-		DEB_BUILD_OPTIONS="nocheck notest parallel=$(NUM_JOBS)" debian/rules binary; \
+		sudo apt-get build-dep -y .; \
+		DEB_BUILD_OPTIONS="nocheck notest parallel=$(NUM_JOBS)" dpkg-buildpackage -b -us -uc; \
 		popd; \
 		sudo apt install -y $(BUILD_DIR)/$(ALIAS)/bloom/ros-$(DISTRO)-$${name//_/-}*.deb; \
 	done
@@ -75,7 +81,7 @@ ros-$(DISTRO)-%-$(OS_VERSION).run: FORCE
 		echo "./$$(basename $$path)"; \
 	done > $(BUILD_DIR)/$(ALIAS)/out/apt/packages.txt
 	$(SCRIPTS_DIR)/rosdep2null -o $(BUILD_DIR)/$(ALIAS)/out/rosdep -i $(DEFAULT_ROSDEP_PATH) -v $(OS_NAME) \
-		-s $*-bundle $$(colcon --log-base /dev/null list -t -n --packages-up-to $*)
+		-s $*-bundle $$(colcon --log-base /dev/null list -t -n --packages-up-to $*) $$(cat $(SOURCE_DIR)/rosdep-skip.txt 2>&- || true)
 	cp $(SCRIPTS_DIR)/install-bundle $(BUILD_DIR)/$(ALIAS)/out/install
 	chmod a+w $(BUILD_DIR) && chmod -R a+w $(BUILD_DIR)/$(ALIAS)
 	makeself --keep-umask $(BUILD_DIR)/$(ALIAS)/out $(ALIAS) "$*-bundle installer" ./install
