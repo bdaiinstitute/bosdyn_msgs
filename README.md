@@ -68,12 +68,19 @@ git -C src clone --recursive https://github.com/bdaiinstitute/bosdyn_msgs.git
 When installing package dependencies, make sure `pip` constraints are enforced:
 
 ``` bash
-PIP_CONSTRAINT=src/bosdyn_msgs/pip-constraint.txt rosdep install -i -y --from-path src
+PIP_CONSTRAINT=src/bosdyn_msgs/pip-constraint.txt rosdep install -i -y --from-path src --skip-keys "$(cat src/bosdyn_msgs/rosdep-skip.txt)"
 ```
 
 This will ensure `apt` and `pip` managed packages are compatible with each other.
 
-Then you can build:
+Unfortunately, this is not yet enough. There are a few dependencies that are distributed separately:
+
+``` bash
+ARCH=amd64  # or arm64
+for url in $(cat ${ARCH}-dpkg.txt); do wget $url && sudo apt install -y ./$(basename $url); done
+```
+
+Finally, you can now build:
 
 ``` bash
 colcon build
