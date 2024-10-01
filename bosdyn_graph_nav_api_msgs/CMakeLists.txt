@@ -28,4 +28,9 @@ proto2ros_vendor_package(${PROJECT_NAME}
   ROS_DEPENDENCIES bosdyn_api_msgs bosdyn_spot_api_msgs
 )
 
-ament_package()
+ament_export_dependencies(
+  bosdyn_api_msgs
+  bosdyn_spot_api_msgs
+)
+
+ament_package(CONFIG_EXTRAS bosdyn_graph_nav_api_msgs-extras.cmake)

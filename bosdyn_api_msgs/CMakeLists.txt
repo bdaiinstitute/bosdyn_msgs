@@ -29,4 +29,6 @@ proto2ros_vendor_package(${PROJECT_NAME}
   ROS_DEPENDENCIES geometry_msgs
 )
 
-ament_package()
+ament_export_dependencies(geometry_msgs)
+
+ament_package(CONFIG_EXTRAS bosdyn_api_msgs-extras.cmake)
