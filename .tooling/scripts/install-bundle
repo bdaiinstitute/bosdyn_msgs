@@ -2,7 +2,7 @@
 
 set -e
 
+(cd apt && if [ -s packages.txt ]; then sudo apt update && sudo apt install wget python3-pip $(cat packages.txt); fi)
 (cd apt && if [ -s files.txt ]; then sudo apt update && for url in $(cat files.txt); do wget $url && sudo apt install ./$(basename $url); done; fi)
-(cd apt && if [ -s packages.txt ]; then sudo apt update && sudo apt install python3-pip $(cat packages.txt); fi)
 (cd pip && if [ -s requirements.txt ]; then pip install -c constraint.txt -r requirements.txt; fi)
 (cd rosdep && sudo cp -r * ${ROSDEP_SOURCE_PATH:-/etc/ros/rosdep}/. && rosdep update)
