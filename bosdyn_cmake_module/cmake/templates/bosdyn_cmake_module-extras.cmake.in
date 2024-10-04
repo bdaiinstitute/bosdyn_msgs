@@ -3,4 +3,5 @@
 find_package(Python3 REQUIRED)
 include(FetchContent)
 
+list(APPEND CMAKE_PREFIX_PATH "@BOSDYN_CMAKE_PREFIX_PATH@")
 include("${bosdyn_cmake_module_DIR}/fetch_spot_sdk.cmake")

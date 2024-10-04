@@ -13,8 +13,8 @@ find_package(bosdyn_spot_api_msgs REQUIRED)
 find_package(bosdyn_spot_cam_api_msgs REQUIRED)
 find_package(proto2ros REQUIRED)
 
-find_package(bosdyn REQUIRED PATHS /opt/spot-cpp-sdk)
 find_package(bosdyn_cmake_module REQUIRED)
+find_package(bosdyn REQUIRED)  # always after bosdyn_cmake_module
 
 fetch_spot_sdk(spotsdk)
 set(${PROJECT_NAME}_PROTO_DIR "${spotsdk_SOURCE_DIR}/protos")
@@ -36,9 +36,11 @@ proto2ros_vendor_package(${PROJECT_NAME}
 
 ament_export_dependencies(
   bosdyn_api_msgs
+  bosdyn_cmake_module
   bosdyn_graph_nav_api_msgs
   bosdyn_spot_api_msgs
   bosdyn_spot_cam_api_msgs
+  bosdyn
 )
 
-ament_package(CONFIG_EXTRAS bosdyn_mission_api_msgs-extras.cmake)
+ament_package()
