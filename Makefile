@@ -47,6 +47,7 @@ ros-$(DISTRO)-%-$(OS_VERSION)_arm64.run: FORCE  # extremely slow in QEMU
 
 ros-$(DISTRO)-%-$(OS_VERSION).run: FORCE
 	mkdir -p $(BUILD_DIR)/$(ALIAS)/{bloom,rosdep} $(BUILD_DIR)/$(ALIAS)/out/{pip,apt,rosdep}
+	sudo apt update
 	rosdep update
 	rosdep keys --from-paths $(SOURCE_DIR) | grep -e '-pip$$' > $(BUILD_DIR)/$(ALIAS)/rosdep/skip.txt
 	[ -f $(SOURCE_DIR)/rosdep-skip.txt ] && cat < $(SOURCE_DIR)/rosdep-skip.txt >> $(BUILD_DIR)/$(ALIAS)/rosdep/skip.txt
@@ -63,7 +64,6 @@ ros-$(DISTRO)-%-$(OS_VERSION).run: FORCE
 	$(SCRIPTS_DIR)/rosdep2null -o $(BUILD_DIR)/$(ALIAS)/rosdep -v $(OS_NAME) \
 		$$(colcon --log-base /dev/null list -t -n --packages-up-to $*) $$(cat $(BUILD_DIR)/$(ALIAS)/rosdep/skip.txt)
 	ROSDEP_SOURCE_PATH=$(BUILD_DIR)/$(ALIAS)/rosdep/sources.list.d:$${ROSDEP_SOURCE_PATH:-$(DEFAULT_ROSDEP_PATH)/sources.list.d} rosdep update
-	sudo apt update
 	colcon --log-base /dev/null list -t --packages-up-to $* | tr -d '\r' | while read name path ignored; do \
 		cp -rf $$path $(BUILD_DIR)/$(ALIAS)/bloom/.; \
 		pushd $(BUILD_DIR)/$(ALIAS)/bloom/$$(basename $$path); \
