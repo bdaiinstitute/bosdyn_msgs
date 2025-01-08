@@ -23,7 +23,7 @@ jobs:
         - { platform: "linux/amd64", arch: "amd64" }
         - { platform: "linux/arm64/v8", arch: "arm64" }
     name: Build ${{ matrix.config.arch }} bundler image
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     permissions:
       contents: read
       packages: write
@@ -73,7 +73,7 @@ jobs:
           retention-days: 1
   merge-container-images:  # so that a unique tag + platform dictate which container image is used
     name: Merge all bundler images
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     needs: [build-container-images]
     permissions:
       contents: read
@@ -135,7 +135,7 @@ jobs:
           retention-days: 1
   release-bundles:
     name: Release all bundles
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     needs: [build-bundles] 
     steps:
       - name: Download bundles

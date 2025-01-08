@@ -16,7 +16,7 @@ env:
 jobs:
   mirror-latest-release:  # only applies to workflow events
     name: Mirror latest bosdyn_msgs release
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     permissions:
       contents: write
@@ -37,7 +37,7 @@ jobs:
           files: '*.run'
   mirror-published-release:  # only applies to release events
     name: Mirror published bosdyn_msgs release
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     if: ${{ github.event_name == 'release' }}
     permissions:
       contents: write
