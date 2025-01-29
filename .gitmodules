@@ -1,3 +1,3 @@
-[submodule "ros_utilities"]
-	path = ros_utilities
-	url = https://github.com/bdaiinstitute/ros_utilities.git
+[submodule "proto2ros"]
+	path = proto2ros
+	url = https://github.com/bdaiinstitute/proto2ros.git
