@@ -1,1 +1,1 @@
-https://github.com/bdaiinstitute/spot-cpp-sdk/releases/download/v4.1.0/spot-cpp-sdk_4.1.0_amd64.deb
+https://github.com/bdaiinstitute/spot-cpp-sdk/releases/download/v4.1.1/spot-cpp-sdk_4.1.1_amd64.deb
