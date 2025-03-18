@@ -10,7 +10,7 @@ cc_library(
     includes = ["include"],
     deps = [
         "@humble//:ros-humble-common-interfaces_cc",
-        "@humble//:ros-humble-proto2ros_cc",
+        #"@humble//:ros-humble-proto2ros_cc", # seems I don't need this for this target
         "@humble//:spot-cpp-sdk_cc",
     ],
 )

@@ -77,5 +77,6 @@ ros.additional_deb(
     # TODO(astout): figure out how to handle multi-arch
     url = ["https://github.com/bdaiinstitute/spot-cpp-sdk/releases/download/v4.1.1/spot-cpp-sdk_4.1.1_amd64.deb"],
     sha256 = "471b9983b17cb13f9e4a74b2b32bbe41ccbd72fb9a5b82609f03e7f2cd2799f3",
+    cc_includes = ["opt/spot-cpp-sdk/include"],
 )
 use_repo(ros, "humble")
