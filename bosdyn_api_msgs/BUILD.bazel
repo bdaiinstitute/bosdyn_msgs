@@ -1,0 +1,14 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+package(default_visibility = ["//visibility:public"])
+
+# stabbing in the dark here...
+cc_library(
+    name = "bosdyn_api_msgs",
+    srcs = ["src/manual_conversions.cpp"],
+    hdrs = ["include/bosdyn_api_msgs/manual_conversions.hpp"],
+    deps = [
+        "@humble//:ros-humble-common-interfaces_cc",
+        "@humble//:ros-humble-proto2ros_cc"
+    ],
+)

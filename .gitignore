@@ -1,6 +1,8 @@
 devel/
 logs/
+log/
 build/
+install/
 bin/
 lib/
 msg_gen/
@@ -46,3 +48,6 @@ qtcreator-*
 CATKIN_IGNORE
 /debian/
 /.obj-x86_64-linux-gnu/
+
+# bazel build stuff
+bazel-*

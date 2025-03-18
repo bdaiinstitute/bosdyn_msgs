@@ -1,0 +1,39 @@
+#  Anytime this file is changed, the lockfile needs to be regenerated.
+#
+#  To generate the jammy.lock.json run the following command
+#
+#     bazel run @jammy//:lock
+version: 1
+
+sources:
+  - channel: jammy main
+    url: https://ftp.osuosl.org/pub/ros2/
+  - channel: jammy main
+    url: https://snapshot.ubuntu.com/ubuntu/20240301T030400Z
+  - channel: jammy-updates main
+    url: https://snapshot.ubuntu.com/ubuntu/20240301T030400Z
+  - channel: jammy-security main
+    url: https://snapshot.ubuntu.com/ubuntu/20240301T030400Z
+  - channel: jammy restricted
+    url: https://snapshot.ubuntu.com/ubuntu/20240301T030400Z
+  - channel: jammy universe
+    url: https://snapshot.ubuntu.com/ubuntu/20240301T030400Z
+  - channel: jammy multiverse
+    url: https://snapshot.ubuntu.com/ubuntu/20240301T030400Z
+
+archs:
+  - "amd64"
+  - "arm64"
+
+packages:
+  - "software-properties-common"
+  - "ros-humble-rclpy"
+  - "ros-humble-std-msgs"
+  - "ros-humble-rmw-fastrtps-cpp"
+  - "ros-humble-ros2cli"
+  - "ros-humble-ros2topic"
+  - "ros-humble-rclcpp"
+  - "ros-humble-libstatistics-collector"
+  # the above are from distroless PoC. ablate to make sure I need them
+  - "ros-humble-common-interfaces"
+  - "ros-humble-proto2ros"
