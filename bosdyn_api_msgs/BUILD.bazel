@@ -7,8 +7,10 @@ cc_library(
     name = "bosdyn_api_msgs",
     srcs = ["src/manual_conversions.cpp"],
     hdrs = ["include/bosdyn_api_msgs/manual_conversions.hpp"],
+    includes = ["include"],
     deps = [
         "@humble//:ros-humble-common-interfaces_cc",
-        "@humble//:ros-humble-proto2ros_cc"
+        "@humble//:ros-humble-proto2ros_cc",
+        "@humble//:spot-cpp-sdk_cc",
     ],
 )

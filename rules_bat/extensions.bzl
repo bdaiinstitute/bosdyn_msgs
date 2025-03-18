@@ -104,6 +104,10 @@ def _ros_package_repository_impl(repository_ctx):
 
         for path in cc_include_path.readdir():
             cc_includes.append("{}/{}".format(cc_include, path.basename))
+        
+    # dirty temporary hack
+    if repository_ctx.path("opt/spot-cpp-sdk/include").exists:
+        cc_includes.append("opt/spot-cpp-sdk/include")
 
     repository_ctx.file(
         "BUILD.bazel",
@@ -147,6 +151,8 @@ def _ros_hub_repository_impl(repository_ctx):
             return _PKG_ALIAS_TMPL.format(name = name, repo = key)
 
     # additional debs won't follow the name/key structure above.
+    # TODO(astout) Hey, dumbass, spot-cpp-sdk actually does follow the structure above
+    # can probably just format the input a little differently and be okay.
     def format_additional_single_repository_alias(name):
         # TODO(astout): obviously, this also doesn't handle multiple architectures.
         return _PKG_ALIAS_TMPL.format(name = name, repo = name)
@@ -249,8 +255,7 @@ def _ros_impl(module_ctx):
                     sha256 = addtl_deb.sha256,
                     dependencies = [] # just not handling dependencies for additional debs right now
                 )
-                # TODO(astout): this won't work, because we don't have a key
-                # I think I need a slightly different version of format_single_repository_alias
+
                 additional_packages.append(addtl_deb.name)
 
             ros_hub_repository(name = parse.name, packages = packages, additional_packages = additional_packages)
