@@ -26,7 +26,9 @@ jobs:
         id: download
         with:
           latest: true  # release tag unknown, default to latest
-          fileName: '*.run'
+          fileName: |
+            *.run
+            debs/*.deb
       - name: Create mirror release
         uses: softprops/action-gh-release@v1
         with:
@@ -34,7 +36,9 @@ jobs:
           repository: ${{ env.MIRROR_REPOSITORY }}
           token: ${{ secrets.MIRROR_PAT }}
           tag_name: ${{ steps.download.outputs.tag_name }}
-          files: '*.run'
+          files: |
+            *.run
+            debs/*.deb
   mirror-published-release:  # only applies to release events
     name: Mirror published bosdyn_msgs release
     runs-on: ubuntu-22.04
@@ -47,7 +51,9 @@ jobs:
         id: download
         with:
           tag: ${{ github.ref_name }}  # use the release tag
-          fileName: '*.run'
+          fileName: |
+            *.run
+            debs/*.deb
       - name: Create mirror release
         uses: softprops/action-gh-release@v1
         with:
@@ -55,4 +61,6 @@ jobs:
           repository: ${{ env.MIRROR_REPOSITORY }}
           token: ${{ secrets.MIRROR_PAT }}
           tag_name: ${{ steps.download.outputs.tag_name }}
-          files: '*.run'
+          files: |
+            *.run
+            debs/*.deb
