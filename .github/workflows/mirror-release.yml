@@ -21,14 +21,19 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Pull release assets
+      - name: Pull .run release assets
         uses: robinraju/release-downloader@v1.9
         id: download
         with:
           latest: true  # release tag unknown, default to latest
-          fileName: |
-            *.run
-            debs/*.deb
+          fileName: `*.run`
+      - name: Pull .deb release assets
+        uses: robinraju/release-downloader@v1.9
+        id: download
+        with:
+          latest: true  # release tag unknown, default to latest
+          fileName: `debs/*.deb`
+          out-file-path: 'debs'
       - name: Create mirror release
         uses: softprops/action-gh-release@v1
         with:
@@ -46,14 +51,19 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Pull release assets
+      - name: Pull .run release assets
         uses: robinraju/release-downloader@v1.9
         id: download
         with:
           tag: ${{ github.ref_name }}  # use the release tag
-          fileName: |
-            *.run
-            debs/*.deb
+          fileName: `*.run`
+      - name: Pull .deb release assets
+        uses: robinraju/release-downloader@v1.9
+        id: download
+        with:
+          tag: ${{ github.ref_name }}  # use the release tag
+          fileName: `debs/*.deb`
+          out-file-path: 'debs'
       - name: Create mirror release
         uses: softprops/action-gh-release@v1
         with:
