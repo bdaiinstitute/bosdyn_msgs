@@ -32,7 +32,8 @@ jobs:
         id: download
         with:
           latest: true  # release tag unknown, default to latest
-          fileName: '*.deb'
+          fileName: 'debs/*.deb'
+          out-file-path: 'debs'
       - name: Create mirror release
         uses: softprops/action-gh-release@v1
         with:
@@ -61,7 +62,8 @@ jobs:
         id: download
         with:
           tag: ${{ github.ref_name }}  # use the release tag
-          fileName: '*.deb'
+          fileName: 'debs/*.deb'
+          out-file-path: 'debs'
       - name: Create mirror release
         uses: softprops/action-gh-release@v1
         with:
