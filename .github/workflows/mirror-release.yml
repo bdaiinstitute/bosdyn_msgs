@@ -29,7 +29,6 @@ jobs:
           fileName: '*.run'
       - name: Pull .deb release assets
         uses: robinraju/release-downloader@v1.9
-        id: download
         with:
           latest: true  # release tag unknown, default to latest
           fileName: 'debs/*.deb'
@@ -59,7 +58,6 @@ jobs:
           fileName: '*.run'
       - name: Pull .deb release assets
         uses: robinraju/release-downloader@v1.9
-        id: download
         with:
           tag: ${{ github.ref_name }}  # use the release tag
           fileName: 'debs/*.deb'
