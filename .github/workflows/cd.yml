@@ -133,7 +133,7 @@ jobs:
           name: ${{ matrix.config.arch }}-bundle-artifact
           path: |
             *.run
-            debs/*.deb
+            *.deb
           retention-days: 1
   release-bundles:
     name: Release all bundles
@@ -151,4 +151,4 @@ jobs:
           name: Release ${{ github.ref_name }}
           files: |
             *.run
-            debs/*.deb
+            *.deb
