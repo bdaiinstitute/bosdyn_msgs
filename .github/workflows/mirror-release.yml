@@ -42,7 +42,7 @@ jobs:
           tag_name: ${{ steps.download.outputs.tag_name }}
           files: |
             *.run
-            *.deb
+            debs/*.deb
   mirror-published-release:  # only applies to release events
     name: Mirror published bosdyn_msgs release
     runs-on: ubuntu-22.04
@@ -71,4 +71,4 @@ jobs:
           tag_name: ${{ steps.download.outputs.tag_name }}
           files: |
             *.run
-            *.deb
+            debs/*.deb
