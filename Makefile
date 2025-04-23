@@ -64,6 +64,7 @@ ros-$(DISTRO)-%-$(OS_VERSION).run: FORCE
 	$(SCRIPTS_DIR)/rosdep2null -o $(BUILD_DIR)/$(ALIAS)/rosdep -v $(OS_NAME) \
 		$$(colcon --log-base /dev/null list -t -n --packages-up-to $*) $$(cat $(BUILD_DIR)/$(ALIAS)/rosdep/skip.txt)
 	ROSDEP_SOURCE_PATH=$(BUILD_DIR)/$(ALIAS)/rosdep/sources.list.d:$${ROSDEP_SOURCE_PATH:-$(DEFAULT_ROSDEP_PATH)/sources.list.d} rosdep update
+	mkdir $(SOURCE_DIR)/debs
 	colcon --log-base /dev/null list -t --packages-up-to $* | tr -d '\r' | while read name path ignored; do \
 		cp -rf $$path $(BUILD_DIR)/$(ALIAS)/bloom/.; \
 		pushd $(BUILD_DIR)/$(ALIAS)/bloom/$$(basename $$path); \
@@ -74,7 +75,7 @@ ros-$(DISTRO)-%-$(OS_VERSION).run: FORCE
 		DEB_BUILD_OPTIONS="nocheck notest parallel=$(NUM_JOBS)" dpkg-buildpackage -b -us -uc; \
 		popd; \
 		sudo apt install -y $(BUILD_DIR)/$(ALIAS)/bloom/ros-$(DISTRO)-$${name//_/-}*.deb; \
-		cp $(BUILD_DIR)/$(ALIAS)/bloom/ros-$(DISTRO)-$${name//_/-}*.deb $(SOURCE_DIR)/; \
+		cp $(BUILD_DIR)/$(ALIAS)/bloom/ros-$(DISTRO)-$${name//_/-}*.deb $(SOURCE_DIR)/debs/; \
 	done
 	sudo apt remove -y $$(ls $(BUILD_DIR)/$(ALIAS)/bloom/*.deb | xargs -I{} dpkg -f {} Package)
 	cp $(BUILD_DIR)/$(ALIAS)/bloom/*deb $(BUILD_DIR)/$(ALIAS)/out/apt/.
