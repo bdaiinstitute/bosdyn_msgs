@@ -31,8 +31,7 @@ jobs:
         uses: robinraju/release-downloader@v1.9
         with:
           latest: true  # release tag unknown, default to latest
-          fileName: 'debs/*.deb'
-          out-file-path: 'debs'
+          fileName: '*.deb'
       - name: Create mirror release
         uses: softprops/action-gh-release@v1
         with:
@@ -42,7 +41,7 @@ jobs:
           tag_name: ${{ steps.download.outputs.tag_name }}
           files: |
             *.run
-            debs/*.deb
+            *.deb
   mirror-published-release:  # only applies to release events
     name: Mirror published bosdyn_msgs release
     runs-on: ubuntu-22.04
@@ -60,8 +59,7 @@ jobs:
         uses: robinraju/release-downloader@v1.9
         with:
           tag: ${{ github.ref_name }}  # use the release tag
-          fileName: 'debs/*.deb'
-          out-file-path: 'debs'
+          fileName: '*.deb'
       - name: Create mirror release
         uses: softprops/action-gh-release@v1
         with:
@@ -71,4 +69,4 @@ jobs:
           tag_name: ${{ steps.download.outputs.tag_name }}
           files: |
             *.run
-            debs/*.deb
+            *.deb
