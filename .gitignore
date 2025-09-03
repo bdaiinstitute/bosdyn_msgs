@@ -8,6 +8,7 @@ srv_gen/
 msg/_*.py
 build_isolated/
 devel_isolated/
+debs/
 .build/
 *.run
 

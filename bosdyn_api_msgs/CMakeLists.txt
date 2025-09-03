@@ -20,6 +20,12 @@ file(GLOB ${PROJECT_NAME}_PROTOS
   "${${PROJECT_NAME}_PROTO_DIR}/bosdyn/api/gps/*.proto"
   "${${PROJECT_NAME}_PROTO_DIR}/bosdyn/api/docking/*.proto"
 )
+# TODO: restore audio visual message vendoring when
+# the circular dependency with bosdyn_spot_api_msgs
+# is resolved
+list(REMOVE_ITEM ${PROJECT_NAME}_PROTOS
+  "${${PROJECT_NAME}_PROTO_DIR}/bosdyn/api/audio_visual.proto"
+)
 
 proto2ros_vendor_package(${PROJECT_NAME}
   PROTOS ${${PROJECT_NAME}_PROTOS}

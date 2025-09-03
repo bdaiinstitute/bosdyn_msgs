@@ -64,7 +64,7 @@ ros-$(DISTRO)-%-$(OS_VERSION).run: FORCE
 	$(SCRIPTS_DIR)/rosdep2null -o $(BUILD_DIR)/$(ALIAS)/rosdep -v $(OS_NAME) \
 		$$(colcon --log-base /dev/null list -t -n --packages-up-to $*) $$(cat $(BUILD_DIR)/$(ALIAS)/rosdep/skip.txt)
 	ROSDEP_SOURCE_PATH=$(BUILD_DIR)/$(ALIAS)/rosdep/sources.list.d:$${ROSDEP_SOURCE_PATH:-$(DEFAULT_ROSDEP_PATH)/sources.list.d} rosdep update
-	mkdir $(SOURCE_DIR)/debs
+	mkdir -p $(SOURCE_DIR)/debs
 	colcon --log-base /dev/null list -t --packages-up-to $* | tr -d '\r' | while read name path ignored; do \
 		cp -rf $$path $(BUILD_DIR)/$(ALIAS)/bloom/.; \
 		pushd $(BUILD_DIR)/$(ALIAS)/bloom/$$(basename $$path); \

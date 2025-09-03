@@ -1,6 +1,6 @@
 # bosdyn_msgs
 
-![SDK Support](https://img.shields.io/badge/SDK-3.3.2%20%7C%204.0.0%20%7C%204.0.2%20%7C%204.1.0-blue)
+![SDK Support](https://img.shields.io/badge/SDK-3.3.2%20%7C%204.0.0%20%7C%204.0.2%20%7C%205.0.1-blue)
 ![C++ Support](https://img.shields.io/badge/C++-17%20%7C%2020-blue)
 ![Python Support](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10-blue)
 ![ROS Support](https://img.shields.io/badge/ROS-humble-blue)
